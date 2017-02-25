@@ -43,3 +43,40 @@
   margin-bottom: 28px;
   color: #879eb2;
 }
+
+/*Positioning of UI-Element in section  */
+.ui-element {
+  display: flex;
+  flex-direction: column;
+  margin: 14px 0 20px;
+}
+
+
+/*Show Markup container*/
+
+/* Show markup button */
+/* Whomever is doing button compents maybe doubl-check what I did here. */
+.btn-full-width {
+  -webkit-transition: background .5s, color .5s;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #e4edfb;
+  color: #7d95ab;
+  font-size: .9rem;
+  height: 45px;
+  width: 100%;
+}
+/* Class added to change bottom radius of button when language markup is displayed */
+.btn-bottom-no-radius {
+  border-radius: 3px 3px 0 0;
+}
+
+.btn-full-width:focus {
+  outline: 0;
+}
+
+.btn-full-width:hover {
+  background: #51d0ef;
+  color: #fff;
+  cursor: pointer;
+}
