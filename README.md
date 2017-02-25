@@ -4,4 +4,3 @@ During this Hackathon,we choose the Design 1 to develop the website for the UI f
 
 ### Design 1
 ![Design 1](images/Desing_1_BovAcademy_UIFramework.png)
-
