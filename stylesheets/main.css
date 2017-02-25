@@ -13,8 +13,8 @@
   box-shadow: 0 0 1px #e8eff7;
   background: #fff;
   border-radius: 3px;
-
 }
+
 /*Parent level element heading*/
 .main-ui-heading {
   color: #2c3339;
@@ -31,6 +31,7 @@
   padding-bottom: 44px;
   border-bottom: 2px solid #f5f7fb;
 }
+
 /*child level element heading*/
 .ui-element-heading {
   margin-bottom: 28px;
