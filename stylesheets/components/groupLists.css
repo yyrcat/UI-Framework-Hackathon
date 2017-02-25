@@ -18,13 +18,24 @@
   display: block;
   height: 45px;
   padding: 14px 0 0 12px;
+  text-decoration: none;
+  -webkit-transition: background .5s ease-in-out, color .5s;
+  transition: background .5s ease-in-out, color .5s;     
 }
 
 .groupList__item:last-child {
   border-bottom: 1px solid #c3ced9;
 }
 
+div > .groupList__item:hover {
+  background: #edfafd;
+  color: #51d0ef;
+}
 
+.active {
+  background: #c3ced9;
+  color: #fff;
+}
 
 
 
