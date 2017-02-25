@@ -24,6 +24,94 @@
         <p class="ui-element-description">Carousel with previous and next buttons.</p>
 
         <div class="ui-element">
+            <div class="ui-element-variation-01 carousel-wrapper">
+                <input type="radio" name="carousel" class="slide-radio1" checked id="carousel_1">
+                <input type="radio" name="carousel" class="slide-radio2" id="carousel_2">
+                <input type="radio" name="carousel" class="slide-radio3" id="carousel_3">
+                <div class="carousel-pagination">
+                    <label for="carousel_1" class="page1"></label>
+                    <label for="carousel_2" class="page2"></label>
+                    <label for="carousel_3" class="page3"></label>
+                </div>
+                <div class="next control">
+                    <label for="carousel_1" class="control01"><i class="fa fa-arrow-right" aria-hidden="true"></i></label>
+                    <label for="carousel_2" class="control02"><i class="fa fa-arrow-right" aria-hidden="true"></i></label>
+                    <label for="carousel_3" class="control03"><i class="fa fa-arrow-right" aria-hidden="true"></i></label>
+                </div>
+                <div class="previous control">
+                    <label for="carousel_1" class="control01"><i class="fa fa-arrow-left" aria-hidden="true"></i></label>
+                    <label for="carousel_2" class="control02"><i class="fa fa-arrow-left" aria-hidden="true"></i></label>
+                    <label for="carousel_3" class="control03"><i class="fa fa-arrow-left" aria-hidden="true"></i></label>
+                </div>
+                <div class="carousel slide01">
+                    <div>
+                        <img src="images/nature01.jpeg" alt="slide 1">
+                    </div>
+                </div>
+                <div class="carousel slide02">
+                    <div>
+                        <img src="images/nature02.jpeg" alt="slide 2">
+                    </div>
+                </div>
+                <div class="carousel slide03">
+                    <div>
+                        <img src="images/nature03.jpeg" alt="slide 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <button class="btn-full-width">Show markup</button>
+      <div class="show-markup">
+        <pre class="language-markup">
+            <code>
+            &lt;div class="ui-element-variation-01 carousel-wrapper">
+                &lt;input type="radio" name="carousel" class="slide-radio1" checked id="carousel_1">
+                &lt;input type="radio" name="carousel" class="slide-radio2" id="carousel_2">
+                &lt;input type="radio" name="carousel" class="slide-radio3" id="carousel_3">
+                &lt;div class="carousel-pagination">
+                    &lt;label for="carousel_1" class="page1">&lt;/label>
+                    &lt;label for="carousel_2" class="page2">&lt;/label>
+                    &lt;label for="carousel_3" class="page3">&lt;/label>
+                &lt;/div>
+                &lt;div class="next control">
+                    &lt;label for="carousel_1" class="control01">&lt;i class="fa fa-arrow-right" aria-hidden="true">&lt;/i>&lt;/label>
+                    &lt;label for="carousel_2" class="control02">&lt;i class="fa fa-arrow-right" aria-hidden="true">&lt;/i>&lt;/label>
+                    &lt;label for="carousel_3" class="control03">&lt;i class="fa fa-arrow-right" aria-hidden="true">&lt;/i>&lt;/label>
+                &lt;/div>
+                &lt;div class="previous control">
+                    &lt;label for="carousel_1" class="control01">&lt;i class="fa fa-arrow-left" aria-hidden="true">&lt;/i>&lt;/label>
+                    &lt;label for="carousel_2" class="control02">&lt;i class="fa fa-arrow-left" aria-hidden="true">&lt;/i>&lt;/label>
+                    &lt;label for="carousel_3" class="control03">&lt;i class="fa fa-arrow-left" aria-hidden="true">&lt;/i>&lt;/label>
+                &lt;/div>
+                &lt;div class="carousel slide01">
+                    &lt;div>
+                        &lt;img src="images/nature01.jpeg" alt="slide 1">
+                    &lt;/div>
+                &lt;/div>
+                &lt;div class="carousel slide02">
+                    &lt;div>
+                        &lt;img src="images/nature02.jpeg" alt="slide 2">
+                    &lt;/div>
+                &lt;/div>
+                &lt;div class="carousel slide03">
+                    &lt;div>
+                        &lt;img src="images/nature03.jpeg" alt="slide 3">
+                    &lt;/div>
+                &lt;/div>
+            &lt;/div>
+
+            </code>
+        </pre>
+      </div>
+
+
+      <div class="ui-element-container">
+        
+        <h3 class="ui-element-heading">Card mode</h3>
+        <p class="ui-element-description">Carousel with previous/next buttons and pagination in a card layout.</p>
+
+        <div class="ui-element ui-element-variation02">
             <div class="carousel-wrapper">
                 <input type="radio" name="carousel" class="slide-radio1" checked id="carousel_1">
                 <input type="radio" name="carousel" class="slide-radio2" id="carousel_2">
@@ -76,6 +164,6 @@
     <!-- If building more then one UI-Element, copy and paste entire section.ui-element-main and go to town!-->
   </main>
   <!-- script for code snippets to work. -->
-  <script type="text/javascript" src="prism.js"></script>
+  <script type="text/javascript" src="scripts/prism.js"></script>
 </body>
 </html>
