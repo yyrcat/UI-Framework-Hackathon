@@ -1,0 +1,30 @@
+
+
+/*UI element foundational body*/
+.groupList {
+  display: flex;
+  flex-direction: column;
+  margin: 14px 0 20px;
+}
+
+/*Code Relevant to my Group List UI element*/
+.groupList__item {
+  background: #fff;
+  border-left: 1px solid #c3ced9;
+  border-radius: 2px;
+  border-right: 1px solid #c3ced9;
+  border-top: 1px solid #c3ced9;
+  color: #c3ced9;
+  display: block;
+  height: 45px;
+  padding: 14px 0 0 12px;
+}
+
+.groupList__item:last-child {
+  border-bottom: 1px solid #c3ced9;
+}
+
+
+
+
+
