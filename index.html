@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Group Lists</title>
+  <link rel="stylesheet" href="reset.css">
+  <!-- stylesheet for code snippets to display properly -->
+  <link rel="stylesheet" href="prism.css">
+  
+</head>
+<body>
+  <main class="page-content">
+    <section class="ui-element-main">
 
+      <h1 class="main-ui-heading">Heading of UI-Element</h1>
+      <p class="main-element-description">Paragraph containing the description of the overall UI-Element</p>
+
+      <div class="ui-element-container">
+        <h3 class="ui-element-heading">Heading for each UI-Element variation</h3>
+        <p class="ui-element-description">Paragraph(if necessary) with description of UI-Element variation.</p>
+
+        <!-- UI-Element is to go below -->
+
+        <button class="btn-full-width">Show markup</button>
+        <div class="show-markup">
+          <pre class="language-markup">
+            <code>
+              <!-- Language markup copied from text-editor and place between <code> tags -->
+              <!-- Also, you  need to escape the beginning of the tags (<) with &lt; for the code to display properly.-->
+
+            </code>
+          </pre>
+        </div>
+      </div>
+      <!-- Copy and paste below  div.ui-element-container template for next UI-Element variation -->
+    </section>
+    <!-- If building more then one UI-Element, copy and paste entire section.ui-element-main and go to town!-->
+  </main>
+  <!-- script for code snippets to work. -->
+  <script type="text/javascript" src="prism.js"></script>
+</body>
+</html>
