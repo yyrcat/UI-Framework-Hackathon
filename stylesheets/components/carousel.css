@@ -1,4 +1,12 @@
-/* carousel wrapper*/
+/* carousel ui element container*/
+#ui-component-carousel .ui-element-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 380px;
+    height: 100%;
+}
+
+/* carousel ui element*/
 #ui-component-carousel .ui-element {
     position: relative;
 }
