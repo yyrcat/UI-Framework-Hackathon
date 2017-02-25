@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 @import url("reset.css");
 @import url("prism.css");
 @import url("components/groupLists.css");
+=======
+@import url("components/carousel.css");
+>>>>>>> 633c8aa59a3a2a74844ed26f6875bb7c082ead3b
 
 * {
   box-sizing: border-box;
@@ -17,8 +21,8 @@
   box-shadow: 0 0 1px #e8eff7;
   background: #fff;
   border-radius: 3px;
-
 }
+
 /*Parent level element heading*/
 .main-ui-heading {
   color: #2c3339;
@@ -35,6 +39,7 @@
   padding-bottom: 44px;
   border-bottom: 2px solid #f5f7fb;
 }
+
 /*child level element heading*/
 .ui-element-heading {
   margin-bottom: 28px;
