@@ -9,3 +9,54 @@ h3 {
     color: #32383E;
 }
 
+.display {
+    font-size: 4.5rem;
+    height: 25px;
+    text-align: center;
+}
+
+.location {
+    text-align: center;
+    font-size: 2.0rem;
+    height: 25px;
+}
+
+.jumbotron {
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+    border-radius: 5px;
+    box-shadow: 0px 10px 24px 0px rgba(68, 68, 68, 0.1);
+}
+
+.lead {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.line {
+    border: 1px solid #51D0EF;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.btn-default {
+    height: 45px;
+    width: 157px;
+    padding: 15px 34px;
+    margin: 15px auto;
+    display: block;
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: box-shadow .3s;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(204, 204, 204, 1);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(204, 204, 204, 1);
+    box-shadow: 0px 3px 5px 0px rgba(204, 204, 204, 1);
+}
+
+.btn-primary {
+    background: #51d0ef;
+}

@@ -7,6 +7,7 @@
 @import url("components/modal.css");
 @import url('https://fonts.googleapis.com/css?family=Roboto:300|Roboto+Slab:100,300');
 @import url("components/pagination.css");
+@import url(components/groupLists.css);
 
 * {
   box-sizing: border-box;
@@ -355,7 +356,7 @@ input[id^="tab-under"]:checked ~ li[class="ui-main-menu__underline"]{
 /* Show markup button */
 /* Whomever is doing button compents maybe doubl-check what I did here. */
 .btn-full-width {
-  -webkit-transition: background .5s, color .5s;
+  -webkit-transition: background .5s ease-in-out, color .5s;
   background: #fff;
   border-radius: 3px;
   border: 1px solid #e4edfb;
@@ -383,10 +384,10 @@ input[id^="tab-under"]:checked ~ li[class="ui-main-menu__underline"]{
 .show-markup {
   transition: opacity 1s, height 1s;
   transition-timing-function: ease-out;
-  opacity: 0;
+  opacity: 0; 
   height: 0;
   overflow: hidden;
-}
+} 
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"]  {
@@ -400,7 +401,6 @@ pre[class*="language-"]  {
   overflow-y: hidden;
   -ms-overflow-y: hidden;
   width: 100%;
-
 }
 
 .slide-down {
