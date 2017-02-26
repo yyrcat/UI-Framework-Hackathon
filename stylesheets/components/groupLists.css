@@ -8,7 +8,9 @@
 }
 
 /*Code Relevant to my Group List UI element*/
-.groupList__item {
+.groupList__item,
+.groupList__link {
+  position: relative;
   background: #fff;
   border-left: 1px solid #c3ced9;
   border-radius: 2px;
@@ -18,11 +20,86 @@
   display: block;
   height: 45px;
   padding: 14px 0 0 12px;
+  text-decoration: none;
+  -webkit-transition: background .5s ease-in-out, color .5s;
+  transition: background .5s ease-in-out, color .5s;     
+  /*z-index: 1;*/
 }
 
-.groupList__item:last-child {
+.groupList__item:last-child,
+.groupList__link:last-child {
   border-bottom: 1px solid #c3ced9;
 }
+
+/*Anchor group list*/
+.groupList__link:hover {
+  background: #edfafd;
+  color: #51d0ef;
+}
+
+.active {
+  background: #c3ced9;
+  color: #fff;
+}
+
+/*Group list with header*/
+.groupList__header {
+  height: 72px;
+  display: block;
+  padding-top: 24px;
+  background: #f3f5f7;
+}
+
+/*Header with Secondary Content*/
+
+.secondary__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #eb72a9;
+  overflow-y: hidden;
+  z-index: -1;
+  color: #fff;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 100%;
+  z-index: 3;
+}
+
+.badge:hover {
+  cursor: pointer;
+}
+
+.badge::after {
+  position: absolute;
+  content: '◓';
+  right: 12px;
+  top: 14px;
+  font-size: 1.4rem;
+  color: #eb72a9;
+  z-index: 2;
+  transition: color .5s;
+}
+
+.badge:hover::after {
+  content: "◒";
+  color: #fff;  
+}
+.badge:hover + .secondary__item {
+  z-index: 1;
+  opacity: 1;
+}
+
+
+
 
 
 
