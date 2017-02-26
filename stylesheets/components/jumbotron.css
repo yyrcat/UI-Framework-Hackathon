@@ -1,0 +1,11 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,
+h3 {
+    color: #32383E;
+}
+
