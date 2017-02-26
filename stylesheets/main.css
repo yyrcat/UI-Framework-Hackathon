@@ -2,7 +2,8 @@
 @import url("prism.css");
 @import url(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
 @import url("components/carousel.css");
-@import url("components/groupLists.css");
+@import url("components/button.css");
+@import url("components/form.css");
 
 * {
   box-sizing: border-box;
