@@ -9,6 +9,7 @@
 /* carousel ui element*/
 #ui-component-carousel .ui-element {
     position: relative;
+    height: 320px;
 }
 #ui-component-carousel .carousel-wrapper {
     display: block;
@@ -20,15 +21,15 @@
     top: 0;
     bottom: 0;
     width: 100%;
-    max-width: 1000px;
-    height: 100%;
-    min-height: 300px;
+    height: 300px;
+}
+#ui-component-carousel input {
+    visibility: hidden;
 }
 /* carousel */
 #ui-component-carousel .carousel {
     width: 100%;
     height: 100%;
-    background: red;
     position: absolute;
     left: 0;
     top: 0;
@@ -56,35 +57,12 @@
 #ui-component-carousel .carousel > div {
     text-align: center;
 }
+
 /* carousel inner slide effect */
-#ui-component-carousel .carousel h2 {
-    color: #FFF;
-    font-weight: 900;
-    text-transform: uppercase;
-    font-size: 45px;
-    line-height: 120%;
-    opacity: 0;
-    transform: translateX(500px);
-}
 #ui-component-carousel .carousel img {
     width: 100%;
 }
-#ui-component-carousel .carousel .button {
-    color: #FFF;
-    padding: 5px 30px;
-    background: rgba(255,255,255,0.3);
-    text-decoration: none;
-    opacity: 0;
-    font-size: 15px;
-    line-height: 30px;
-    display: inline-block;
-    transform: translateX(-500px);
-}
-#ui-component-carousel .carousel h2, 
-#ui-component-carousel .carousel .button {
-    transition: transform 800ms, opacity 800ms;
-    transition-delay: 1s;
-}
+
 /* Next and Previous arrow */ 
 #ui-component-carousel .control {
     position: absolute;
@@ -116,71 +94,123 @@
     left: 1%;
 }
 
+/* pager for base version */
+.ui-element-variation-01 .carousel-pagination {
+    visibility: hidden;
+}
+/* disabled state */
+#ui-component-carousel .slide01-radio1:checked ~ .previous .control01_02 {
+    display: block;
+    opacity: .3;
+    cursor: default;
+}
 /* carousel Pager arrow event */
-#ui-component-carousel .slide-radio1:checked ~ .next .control02,
-#ui-component-carousel .slide-radio2:checked ~ .next .control03,
-#ui-component-carousel .slide-radio2:checked ~ .previous .control01,
-#ui-component-carousel .slide-radio3:checked ~ .previous .control02 {
+#ui-component-carousel .slide01-radio1:checked ~ .next .control01_02,
+#ui-component-carousel .slide01-radio2:checked ~ .next .control01_03,
+#ui-component-carousel .slide01-radio2:checked ~ .previous .control01_01,
+#ui-component-carousel .slide01-radio3:checked ~ .previous .control01_02 {
     display: block;
     z-index: 1
 }
 /* carousel Pager event */
-#ui-component-carousel .slide-radio1:checked ~ .carousel-pagination .page1,
-#ui-component-carousel .slide-radio2:checked ~ .carousel-pagination .page2,
-#ui-component-carousel .slide-radio3:checked ~ .carousel-pagination .page3 {
-    background: rgba(255,255,255,1)
+#ui-component-carousel .slide01-radio1:checked ~ .carousel-pagination .page1,
+#ui-component-carousel .slide01-radio2:checked ~ .carousel-pagination .page2,
+#ui-component-carousel .slide01-radio3:checked ~ .carousel-pagination .page3 {
+    background: #51d0ef;
 }
-/* carousel slide effect */
-#ui-component-carousel .slide-radio1:checked ~ .carousel {
+/* carousel slide effect V1 */
+#ui-component-carousel .slide01-radio1:checked ~ .carousel {
     transform: translateX(0%);
 }
-#ui-component-carousel .slide-radio2:checked ~ .carousel {
+#ui-component-carousel .slide01-radio2:checked ~ .carousel {
     transform: translateX(-100%);
 }
-#ui-component-carousel .slide-radio3:checked ~ .carousel {
+#ui-component-carousel .slide01-radio3:checked ~ .carousel {
     transform: translateX(-200%);
 }
-#ui-component-carousel .slide-radio1:checked ~ .slide1 h2, 
-#ui-component-carousel .slide-radio2:checked ~ .slide2 h2, 
-#ui-component-carousel .slide-radio3:checked ~ .slide3 h2,
-#ui-component-carousel .slide-radio1:checked ~ .slide1 .button,
-#ui-component-carousel .slide-radio2:checked ~ .slide2 .button,
-#ui-component-carousel .slide-radio3:checked ~ .slide3 .button {
-    transform: translateX(0);
-    opacity: 1
+
+/* pager for cards version */
+
+
+#ui-component-carousel .ui-element-variation-02 .slide01 {
+    left: 184px;
+}
+#ui-component-carousel .ui-element-variation-02 .slide02 {
+    left: 100%
+}
+#ui-component-carousel .ui-element-variation-02 .slide03 {
+    left: 180%
+}
+
+/* disabled state */
+#ui-component-carousel .slide02-radio1:checked ~ .previous .control02_02 {
+    display: block;
+    opacity: .3;
+    cursor: default;
+}
+/* carousel Pager arrow event */
+#ui-component-carousel .slide02-radio1:checked ~ .next .control02_02,
+#ui-component-carousel .slide02-radio2:checked ~ .next .control02_03,
+#ui-component-carousel .slide02-radio2:checked ~ .previous .control02_01,
+#ui-component-carousel .slide02-radio3:checked ~ .previous .control02_02 {
+    display: block;
+    z-index: 1
+}
+/* carousel Pager event */
+#ui-component-carousel .slide02-radio1:checked ~ .carousel-pagination .page1,
+#ui-component-carousel .slide02-radio2:checked ~ .carousel-pagination .page2,
+#ui-component-carousel .slide02-radio3:checked ~ .carousel-pagination .page3 {
+    background-color: #51d0ef;
+}
+/* carousel slide effect V2 */
+#ui-component-carousel .slide02-radio1:checked ~ .carousel {
+    transform: translateX(0%);
+    width: 80%;
+    margin-left: -95px;
+}
+#ui-component-carousel .slide02-radio2:checked ~ .carousel {
+    transform: translateX(-100%);
+    width: 80%;
+    margin-left: -95px;
+}
+#ui-component-carousel .slide02-radio3:checked ~ .carousel {
+    transform: translateX(-200%);
+    width: 80%;
+    margin-left: -95px;
+}
+
+#ui-component-carousel .slide02-radio1:checked ~ .slide02 img,
+#ui-component-carousel .slide02-radio2:checked ~ .slide01 img,
+#ui-component-carousel .slide02-radio2:checked ~ .slide03 img,
+#ui-component-carousel .slide02-radio3:checked ~ .slide02 img {
+    height: 230px;
+    opacity: .5;
 }
 
 /* Slider Pager */ 
 .carousel-pagination {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  left: 0;
-  text-align: center;
-  z-index: 1000;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    z-index: 1000;
 }
-.ui-element-variation02 .carousel-pagination label {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  display: inline-block;
-  background: rgba(255,255,255,0.2);
-  margin: 0 2px;
-  border: solid 1px rgba(255,255,255,0.4);
-  cursor: pointer;
+.carousel-pagination label {
+    width: 70px;
+    height: 4px;
+    display: inline-block;
+    background: #f5f7fb;
+    margin: 0 2px;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 767px) {
-   #ui-component-carousel .carousel h2 {
-        font-size: 20px;
-    }
+
     #ui-component-carousel .carousel > div {
         padding: 0 2%
     }
     #ui-component-carousel .control label {
         font-size: 35px;
-    }
-    #ui-component-carousel .carousel .button {
-        padding: 0 15px;
     }
 }
