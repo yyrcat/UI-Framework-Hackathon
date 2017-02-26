@@ -1,13 +1,15 @@
 @import url("reset.css");
 @import url("prism.css");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css?family=Roboto:300|Roboto+Slab:100,300');
 @import url("components/carousel.css");
 @import url("components/button.css");
 @import url("components/form.css");
 @import url("components/modal.css");
-@import url('https://fonts.googleapis.com/css?family=Roboto:300|Roboto+Slab:100,300');
 @import url("components/pagination.css");
 @import url(components/groupLists.css);
+@import url("components/toggle-switches.css");
+
 
 * {
   box-sizing: border-box;
