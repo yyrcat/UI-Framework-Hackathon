@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Components</title>
+  <!-- vendor css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!-- component css  -->
+  <link rel="stylesheet" href="stylesheets/main.css">
+  
+</head>
+<body>
+  <main class="page-content">
+    <section id="ui-component-COMPONENTNAME" class="ui-element-main">
+
+      <h1 class="main-ui-heading">Heading of UI-Element</h1>
+      <p class="main-element-description">Paragraph containing the description of the overall UI-Element</p>
+      
+      <!-- Copy div.ui-element-container template for next UI-Element variation -->
+      <div class="ui-element-container">
+        <h3 class="ui-element-heading">Heading for each UI-Element variation</h3>
+        <p class="ui-element-description">Paragraph(if necessary) with description of UI-Element variation.</p>
+
+        <!-- UI-Element is to go below -->
+        <!-- Whatever the UI-Element is, give it a class of .ui-element -->
+        <button class="btn-full-width">Show markup</button>
+        <div class="show-markup">
+          <pre class="language-markup">
+            <code>
+              <!-- Language markup copied from text-editor and place between <code> tags -->
+              <!-- Also, you  need to escape the beginning of the tags (<) with &lt; for the code to display properly like the code below.-->
+              &lt;ul class="groupList">
+                &lt;li class="groupList__item">Bubbles&lt;/li>
+                &lt;li class="groupList__item">Giggles&lt;/li>
+                &lt;li class="groupList__item">Pickles&lt;/li>
+                &lt;li class="groupList__item">Speckles&lt;/li>
+                &lt;li class="groupList__item">Freckles&lt;/li>
+                &lt;li class="groupList__item">Wiggles&lt;/li>
+              &lt;/ul> 
+            </code>
+          </pre>
+        </div>
+      </div>
+      <!-- Paste div.ui-element-container template for next UI-Element variation -->
+    </section>
+    <!-- If building more then one UI-Element, copy and paste entire section.ui-element-main and go to town!-->
+  </main>
+  <!-- script for code snippets to work. -->
+  <script type="text/javascript" src="/scripts/prism.js"></script>
+  <script type="text/javascript" src="/scripts/markupDropDown.js"></script>
+</body>
+</html>

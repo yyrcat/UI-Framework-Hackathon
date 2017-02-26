@@ -1,3 +1,56 @@
-.btn-default {
-
+.btn-default,
+.btn-sm {
+    
+    margin:16px 4px;
+    border-radius: 3px;  
+    border:none;
+    color:#fff;
+    text-transform:uppercase;
 }
+.btn-default {
+    height:45px;
+    min-width:120px;
+    padding:0 34px;
+}
+.btn-sm {
+  height:40px;
+  max-width:110px;
+  padding:0 15px;
+  font-size:12px;
+}
+.btn-default:focus,
+.btn-sm:focus {
+    outline: 0;
+}
+.btn-default:hover,
+.btn-sm:hover {
+  cursor: pointer;
+}
+
+.btn-primary {
+    background:#51d0ef;
+}
+.btn-primary-sub {
+    background:#c3ced9;
+}
+.btn-secondary {
+  color:#51d0ef;
+    background:#edfafd;
+}
+.btn-secondary-sub {
+  color:#c3ced9;
+    background:#f3f5f7;
+}
+
+.btn-icon {
+  padding:0 5px 0 0;
+}
+.btn-round {
+    border-radius:22.5px;
+}
+.btn-center {
+  display:block;
+  margin:auto;
+}
+
+
