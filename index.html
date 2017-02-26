@@ -1,1 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Components</title>
+    <!-- component css  -->
+    <link rel="stylesheet" href="stylesheets/main.css">
+</head>
+
+<body>
+    <main class="page-content">
+        <section id="ui-component-carousel" class="ui-element-main">
+            <h1 class="main-ui-heading">Carousel</h1>
+            <p class="main-element-description">CSS only carousels</p>
+            <div class="ui-element-container">
+                <h3 class="ui-element-heading">Basic</h3>
+                <p class="ui-element-description">Carousel with previous and next buttons.</p>
+                <div class="ui-element">
+                    <div class="carousel-wrapper">
+                        <input type="radio" name="carousel" class="slide-radio1" checked id="carousel_1">
+                        <input type="radio" name="carousel" class="slide-radio2" id="carousel_2">
+                        <input type="radio" name="carousel" class="slide-radio3" id="carousel_3">
+                        <div class="carousel-pagination">
+                            <label for="carousel_1" class="page1"></label>
+                            <label for="carousel_2" class="page2"></label>
+                            <label for="carousel_3" class="page3"></label>
+                        </div>
+                        <div class="next control">
+                            <label for="carousel_1" class="control01"><i class="fa fa-arrow-right" aria-hidden="true"></i></label>
+                            <label for="carousel_2" class="control02"><i class="fa fa-arrow-right" aria-hidden="true"></i></label>
+                            <label for="carousel_3" class="control03"><i class="fa fa-arrow-right" aria-hidden="true"></i></label>
+                        </div>
+                        <div class="previous control">
+                            <label for="carousel_1" class="control01"><i class="fa fa-arrow-left" aria-hidden="true"></i></label>
+                            <label for="carousel_2" class="control02"><i class="fa fa-arrow-left" aria-hidden="true"></i></label>
+                            <label for="carousel_3" class="control03"><i class="fa fa-arrow-left" aria-hidden="true"></i></label>
+                        </div>
+                        <div class="carousel slide01">
+                            <div>
+                                <img src="images/nature01.jpeg" alt="slide 1">
+                            </div>
+                        </div>
+                        <div class="carousel slide02">
+                            <div>
+                                <img src="images/nature02.jpeg" alt="slide 2">
+                            </div>
+                        </div>
+                        <div class="carousel slide03">
+                            <div>
+                                <img src="images/nature03.jpeg" alt="slide 3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-full-width">Show markup</button>
+            <div class="show-markup">
+                <pre class="language-markup">
+            <code>
+          <!-- Language markup copied from text-editor and place between <code> tags -->
+          <!-- Also, you  need to escape the beginning of the tags (<) with &lt; for the code to display properly.-->
+
+            </code>
+        </pre>
+            </div>
+            <!-- Copy and paste below  div.ui-element-container template for next UI-Element variation -->
+        </section>
+        <!-- If building more then one UI-Element, copy and paste entire section.ui-element-main and go to town!-->
+        <section class="ui-element-main">
+            <h1 class="main-ui-heading">Buttons</h1>
+            <p class="main-element-description">Commonly used buttons</p>
+            <div class="ui-element-container">
+                <h3 class="ui-element-heading">Basic</h3>
+                <button class="btn-default btn-primary">primary</button>
+                <button class="btn-default btn-secondary">secondary</button>
+                <button class="btn-default btn-primary"><i class="fa fa-upload btn-icon" aria-hidden="true"></i>upload</button>
+                <button class="btn-default btn-primary"><i class="fa fa-pencil btn-icon" aria-hidden="true"></i>edit</button>
+                <button class="btn-default btn-primary-sub">primary</button>
+                <button class="btn-default btn-secondary-sub">secondary</button>
+                <button class="btn-default btn-full-width">Show markup</button>
+            </div>
+            <div class="ui-element-container">
+                <h3 class="ui-element-heading">Rounded</h3>
+                <button class="btn-default btn-primary btn-round">primary</button>
+                <button class="btn-default btn-secondary btn-round">secondary</button>
+                <button class="btn-default btn-primary btn-round"><i class="fa fa-upload btn-icon" aria-hidden="true"></i>upload</button>
+                <button class="btn-default btn-primary btn-round"><i class="fa fa-pencil btn-icon" aria-hidden="true"></i>edit</button>
+                <button class="btn-default btn-primary-sub btn-round">primary</button>
+                <button class="btn-default btn-secondary-sub btn-round">secondary</button>
+                <button class="btn-default btn-full-width">Show markup</button>
+            </div>
+        </section>
+        <section class="ui-element-main">
+            <h1 class="main-ui-heading">Forms</h1>
+            <div class="ui-element-container">
+                <h3 class="ui-element-heading">Basic</h3>
+                <form>
+                    <div class="formInput">
+                        <label for="name"></label>
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input type="text" id="name" name="user_name" placeholder="Full Name">
+                    </div>
+                    <div class="formInput">
+                        <label for="mail" placeholder="Email"></label>
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <input type="email" id="mail" name="user_email" placeholder="Email">
+                    </div>
+                    <div class="formInput">
+                        <label for="password"></label>
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                        <input type="password" id="password" class="formpassword" name="user_password" placeholder="Password">
+                    </div>
+                    <div class="birthday-container">
+                        <div class="lineleft">
+                        </div>
+                        <div class="birthday">
+                            <p>birthday</p>
+                        </div>
+                        <div class="lineright"></div>
+                    </div>
+                    <div class="dates">
+                        <select name="mm" class="datemonth">
+                            <option value="mm">mm</option>
+                            <option value="january">1</option>
+                            <option value="february">2</option>
+                            <option value="march">3</option>
+                        </select>
+                        <select name="dd" class="dateday">
+                            <option value="dd">dd</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <select name="yyyy" class="dateyear">
+                            <option value="yyyy">yyyy</option>
+                            <option value="1989">1989</option>
+                            <option value="1990">1990</option>
+                            <option value="1991">1991</option>
+                        </select>
+                    </div>
+                    <div class="button">
+                        <button type="submit" class="btn">SIGN UP</button>
+                    </div>
+                    <button class="btn-full-width">Show markup</button>
+                    <div class="show-markup">
+                        <pre class="language-markup">
+            <code>
+              <!-- Language markup copied from text-editor and place between <code> tags -->
+              <!-- Also, you  need to escape the beginning of the tags (<) with &lt; for the code to display properly.-->
+
+            </code>
+          </pre>
+                    </div>
+            </div>
+            <!-- Copy and paste below  div.ui-element-container template for next UI-Element variation -->
+        </section>
+        </code>
+        </pre>
+        </div>
+        </div>
+        <!-- Copy and paste below  div.ui-element-container template for next UI-Element variation -->
+        </section>
+    </main>
+    <!-- script for code snippets to work. -->
+    <script type="text/javascript" src="scripts/prism.js"></script>
+    <script type="text/javascript" src="scripts/markupDropDown.js"></script>
+</body>
+
+</html>
