@@ -1,8 +1,9 @@
 @import url("reset.css");
 @import url("prism.css");
-@import url(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
 @import url("components/carousel.css");
 @import url("components/button.css");
+@import url("components/form.css");
 
 * {
   box-sizing: border-box;
@@ -14,7 +15,7 @@
 /*Main UI element container surrounding all UI elements*/
 .ui-element-main { 
   max-width: 1050px;
-  margin: 0 auto; 
+  margin: 50px auto; 
   padding:  60px 65px;
   box-shadow: 0 0 1px #e8eff7;
   background: #fff;

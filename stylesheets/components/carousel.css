@@ -99,7 +99,8 @@
     visibility: hidden;
 }
 /* disabled state */
-#ui-component-carousel .slide01-radio1:checked ~ .previous .control01_02 {
+#ui-component-carousel .slide01-radio1:checked ~ .previous .control01_02,
+#ui-component-carousel .slide01-radio3:checked ~ .next .control01_03  {
     display: block;
     opacity: .3;
     cursor: default;
@@ -143,7 +144,8 @@
 }
 
 /* disabled state */
-#ui-component-carousel .slide02-radio1:checked ~ .previous .control02_02 {
+#ui-component-carousel .slide02-radio1:checked ~ .previous .control02_02,
+#ui-component-carousel .slide02-radio3:checked ~ .next .control02_03  {
     display: block;
     opacity: .3;
     cursor: default;
@@ -165,18 +167,19 @@
 /* carousel slide effect V2 */
 #ui-component-carousel .slide02-radio1:checked ~ .carousel {
     transform: translateX(0%);
-    width: 80%;
-    margin-left: -95px;
 }
 #ui-component-carousel .slide02-radio2:checked ~ .carousel {
     transform: translateX(-100%);
-    width: 80%;
-    margin-left: -95px;
 }
 #ui-component-carousel .slide02-radio3:checked ~ .carousel {
     transform: translateX(-200%);
+}
+#ui-component-carousel .slide02-radio1:checked ~ .carousel,
+#ui-component-carousel .slide02-radio2:checked ~ .carousel,
+#ui-component-carousel .slide02-radio3:checked ~ .carousel {
     width: 80%;
     margin-left: -95px;
+    transition: all 0.5s ease;
 }
 
 #ui-component-carousel .slide02-radio1:checked ~ .slide02 img,
