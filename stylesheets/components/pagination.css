@@ -1,0 +1,41 @@
+.pagination .pages {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #e4edfb;
+    border-radius: 4px;
+}
+.pagination .page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 15%;
+    border-right: 1px solid #e4edfb;
+    text-align: center;
+    padding: 1rem;
+}
+.pagination .page.active,
+.pagination .page.active:hover {
+    background-color: #51d0ef;
+}
+.pagination .page:last-child {
+    border-right: 0;
+}
+.pagination .page:hover {
+    background-color: rgba(128, 128, 128, 0.43);
+    cursor: pointer;
+}
+.pagination .page a {
+    color: rgb(128, 128, 128);
+    text-decoration: none;
+}
+.pagination .page:hover a {
+    color: #fff;
+}
+.pagination .page.active a {
+    color: #fff;
+}
+.pagination .fa-angle-right:before,
+.pagination .fa-angle-left:before {
+    font-size: 25px;
+}

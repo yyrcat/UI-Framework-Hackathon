@@ -6,6 +6,7 @@
 @import url("components/form.css");
 @import url("components/modal.css");
 @import url('https://fonts.googleapis.com/css?family=Roboto:300|Roboto+Slab:100,300');
+@import url("components/pagination.css");
 
 * {
   box-sizing: border-box;
@@ -376,4 +377,35 @@ input[id^="tab-under"]:checked ~ li[class="ui-main-menu__underline"]{
   background: #51d0ef;
   color: #fff;
   cursor: pointer;
+}
+
+/*Hidden pre component that holds language markup*/
+.show-markup {
+  transition: opacity 1s, height 1s;
+  transition-timing-function: ease-out;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"]  {
+  background: #f2f5fa;
+  border: 1px solid #e4edfb;
+  border-radius: 0 0 2px 2px;
+  margin-top: -1px;
+  padding-bottom: 0;
+  padding-top: 0;
+  overflow: auto;
+  overflow-y: hidden;
+  -ms-overflow-y: hidden;
+  width: 100%;
+
+}
+
+.slide-down {
+  opacity: 1;
+  height: auto;
+  transition: opacity .5s, height 1s;
+  transition-timing-function: ease-in;
 }
