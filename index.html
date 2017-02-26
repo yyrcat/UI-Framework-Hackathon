@@ -10,7 +10,7 @@
 </head>
 <body>
   <main class="page-content">
-    <section id="ui-component-COMPONENTNAME" class="ui-element-main">
+    <section id="ui-component-groupLists" class="ui-element-main">
 
       <h1 class="main-ui-heading">Group Lists</h1>
       <p class="main-element-description">The Group List component is an effective and flexible way to display a group of list elements. You can create anything from simple list items to more complex feature rich list groups.</p>
@@ -46,23 +46,93 @@
         <p class="ui-element-description">The group list can be composed as links if need be.</p>
 
         <div class="ui-element groupList">
-          <a href="#" class="groupList__item">Bubbles</a>
-          <a href="#" class="groupList__item">Giggles</a>
-          <a href="#" class="groupList__item active">Pickles</a>
-          <a href="#" class="groupList__item">Speckles</a>
-          <a href="#" class="groupList__item">Freckles</a>
+          <a href="#!" class="groupList__link">Bubbles</a>
+          <a href="#!" class="groupList__link">Giggles</a>
+          <a href="#!" class="groupList__link active">Pickles</a>
+          <a href="#!" class="groupList__link">Speckles</a>
+          <a href="#!" class="groupList__link">Freckles</a>
         </div>
         <button class="btn-full-width">Show markup</button>
         <div class="show-markup">
           <pre class="language-markup">
             <code>
-              &lt;div class="ui-element groupList">
-                &lt;a href="#" class="groupList__item">Bubbles&lt;/a>
-                &lt;a href="#" class="groupList__item">Giggles&lt;/a>
-                &lt;a href="#" class="groupList__item active">Pickles&lt;/a>
-                &lt;a href="#" class="groupList__item">Speckles&lt;/a>
-                &lt;a href="#" class="groupList__item">Freckles&lt;/a>
+              &lt;div class="groupList">
+                &lt;a href="#" class="groupList__link">Bubbles&lt;/a>
+                &lt;a href="#" class="groupList__link">Giggles&lt;/a>
+                &lt;a href="#" class="groupList__link active">Pickles&lt;/a>
+                &lt;a href="#" class="groupList__link">Speckles&lt;/a>
+                &lt;a href="#" class="groupList__link">Freckles&lt;/a>
               &lt;/div>   
+            </code>
+          </pre>
+        </div>
+      </div>
+
+      <div class="ui-element-container">
+        <h3 class="ui-element-heading">Heading</h3>
+        <p class="ui-element-description">If a heading is needed for the group list</p>
+
+        <!-- UI-Element is to go below -->
+        <!-- Whatever the UI-Element is, give it a class of .ui-element -->
+        <ul class="ui-element groupList header--included">
+          <li class="groupList__header groupList__item">
+            <h3 class="main-ui-heading">"les" Names Braah!</h3>
+          </li>
+          <li class="groupList__item">Bubbles</li>
+          <li class="groupList__item">Giggles</li>
+          <li class="groupList__item">Pickles</li>
+          <li class="groupList__item">Speckles</li>
+          <li class="groupList__item">Freckles</li>
+        </ul>
+        <button class="btn-full-width">Show markup</button>
+        <div class="show-markup">
+          <pre class="language-markup">
+            <code>
+              &lt;ul class="groupList header--included">
+                &lt;li class="groupList__header groupList__item">
+                  &lt;h3 class="main-ui-heading">"les" Names Braah!&lt;/h3>
+                &lt;/li>
+                &lt;li class="groupList__item">Bubbles&lt;/li>
+                &lt;li class="groupList__item">Giggles&lt;/li>
+                &lt;li class="groupList__item">Pickles&lt;/li>
+                &lt;li class="groupList__item">Speckles&lt;/li>
+                &lt;li class="groupList__item">Freckles&lt;/li>
+              &lt;/ul> 
+            </code>
+          </pre>
+        </div>
+      </div>
+
+      <div class="ui-element-container">
+        <h3 class="ui-element-heading">Secondary Content</h3>
+        <p class="ui-element-description">If a header is required with list items and a icon to display additional content in the same list item.</p>
+
+        <!-- UI-Element is to go below -->
+        <!-- Whatever the UI-Element is, give it a class of .ui-element -->
+        <ul class="ui-element groupList header--included">
+          <li class="groupList__header groupList__item">
+            <h3 class="main-ui-heading">"les" Names Braah!</h3>
+          </li>
+          <li class="groupList__item">Bubbles <span class="badge"></span><div class="groupList__item secondary__item">Yah so what, I love bubbles! Bubble bathes, bubbles in the park, snot bubbles from laughing!</div></li>
+          <li class="groupList__item">Giggles <span class="badge"></span><div class="groupList__item secondary__item">It's all shits and giggles over here!</div></li>
+          <li class="groupList__item">Pickles <span class="badge"></span><div class="groupList__item secondary__item">Pickles on a burger trascends space and time!</div></li>
+          <li class="groupList__item">Speckles <span class="badge"></span><div class="groupList__item secondary__item">A speckle of light will drown out the largest of fright!</div></li>
+          <li class="groupList__item">Freckles <span class="badge"></span><div class="groupList__item secondary__item">If I had more freckles, then, just maybe then I would be true Irish!</div></li>
+        </ul>
+        <button class="btn-full-width">Show markup</button>
+        <div class="show-markup">
+          <pre class="language-markup">
+            <code>
+              &lt;ul class="ui-element groupList header--included">
+                &lt;li class="groupList__header groupList__item">
+                  &lt;h3 class="main-ui-heading">"les" Names Braah!&lt;/h3>
+                &lt;/li>
+                &lt;li class="groupList__item">Bubbles &lt;span class="badge">&lt;/span>&lt;div class="groupList__item secondary__item">Yah so what, I love bubbles! Bubble bathes, bubbles in the park, snot bubbles from laughing!&lt;/div>&lt;/li>
+                &lt;li class="groupList__item">Giggles &lt;span class="badge">&lt;/span>&lt;div class="groupList__item secondary__item">It's all shits and giggles over here!&lt;/div>&lt;/li>
+                &lt;li class="groupList__item">Pickles &lt;span class="badge">&lt;/span>&lt;div class="groupList__item secondary__item">Pickles on a burger trascends space and time!&lt;/div>&lt;/li>
+                &lt;li class="groupList__item">Speckles &lt;span class="badge">&lt;/span>&lt;div class="groupList__item secondary__item">A speckle of light will drown out the largest of fright!&lt;/div>&lt;/li>
+                &lt;li class="groupList__item">Freckles &lt;span class="badge">&lt;/span>&lt;div class="groupList__item secondary__item">If I had more freckles, then, just maybe then I would be true Irish!&lt;/div>&lt;/li>
+              &lt;/ul>
             </code>
           </pre>
         </div>

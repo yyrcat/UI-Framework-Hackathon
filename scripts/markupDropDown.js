@@ -1,5 +1,4 @@
 var markupBtn = document.querySelectorAll('.btn-full-width');
-// showMarkup = document.querySelectorAll('.show-markup');
 
 var forEach = function(array, callback, scope) {
   for (var i = 0; i < array.length; i++) {
