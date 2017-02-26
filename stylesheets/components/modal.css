@@ -1,0 +1,46 @@
+.modal {
+    width: 370px;
+    border-radius: 4px;
+    box-shadow: 0px 10px 24px 0px rgba(68, 68, 68, 0.1);
+}
+.modal .modal-info-container {
+    padding: 25px 30px;
+    color: rgba(128, 128, 128, 0.76);
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: .02rem;
+    line-height: 1.5rem;
+}
+.modal h1 {
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(95, 95, 95, 0.9);
+    align-items: center;
+    padding-bottom: 0.7rem;
+}
+.modal .fa-exclamation-circle {
+    color: #ff9948;
+    font-size: 28px;
+    padding-right: 0.7rem;
+}
+.modal .modal-btn-container {
+    display: flex;
+    border-top: 1px solid #e4edfb;  
+}
+.modal .modal-btn {
+    background: #fff;
+    border: 0;
+    width: 50%;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 14px;
+    padding: 17px 0;
+}
+.modal .modal-btn.apply {
+    border-right: 1px solid #e4edfb;
+    color: #51d0ef;
+}
+.modal .modal-btn.cancel {
+    color: rgba(95, 95, 95, 0.9);
+}
