@@ -43,7 +43,7 @@
       
       <div class="ui-element-container">
         <h3 class="ui-element-heading">Anchored Group List</h3>
-        <p class="ui-element-description">The group list can be composed as links if need be.</p>
+        <p class="ui-element-description">The group list can be composed as links if need be. The only change is replacing the <em class="tagEmphasis">ul</em> tags with a <em class="tagEmphasis">div</em> and the <em class="tagEmphasis">li</em> tags with the <em class="tagEmphasis">anchor</em> tag.</p>
 
         <div class="ui-element groupList">
           <a href="#!" class="groupList__link">Bubbles</a>
@@ -113,7 +113,7 @@
           <li class="groupList__header groupList__item">
             <h3 class="main-ui-heading">"les" Names Braah!</h3>
           </li>
-          <li class="groupList__item">Bubbles <span class="badge"></span><div class="groupList__item secondary__item">Yah so what, I love bubbles! Bubble bathes, bubbles in the park, snot bubbles from laughing!</div></li>
+          <li class="groupList__item">Bubbles <span class="badge"></span><div class="groupList__item secondary__item">Bubble bathes, bubbles in the park, snot bubbles from laughing!</div></li>
           <li class="groupList__item">Giggles <span class="badge"></span><div class="groupList__item secondary__item">It's all shits and giggles over here!</div></li>
           <li class="groupList__item">Pickles <span class="badge"></span><div class="groupList__item secondary__item">Pickles on a burger trascends space and time!</div></li>
           <li class="groupList__item">Speckles <span class="badge"></span><div class="groupList__item secondary__item">A speckle of light will drown out the largest of fright!</div></li>
@@ -132,6 +132,103 @@
                 &lt;li class="groupList__item">Pickles &lt;span class="badge">&lt;/span>&lt;div class="groupList__item secondary__item">Pickles on a burger trascends space and time!&lt;/div>&lt;/li>
                 &lt;li class="groupList__item">Speckles &lt;span class="badge">&lt;/span>&lt;div class="groupList__item secondary__item">A speckle of light will drown out the largest of fright!&lt;/div>&lt;/li>
                 &lt;li class="groupList__item">Freckles &lt;span class="badge">&lt;/span>&lt;div class="groupList__item secondary__item">If I had more freckles, then, just maybe then I would be true Irish!&lt;/div>&lt;/li>
+              &lt;/ul>
+            </code>
+          </pre>
+        </div>
+      </div>
+
+      <div class="ui-element-container">
+        <h3 class="ui-element-heading">Detailed Lists</h3>
+        <p class="ui-element-description">Avatar icons with detailed list and secondary content.</p>
+
+        <ul class="ui-element groupList">
+          <li class="groupList__item detailed__item">
+            <span class="detail__image">❅</span>
+            <span class="title">Bubbles</span>
+            <p class="details">Rainbow Bubbles</p>
+            <p class="details">Babbling bubbles</p>
+            <span class="badge"></span>
+            <div class="secondary__details secondary__item">Yah so what, I love bubbles! Bubble bathes, bubbles in the park, snot bubbles from laughing!</div>
+          </li>
+          <li class="groupList__item detailed__item">
+            <span class="detail__image">&#x2741;</span>
+            <span class="title">Giggles</span>
+            <p class="details">Rainbow Giggles</p>
+            <p class="details">Babbling Giggles</p>
+            <span class="badge"></span>
+            <div class="secondary__details secondary__item">It's all shits and giggles over here!</div>
+          </li>
+          <li class="groupList__item detailed__item"> 
+            <span class="detail__image">&#x2742;</span>
+            <span class="title">Pickles</span>
+            <p class="details">Rainbow Pickles</p>
+            <p class="details">Babbling Pickles</p>
+            <span class="badge"></span>
+            <div class="secondary__details secondary__item">Pickles on a burger trascends space and time!</div>
+          </li>
+          <li class="groupList__item detailed__item">
+            <span class="detail__image">&#x2725;</span>
+            <span class="title">Speckles</span>
+            <p class="details">Rainbow Speckles</p>
+            <p class="details">Babbling Speckles</p>
+            <span class="badge"></span>
+            <div class="secondary__details secondary__item">A speckle of light will drown out the largest of fright!</div>
+          </li>
+          <li class="groupList__item detailed__item">
+            <span class="detail__image">&#x273e;</span>
+            <span class="title">Freckles</span>
+            <p class="details">Rainbow Freckles</p>
+            <p class="details">Babbling Freckles</p>
+            <span class="badge"></span>
+            <div class="secondary__details secondary__item">If I had more freckles, then, just maybe then I would be true Irish!</div>
+          </li>
+        </ul>
+        <button class="btn-full-width">Show markup</button>
+        <div class="show-markup">
+          <pre class="language-markup">
+            <code>
+              &lt;ul class="ui-element groupList">
+                &lt;li class="groupList__item detailed__item">
+                  &lt;span class="detail__image">❅&lt;/span>
+                  &lt;span class="title">Bubbles&lt;/span>
+                  &lt;p class="details">Rainbow Bubbles&lt;/p>
+                  &lt;p class="details">Babbling bubbles&lt;/p>
+                  &lt;span class="badge">&lt;/span>
+                  &lt;div class="secondary__details secondary__item">Yah so what, I love bubbles! Bubble bathes, bubbles in the park, snot bubbles from laughing!&lt;/div>
+                &lt;/li>
+                &lt;li class="groupList__item detailed__item">
+                  &lt;span class="detail__image">&#x2741;&lt;/span>
+                  &lt;span class="title">Giggles&lt;/span>
+                  &lt;p class="details">Rainbow Giggles&lt;/p>
+                  &lt;p class="details">Babbling Giggles&lt;/p>
+                  &lt;span class="badge">&lt;/span>
+                  &lt;div class="secondary__details secondary__item">It's all shits and giggles over here!&lt;/div>
+                &lt;/li>
+                &lt;li class="groupList__item detailed__item"> 
+                  &lt;span class="detail__image">&#x2742;&lt;/span>
+                  &lt;span class="title">Pickles&lt;/span>
+                  &lt;p class="details">Rainbow Pickles&lt;/p>
+                  &lt;p class="details">Babbling Pickles&lt;/p>
+                  &lt;span class="badge">&lt;/span>
+                  &lt;div class="secondary__details secondary__item">Pickles on a burger trascends space and time!&lt;/div>
+                &lt;/li>
+                &lt;li class="groupList__item detailed__item">
+                  &lt;span class="detail__image">&#x2725;&lt;/span>
+                  &lt;span class="title">Speckles&lt;/span>
+                  &lt;p class="details">Rainbow Speckles&lt;/p>
+                  &lt;p class="details">Babbling Speckles&lt;/p>
+                  &lt;span class="badge">&lt;/span>
+                  &lt;div class="secondary__details secondary__item">A speckle of light will drown out the largest of fright!&lt;/div>
+                &lt;/li>
+                &lt;li class="groupList__item detailed__item">
+                  &lt;span class="detail__image">&#x273e;&lt;/span>
+                  &lt;span class="title">Freckles&lt;/span>
+                  &lt;p class="details">Rainbow Freckles&lt;/p>
+                  &lt;p class="details">Babbling Freckles&lt;/p>
+                  &lt;span class="badge">&lt;/span>
+                  &lt;div class="secondary__details secondary__item">If I had more freckles, then, just maybe then I would be true Irish!&lt;/div>
+                &lt;/li>
               &lt;/ul>
             </code>
           </pre>
