@@ -109,8 +109,8 @@
                 <p class="ui-element-description">Basic pagination to page through content.</p>
 
                 <div class="ui-element">
-                    <nav aria-label="Page navigation">
-                        <ul class="pagination">
+                    <nav class="pagination" aria-label="Page navigation">
+                        <ul class="pages">
                             <li class="page"><a href="#" aria-label="Previous"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
                             <li class="page"><a href="#">1</a></li>
                             <li class="page"><a href="#">...</a></li>
@@ -128,7 +128,19 @@
             <div class="show-markup">
                 <pre class="language-markup">
                     <code>
-
+    &lt;nav class="pagination" aria-label="Page navigation">
+        &lt;ul class="pages">
+            &lt;li class="page">&lt;a href="#" aria-label="Previous">&lt;i class="fa fa-angle-left" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
+            &lt;li class="page">&lt;a href="#">1&lt;/a>&lt;/li>
+            &lt;li class="page">&lt;a href="#">...&lt;/a>&lt;/li>
+            &lt;li class="page">&lt;a href="#">24&lt;/a>&lt;/li>
+            &lt;li class="page active">&lt;a href="#">25&lt;/a>&lt;/li>
+            &lt;li class="page">&lt;a href="#">26&lt;/a>&lt;/li>
+            &lt;li class="page">&lt;a href="#">...&lt;/a>&lt;/li>
+            &lt;li class="page">&lt;a href="#">98&lt;/a>&lt;/li>
+            &lt;li class="page">&lt;a href="#" aria-label="Next">&lt;i class="fa fa-angle-right" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
+        &lt;/ul>
+    &lt;/nav>
                     </code>
                 </pre>
             </div>
@@ -159,7 +171,20 @@
             <div class="show-markup">
                 <pre class="language-markup">
                     <code>
-
+    &lt;div class="modal" role="modal" aria-labelledby="modal-title" aria-describedby="modal-description">  
+        &lt;div class="modal-info-container">
+            &lt;h1 id="modal-title">
+                &lt;i class="fa fa-exclamation-circle" aria-hidden="true">&lt;/i>Update form Feb 12, 2015
+            &lt;/h1>
+            &lt;p id="modal-description" class="sr-only">Bender, we're trying our best.
+            You'll have all the Slurm you can drink when 
+            you're partying with Slurm McKenzie!&lt;/p>
+        &lt;/div>
+        &lt;div class="modal-btn-container">
+            &lt;button type="button" aria-label="Apply" class="modal-btn apply">Apply&lt;/button>
+            &lt;button type="button" aria-label="Cancel" class="modal-btn cancel">Cancel&lt;/button>
+        &lt;/div>
+    &lt;/div> 
                     </code>
                 </pre>
             </div>
@@ -215,7 +240,41 @@
           <div class="show-markup">
             <pre class="language-markup">
                 <code>
-
+    &lt;div class="ui-element-variation-01 carousel-wrapper">
+        &lt;input type="radio" name="carousel01" class="slide01-radio1" checked id="carousel01_1">
+        &lt;input type="radio" name="carousel01" class="slide01-radio2" id="carousel01_2">
+        &lt;input type="radio" name="carousel01" class="slide01-radio3" id="carousel01_3">
+        &lt;div class="carousel-pagination">
+            &lt;label for="carousel01_1" class="page1">&lt;/label>
+            &lt;label for="carousel01_2" class="page2">&lt;/label>
+            &lt;label for="carousel01_3" class="page3">&lt;/label>
+        &lt;/div>
+        &lt;div class="next control">
+            &lt;label for="carousel01_1" class="control01_01">&lt;i class="fa fa-arrow-right" aria-hidden="true">&lt;/i>&lt;/label>
+            &lt;label for="carousel01_2" class="control01_02">&lt;i class="fa fa-arrow-right" aria-hidden="true">&lt;/i>&lt;/label>
+            &lt;label for="carousel01_3" class="control01_03">&lt;i class="fa fa-arrow-right" aria-hidden="true">&lt;/i>&lt;/label>
+        &lt;/div>
+        &lt;div class="previous control">
+            &lt;label for="carousel01_1" class="control01_01">&lt;i class="fa fa-arrow-left" aria-hidden="true">&lt;/i>&lt;/label>
+            &lt;label for="carousel01_2" class="control01_02">&lt;i class="fa fa-arrow-left" aria-hidden="true">&lt;/i>&lt;/label>
+            &lt;label for="carousel01_3" class="control01_03">&lt;i class="fa fa-arrow-left" aria-hidden="true">&lt;/i>&lt;/label>
+        &lt;/div>
+        &lt;div class="carousel slide01">
+            &lt;div>
+                &lt;img src="images/nature01.jpeg" alt="slide 1">
+            &lt;/div>
+        &lt;/div>
+        &lt;div class="carousel slide02">
+            &lt;div>
+                &lt;img src="images/nature02.jpeg" alt="slide 2">
+            &lt;/div>
+        &lt;/div>
+        &lt;div class="carousel slide03">
+            &lt;div>
+                &lt;img src="images/nature03.jpeg" alt="slide 3">
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
                 </code>
             </pre>
           </div>
@@ -268,7 +327,43 @@
           <div class="show-markup">
             <pre class="language-markup">
                 <code>
-
+    &lt;div class="ui-element-variation-02 carousel-wrapper">
+        &lt;input type="radio" name="carousel02" class="slide02-radio1" checked id="carousel02_1">
+        &lt;input type="radio" name="carousel02" class="slide02-radio2" id="carousel02_2">
+        &lt;input type="radio" name="carousel02" class="slide02-radio3" id="carousel02_3">
+        
+        &lt;div class="carousel-pagination">
+            &lt;label for="carousel02_1" class="page1">&lt;/label>
+            &lt;label for="carousel02_2" class="page2">&lt;/label>
+            &lt;label for="carousel02_3" class="page3">&lt;/label>
+        &lt;/div>
+        
+        &lt;div class="next control">
+            &lt;label for="carousel02_1" class="control02_01">&lt;i class="fa fa-arrow-right" aria-hidden="true">&lt;/i>&lt;/label>
+            &lt;label for="carousel02_2" class="control02_02">&lt;i class="fa fa-arrow-right" aria-hidden="true">&lt;/i>&lt;/label>
+            &lt;label for="carousel02_3" class="control02_03">&lt;i class="fa fa-arrow-right" aria-hidden="true">&lt;/i>&lt;/label>
+        &lt;/div>
+        &lt;div class="previous control">
+            &lt;label for="carousel02_1" class="control02_01">&lt;i class="fa fa-arrow-left" aria-hidden="true">&lt;/i>&lt;/label>
+            &lt;label for="carousel02_2" class="control02_02">&lt;i class="fa fa-arrow-left" aria-hidden="true">&lt;/i>&lt;/label>
+            &lt;label for="carousel02_3" class="control02_03">&lt;i class="fa fa-arrow-left" aria-hidden="true">&lt;/i>&lt;/label>
+        &lt;/div>
+        &lt;div class="carousel slide01">
+            &lt;div>
+                &lt;img src="images/nature01.jpeg" alt="slide 1">
+            &lt;/div>
+        &lt;/div>
+        &lt;div class="carousel slide02">
+            &lt;div>
+                &lt;img src="images/nature02.jpeg" alt="slide 2">
+            &lt;/div>
+        &lt;/div>
+        &lt;div class="carousel slide03">
+            &lt;div>
+                &lt;img src="images/nature03.jpeg" alt="slide 3">
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
                 </code>
             </pre>
           </div>

@@ -1,4 +1,4 @@
-.pagination {
+.pagination .pages {
     display: flex;
     width: 100%;
     max-width: 500px;
@@ -25,7 +25,7 @@
     background-color: rgba(128, 128, 128, 0.43);
     cursor: pointer;
 }
-.pagination a {
+.pagination .page a {
     color: rgb(128, 128, 128);
     text-decoration: none;
 }
@@ -35,7 +35,7 @@
 .pagination .page.active a {
     color: #fff;
 }
-.fa-angle-right:before,
-.fa-angle-left:before {
+.pagination .fa-angle-right:before,
+.pagination .fa-angle-left:before {
     font-size: 25px;
 }
