@@ -1,14 +1,303 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300|Roboto+Slab:100,300');
+
 * {
   box-sizing: border-box;
 }
+
+html {
+  font-family: Roboto, sans-serif;
+}
+
 .page-content {
   background: #f3f5f8;
 }
 
+.hide {
+  display: none;
+}
+
+/* Layout styles */
+.container {
+  overflow: auto;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+}
+
+[class*="col"] {
+  float: left;
+}
+
+.col1 {
+  width: 8.33%;
+}
+
+.col2 {
+  width: 16.66%;
+}
+
+.col3 {
+  width: 25%;
+}
+
+.col4 {
+  width: 33.33%;
+}
+
+.col5 {
+  width: 41.66%;
+}
+
+.col6 {
+  width: 50%;
+}
+
+.col7 {
+  width: 58.33%;
+}
+
+.col8 {
+  width: 66.66%;
+}
+
+.col9 {
+  width: 75%;
+}
+
+.col10 {
+  width: 83.33%;
+}
+
+.col11 {
+  width: 91.66%;
+}
+
+.col12 {
+  width: 100%;
+}
+
+.col-gap1 {
+  margin-left: 8.33%;
+}
+
+.col-gap2 {
+  margin-left: 16.66%;
+}
+
+.col-gap3 {
+  margin-left: 25%;
+}
+
+.col-gap4 {
+  margin-left: 33.33%;
+}
+
+.col-gap5 {
+  margin-left: 41.66%;
+}
+
+.col-gap6 {
+  margin-left: 50%;
+}
+
+.col-gap7 {
+  margin-left: 58.33%;
+}
+
+.col-gap8 {
+  margin-left: 66.66%;
+}
+
+.col-gap9 {
+  margin-left: 75%;
+}
+
+.col-gap10 {
+  margin-left: 83.33%;
+}
+
+.col-gap11 {
+  margin-left: 91.66%;
+}
+
+header, footer {
+  background: #1E2226;
+  color: #F3F5F8;
+}
+
+.logo {
+  font-family: Roboto Slab, serif;
+  font-weight: 100;
+  margin-top: 1em;
+}
+
+.logo__image, .logo__title {
+  display: inline-block;
+}
+
+.logo__image {
+  vertical-align: middle;
+}
+
+.logo__title {
+  color: #49bcd8;
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 14px;
+}
+
+.logo__acd {
+  color: #9ec7d2;
+  font-size: 28px;
+}
+
+.logo__subtitle {
+  font-weight: 300;
+  font-size: 28px;
+  margin-left: 14px;
+}
+
+.search__input, .search__palette {
+  display: inline-block;
+  margin-top: 1em;
+}
+
+.search__input {
+  background: #34383c;
+  border: 0;
+  border-radius: 3px;
+  color: #8493a8;
+  font-family: 'FontAwesome';
+  font-size: 14px;
+  padding: .5em;
+  width: 60%;
+}
+
+.ui-main-menu {
+  float: right;
+  margin-right: 3em;
+}
+
+.ui-main-menu__li{
+  display: inline-block;
+  margin: auto 14px 1em;
+}
+
+.ui-main-menu__li_el {
+  cursor: pointer;
+}
+
+.ui-main-menu__underline {
+  border-bottom: 5px solid #eb74aa;
+  display: block;
+	margin:0 0 0 15px;
+	padding:0;
+	width: 85px;
+}
+
+.ui-nav-elements-title {
+  font-weight: bolder;
+  margin: 2em;
+  text-align: left;
+}
+
+.ui-nav-elements__li {
+  cursor: pointer;
+  margin: 2em auto 2em 2em;
+  padding: 1em 1em 1em 0;
+  text-align: left;
+}
+
+input[id^="tab-under"]:checked ~ li[class="ui-main-menu__underline"]{
+	transition: all .3s ease-in-out;
+}
+
+#tab-under-11:checked ~ .ui-main-menu__underline {
+	margin-left: 15px;
+}
+
+#tab-under-12:checked ~ .ui-main-menu__underline {
+	margin-left: 130px;
+  width: 85px;
+}
+
+#tab-under-13:checked ~ .ui-main-menu__underline{
+  margin-left: 245px;
+  width: 144px;
+}
+
+.is-active {
+  border-right: 5px solid #eb74aa;
+}
+
+.sitemap {
+  font-weight: 300;
+  margin: 1em auto;
+}
+
+.sitemap__li {
+  color: #a6afb8;
+  display: inline;
+  margin: auto 14px;
+}
+
+.social {
+  margin: 1em auto;
+}
+
+.social__li {
+  color: #738494;
+  display: inline;
+  margin: auto 1em;
+}
+
+.circled {
+  border-radius: 50%;
+}
+
+.divider {
+  border-bottom: 2px solid #31353a;
+  margin: 1em auto;
+}
+
+.develop__title {
+  color: #6d7f92;
+  margin: 2em auto;
+}
+
+.develop__profiles {
+  display: flex;
+  justify-content: center;
+}
+
+.develop__profile {
+  display: inline;
+  float: left;
+  margin: auto 14px;
+}
+
+.develop__img {
+  display: block;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+}
+
+.develop__name {
+  color: #6d7f92;
+  margin: 1em auto;
+  text-align: center;
+}
+
+
 /*Main UI element container surrounding all UI elements*/
-.ui-element-main { 
+.ui-element-main {
   max-width: 1050px;
-  margin: 0 auto; 
+  margin: 0 auto;
   padding:  60px 65px;
   box-shadow: 0 0 1px #e8eff7;
   background: #fff;
@@ -23,7 +312,7 @@
 .main-element-description {
   margin: 24px 0 44px;
   color: #879eb2;
-  
+
 }
 /*Container surrounding each individual UI element*/
 .ui-element-container {
@@ -36,7 +325,7 @@
   margin-bottom: 28px;
   color: #62652a;
   font-size: 1.3rem;
-  
+
 }
 
 .ui-element-description {

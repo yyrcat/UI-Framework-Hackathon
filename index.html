@@ -10,36 +10,156 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <!-- component css  -->
   <link rel="stylesheet" href="stylesheets/main.css">
-  
+
 </head>
 <body>
-  <main class="page-content">
-    <section id="ui-component-COMPONENTNAME" class="ui-element-main">
 
-      <h1 class="main-ui-heading">Heading of UI-Element</h1>
-      <p class="main-element-description">Paragraph containing the description of the overall UI-Element</p>
+  <header>
+    <div class="container">
 
-      <div class="ui-element-container">
-        <h3 class="ui-element-heading">Heading for each UI-Element variation</h3>
-        <p class="ui-element-description">Paragraph(if necessary) with description of UI-Element variation.</p>
+      <div class="row">
 
-        <!-- UI-Element is to go below -->
-        <!-- Whatever the UI-Element is, give it a class of .ui-element -->
-        <button class="btn-full-width">Show markup</button>
-        <div class="show-markup">
-          <pre class="language-markup">
-            <code>
-              <!-- Language markup copied from text-editor and place between <code> tags -->
-              <!-- Also, you  need to escape the beginning of the tags (<) with &lt; for the code to display properly.-->
+        <div class="col6">
+          <div class="logo">
+            <img class="logo__image" src="images/bov_logo.png" alt="Bov Academy Logo">
+            <h1 class="logo__title">Bov</h1> <span class="logo__acd">Academy</span> <span class="logo__subtitle">UI Framework</span>
+          </div>
+        </div>
 
-            </code>
-          </pre>
+        <div class="col-gap2 col4">
+            <input type="text" placeholder="&#xf002; Search" class="search__input">
+            <label for="search" class="search__icon"></label>
+
+            <select name="color" class="search_palette">
+              <option value="red">Red</option>
+              <option value="gree">Green</option>
+              <option value="blue">Blue</option>
+            </select>
+        </div>
+
+      </div>
+
+    </div>
+
+      <div class="row">
+        <div class="col-gap7 col5">
+            <ul class="ui-main-menu">
+              <li class="ui-main-menu__li"><label class="ui-main-menu__li_el" for="tab-under-11">UI Elements</label></li>
+              <li class="ui-main-menu__li"><label class="ui-main-menu__li_el" for="tab-under-12">Maintainers</label></li>
+              <li class="ui-main-menu__li"><label class="ui-main-menu__li_el" for="tab-under-13">About Bov Academy</label></li>
+              <input class="hide" type="radio" name="under" id="tab-under-11">
+              <input class="hide" type="radio" name="under" id="tab-under-12">
+              <input class="hide" type="radio" name="under" id="tab-under-13">
+              <li class="ui-main-menu__underline"></li>
+            </ul>
         </div>
       </div>
-      <!-- Copy and paste below  div.ui-element-container template for next UI-Element variation -->
-    </section>
+
+    </div>
+  </header>
+
+  <main class="page-content container">
+
+    <div class="row">
+      <div class="col2">
+          <h4 class="ui-nav-elements-title">UI ELEMENTS</h4>
+          <ul class="ui-nav-elements-menu">
+            <li class="ui-nav-elements__li"><label for="tab-under-21">Buttons</label></li>
+            <li class="ui-nav-elements__li"><label for="tab-under-22">Cards</label></li>
+            <li class="ui-nav-elements__li"><label for="tab-under-23">Accordion</label></li>
+            <li class="ui-nav-elements__li"><label for="tab-under-24">Tabs</label></li>
+            <li class="ui-nav-elements__li"><label for="tab-under-25">Carousel</label></li>
+            <li class="ui-nav-elements__li"><label for="tab-under-26">Forms</label></li>
+            <input class="hide" type="radio" name="under" id="tab-under-21">
+            <input class="hide" type="radio" name="under" id="tab-under-22">
+            <input class="hide" type="radio" name="under" id="tab-under-23">
+            <input class="hide" type="radio" name="under" id="tab-under-24">
+            <input class="hide" type="radio" name="under" id="tab-under-25">
+            <input class="hide" type="radio" name="under" id="tab-under-26">
+          </ul>
+      </div>
+      <div class="col10">
+        <section id="ui-component-COMPONENTNAME" class="ui-element-main">
+
+          <h1 class="main-ui-heading">Heading of UI-Element</h1>
+          <p class="main-element-description">Paragraph containing the description of the overall UI-Element</p>
+
+          <div class="ui-element-container">
+            <h3 class="ui-element-heading">Heading for each UI-Element variation</h3>
+            <p class="ui-element-description">Paragraph(if necessary) with description of UI-Element variation.</p>
+
+            <!-- UI-Element is to go below -->
+            <!-- Whatever the UI-Element is, give it a class of .ui-element -->
+            <button class="btn-full-width">Show markup</button>
+            <div class="show-markup">
+              <pre class="language-markup">
+                <code>
+                  <!-- Language markup copied from text-editor and place between <code> tags -->
+                  <!-- Also, you  need to escape the beginning of the tags (<) with &lt; for the code to display properly.-->
+
+                </code>
+              </pre>
+            </div>
+          </div>
+          <!-- Copy and paste below  div.ui-element-container template for next UI-Element variation -->
+        </section>
+      </div>
+    </div>
+
+
+
+
     <!-- If building more then one UI-Element, copy and paste entire section.ui-element-main and go to town!-->
   </main>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-gap2 col8">
+
+            <ul class="sitemap">
+              <li class="sitemap__li">HOME</li>
+              <li class="sitemap__li">PROGRAMS AND CAREER PATHS</li>
+              <li class="sitemap__li">OUR MISSION</li>
+              <li class="sitemap__li">CAREERS</li>
+              <li class="sitemap__li">CONTACT</li>
+            </ul>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-gap5 col2">
+
+            <ul class="social">
+              <li class="social__li"><i class="fa fa-twitter fa-2x"></i></li>
+              <li class="social__li"><i class="fa fa-instagram fa-2x"></i></li>
+              <li class="social__li"><i class="fa fa-social fa-2x"></i></li>
+            </ul>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-gap2 col8">
+          <div class="divider"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-gap1 col10">
+          <h5 class="develop__title">Develop by Team 9</h5>
+          <ul class="develop__profiles">
+            <li class="develop__profile"><img class="develop__img circled" src="images/yerui.jpg" alt=""><h5 class="develop__name">Yerui Yu</h5></li>
+            <li class="develop__profile"><img class="develop__img circled" src="images/zoe.jpg" alt=""><h5 class="develop__name">Zoe Sadler</h5></li>
+            <li class="develop__profile"><img class="develop__img circled" src="images/justin.jpg" alt=""><h5 class="develop__name">Justin Browne</h5></li>
+            <li class="develop__profile"><img class="develop__img circled" src="images/blake.jpeg" alt=""><h5 class="develop__name">Blake Wilson</h5></li>
+            <li class="develop__profile"><img class="develop__img circled" src="images/" alt=""><h5 class="develop__name"></h5></li>
+            <li class="develop__profile"><img class="develop__img circled" src="images/luis.jpg" alt=""><h5 class="develop__name">Luis Rojas</h5></li>
+          </li>
+        </div>
+      </div>
+    </div>
+  </footer>
   <!-- script for code snippets to work. -->
   <script type="text/javascript" src="prism.js"></script>
 </body>
