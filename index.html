@@ -22,42 +22,42 @@
           <div class="logo">
             <img class="logo__image" src="images/bov_logo.png" alt="Bov Academy Logo">
             <h1 class="logo__title">Bov</h1> <span class="logo__acd">Academy</span> <span class="logo__subtitle">UI Framework</span>
-          </div>
         </div>
-
-        <div class="col-gap2 col4">
-            <input type="text" placeholder="&#xf002; Search" class="search__input">
-            <label for="search" class="search__icon"></label>
-
-            <select name="color" class="search_palette">
-              <option value="red">Red</option>
-              <option value="gree">Green</option>
-              <option value="blue">Blue</option>
-            </select>
-        </div>
-
-      </div>
-
     </div>
 
-      <div class="row">
-        <div class="col-gap7 col5">
-            <ul class="ui-main-menu">
-              <li class="ui-main-menu__li"><label class="ui-main-menu__li_el" for="tab-under-11">UI Elements</label></li>
-              <li class="ui-main-menu__li"><label class="ui-main-menu__li_el" for="tab-under-12">Maintainers</label></li>
-              <li class="ui-main-menu__li"><label class="ui-main-menu__li_el" for="tab-under-13">About Bov Academy</label></li>
-              <input class="hide" type="radio" name="under" id="tab-under-11">
-              <input class="hide" type="radio" name="under" id="tab-under-12">
-              <input class="hide" type="radio" name="under" id="tab-under-13">
-              <li class="ui-main-menu__underline"></li>
-            </ul>
-        </div>
-      </div>
+    <div class="col-gap2 col4">
+        <input type="text" placeholder="&#xf002; Search" class="search__input">
+        <label for="search" class="search__icon"></label>
 
-    </div>
-  </header>
+        <select name="color" class="search_palette">
+          <option value="red">Red</option>
+          <option value="gree">Green</option>
+          <option value="blue">Blue</option>
+      </select>
+  </div>
 
-  <main class="page-content container">
+</div>
+
+</div>
+
+<div class="row">
+    <div class="col-gap7 col5">
+        <ul class="ui-main-menu">
+          <li class="ui-main-menu__li"><label class="ui-main-menu__li_el" for="tab-under-11">UI Elements</label></li>
+          <li class="ui-main-menu__li"><label class="ui-main-menu__li_el" for="tab-under-12">Maintainers</label></li>
+          <li class="ui-main-menu__li"><label class="ui-main-menu__li_el" for="tab-under-13">About Bov Academy</label></li>
+          <input class="hide" type="radio" name="under" id="tab-under-11">
+          <input class="hide" type="radio" name="under" id="tab-under-12">
+          <input class="hide" type="radio" name="under" id="tab-under-13">
+          <li class="ui-main-menu__underline"></li>
+      </ul>
+  </div>
+</div>
+
+</div>
+</header>
+
+<main class="page-content container">
 
     <div class="row">
       <div class="col2">
@@ -75,10 +75,10 @@
             <input class="hide" type="radio" name="under" id="tab-under-24">
             <input class="hide" type="radio" name="under" id="tab-under-25">
             <input class="hide" type="radio" name="under" id="tab-under-26">
-          </ul>
-      </div>
-      <div class="col10">
-        <section class="ui-element-main">
+        </ul>
+    </div>
+    <div class="col10">
+        <section class="ui-element-main" id="ui-element-button">
             <h1 class="main-ui-heading">Buttons</h1>
             <p class="main-element-description">Commonly used buttons</p>
             <div class="ui-element-container">
@@ -89,7 +89,19 @@
                 <button class="btn-default btn-primary"><i class="fa fa-pencil btn-icon" aria-hidden="true"></i>edit</button>
                 <button class="btn-default btn-primary-sub">primary</button>
                 <button class="btn-default btn-secondary-sub">secondary</button>
-                <button class="btn-default btn-full-width">Show markup</button>
+                <button class="btn-full-width">Show markup</button>
+                <div class="show-markup">
+                    <p class="language-markup">
+                        <code>
+                            &lt;button class="btn-default btn-primary">primary&lt;/button>
+                            &lt;button class="btn-default btn-secondary">secondary&lt;/button>
+                            &lt;button class="btn-default btn-primary">&lt;i class="fa fa-upload btn-icon" aria-hidden="true">&lt;/i>upload&lt;/button>
+                            &lt;button class="btn-default btn-primary">&lt;i class="fa fa-pencil btn-icon" aria-hidden="true">&lt;/i>edit&lt;/button>
+                            &lt;button class="btn-default btn-primary-sub">primary&lt;/button>
+                            &lt;button class="btn-default btn-secondary-sub">secondary&lt;/button>
+                        </code>
+                    </p>
+                </div>
             </div>
             <div class="ui-element-container">
                 <h3 class="ui-element-heading">Rounded</h3>
@@ -99,9 +111,23 @@
                 <button class="btn-default btn-primary btn-round"><i class="fa fa-pencil btn-icon" aria-hidden="true"></i>edit</button>
                 <button class="btn-default btn-primary-sub btn-round">primary</button>
                 <button class="btn-default btn-secondary-sub btn-round">secondary</button>
-                <button class="btn-default btn-full-width">Show markup</button>
+                <button class="btn-full-width">Show markup</button>
+                <div class="show-markup">
+                    <p class="language-markup">
+                        <code>
+                            &lt;button class="btn-default btn-primary btn-round">primary&lt;/button>
+                            &lt;button class="btn-default btn-secondary btn-round">secondary&lt;/button>
+                            &lt;button class="btn-default btn-primary btn-round">&lt;i class="fa fa-upload btn-icon" aria-hidden="true">&lt;/i>upload&lt;/button>
+                            &lt;button class="btn-default btn-primary btn-round">&lt;i class="fa fa-pencil btn-icon" aria-hidden="true">&lt;/i>edit&lt;/button>
+                            &lt;button class="btn-default btn-primary-sub btn-round">primary&lt;/button>
+                            &lt;button class="btn-default btn-secondary-sub btn-round">secondary&lt;/button>
+                        </code>
+                    </p>
+                </div>
             </div>
         </section>
+        
+
         <section class="ui-element-main">
             <h1 class="main-ui-heading">Forms</h1>
             <div class="ui-element-container">
@@ -207,33 +233,33 @@
             <div class="show-markup">
                 <pre class="language-markup">
                     <code>
-    &lt;div class="toggles">
-        &lt;div class="toggle">
-            &lt;input type="checkbox" id="toggle1">
-            &lt;label for="toggle1" class="switch square">&lt;/label>
-        &lt;/div>
+                        &lt;div class="toggles">
+                        &lt;div class="toggle">
+                        &lt;input type="checkbox" id="toggle1">
+                        &lt;label for="toggle1" class="switch square">&lt;/label>
+                        &lt;/div>
 
-        &lt;div class="toggle">
-            &lt;input type="checkbox" id="toggle2">
-            &lt;label for="toggle2" class="switch round">&lt;/label>
-        &lt;/div>
-    &lt;/div>
-    &lt;div class="toggles">
-        &lt;div class="toggle on-off">
-            &lt;input type="checkbox" id="on-off">
-            &lt;label for="on-off">
-                &lt;span class="toggle-on">ON&lt;/span>
-                &lt;span class="toggle-off">OFF&lt;/span>
-            &lt;/label>
-        &lt;/div>
-        &lt;div class="toggle yes-no">
-            &lt;input type="checkbox" id="yes-no">
-            &lt;label for="yes-no">
-                &lt;span class="toggle-yes">YES&lt;/span>
-                &lt;span class="toggle-no">NO&lt;/span>
-            &lt;/label>
-        &lt;/div>
-    &lt;/div>
+                        &lt;div class="toggle">
+                        &lt;input type="checkbox" id="toggle2">
+                        &lt;label for="toggle2" class="switch round">&lt;/label>
+                        &lt;/div>
+                        &lt;/div>
+                        &lt;div class="toggles">
+                        &lt;div class="toggle on-off">
+                        &lt;input type="checkbox" id="on-off">
+                        &lt;label for="on-off">
+                        &lt;span class="toggle-on">ON&lt;/span>
+                        &lt;span class="toggle-off">OFF&lt;/span>
+                        &lt;/label>
+                        &lt;/div>
+                        &lt;div class="toggle yes-no">
+                        &lt;input type="checkbox" id="yes-no">
+                        &lt;label for="yes-no">
+                        &lt;span class="toggle-yes">YES&lt;/span>
+                        &lt;span class="toggle-no">NO&lt;/span>
+                        &lt;/label>
+                        &lt;/div>
+                        &lt;/div>
                     </code>
                 </pre>
             </div>
@@ -268,381 +294,381 @@
                 <pre class="language-markup">
                     <code>
                       &lt;nav class="pagination" aria-label="Page navigation">
-                          &lt;ul class="pages">
-                              &lt;li class="page">&lt;a href="#" aria-label="Previous">&lt;i class="fa fa-angle-left" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
-                              &lt;li class="page">&lt;a href="#">1&lt;/a>&lt;/li>
-                              &lt;li class="page">&lt;a href="#">...&lt;/a>&lt;/li>
-                              &lt;li class="page">&lt;a href="#">24&lt;/a>&lt;/li>
-                              &lt;li class="page active">&lt;a href="#">25&lt;/a>&lt;/li>
-                              &lt;li class="page">&lt;a href="#">26&lt;/a>&lt;/li>
-                              &lt;li class="page">&lt;a href="#">...&lt;/a>&lt;/li>
-                              &lt;li class="page">&lt;a href="#">98&lt;/a>&lt;/li>
-                              &lt;li class="page">&lt;a href="#" aria-label="Next">&lt;i class="fa fa-angle-right" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
-                          &lt;/ul>
+                      &lt;ul class="pages">
+                      &lt;li class="page">&lt;a href="#" aria-label="Previous">&lt;i class="fa fa-angle-left" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
+                      &lt;li class="page">&lt;a href="#">1&lt;/a>&lt;/li>
+                      &lt;li class="page">&lt;a href="#">...&lt;/a>&lt;/li>
+                      &lt;li class="page">&lt;a href="#">24&lt;/a>&lt;/li>
+                      &lt;li class="page active">&lt;a href="#">25&lt;/a>&lt;/li>
+                      &lt;li class="page">&lt;a href="#">26&lt;/a>&lt;/li>
+                      &lt;li class="page">&lt;a href="#">...&lt;/a>&lt;/li>
+                      &lt;li class="page">&lt;a href="#">98&lt;/a>&lt;/li>
+                      &lt;li class="page">&lt;a href="#" aria-label="Next">&lt;i class="fa fa-angle-right" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
+                      &lt;/ul>
                       &lt;/nav>
-                    </code>
-                </pre>
-            </div>
-        </section>
+                  </code>
+              </pre>
+          </div>
+      </section>
 
-        <section id="ui-component-modal" class="ui-element-main">
-            <h1 class="main-ui-heading">Modal</h1>
-            <p class="main-element-description">CSS only modal layout</p>
+      <section id="ui-component-modal" class="ui-element-main">
+        <h1 class="main-ui-heading">Modal</h1>
+        <p class="main-element-description">CSS only modal layout</p>
 
-            <div class="ui-element-container">
-                <h3 class="ui-element-heading">Basic</h3>
-                <p class="ui-element-description">Basic modal to display information.</p>
-
-                <div class="ui-element">
-                    <div class="modal" role="modal" aria-labelledby="modal-title" aria-describedby="modal-description">
-                        <div class="modal-info-container">
-                            <h1 id="modal-title"><i class="fa fa-exclamation-circle" aria-hidden="true"></i>Update form Feb 12, 2015</h1>
-                            <p id="modal-description" class="sr-only">Bender, we're trying our best. You'll have all the Slurm you can drink when you're partying with Slurm McKenzie!</p>
-                        </div>
-                        <div class="modal-btn-container">
-                            <button type="button" aria-label="Apply" class="modal-btn apply">Apply</button>
-                            <button type="button" aria-label="Cancel" class="modal-btn cancel">Cancel</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="btn-full-width">Show markup</button>
-            <div class="show-markup">
-                <pre class="language-markup">
-                    <code>
-                      &lt;div class="modal" role="modal" aria-labelledby="modal-title" aria-describedby="modal-description">  
-                          &lt;div class="modal-info-container">
-                              &lt;h1 id="modal-title">
-                                  &lt;i class="fa fa-exclamation-circle" aria-hidden="true">&lt;/i>Update form Feb 12, 2015
-                              &lt;/h1>
-                              &lt;p id="modal-description" class="sr-only">Bender, we're trying our best.
-                              You'll have all the Slurm you can drink when 
-                              you're partying with Slurm McKenzie!&lt;/p>
-                          &lt;/div>
-                          &lt;div class="modal-btn-container">
-                              &lt;button type="button" aria-label="Apply" class="modal-btn apply">Apply&lt;/button>
-                              &lt;button type="button" aria-label="Cancel" class="modal-btn cancel">Cancel&lt;/button>
-                          &lt;/div>
-                      &lt;/div> 
-                    </code>
-                </pre>
-            </div>
-        </section>
-
-        <section id="ui-component-carousel" class="ui-element-main">
-          <h1 class="main-ui-heading">Carousel</h1>
-          <p class="main-element-description">CSS only carousels</p>
-
-          <div class="ui-element-container">
+        <div class="ui-element-container">
             <h3 class="ui-element-heading">Basic</h3>
-            <p class="ui-element-description">Carousel with previous and next buttons.</p>
+            <p class="ui-element-description">Basic modal to display information.</p>
 
             <div class="ui-element">
-                <div class="ui-element-variation-01 carousel-wrapper">
-                    <input type="radio" name="carousel01" class="slide01-radio1" checked id="carousel01_1">
-                    <input type="radio" name="carousel01" class="slide01-radio2" id="carousel01_2">
-                    <input type="radio" name="carousel01" class="slide01-radio3" id="carousel01_3">
-                    <div class="carousel-pagination">
-                        <label for="carousel01_1" class="page1"></label>
-                        <label for="carousel01_2" class="page2"></label>
-                        <label for="carousel01_3" class="page3"></label>
+                <div class="modal" role="modal" aria-labelledby="modal-title" aria-describedby="modal-description">
+                    <div class="modal-info-container">
+                        <h1 id="modal-title"><i class="fa fa-exclamation-circle" aria-hidden="true"></i>Update form Feb 12, 2015</h1>
+                        <p id="modal-description" class="sr-only">Bender, we're trying our best. You'll have all the Slurm you can drink when you're partying with Slurm McKenzie!</p>
                     </div>
-                    <div class="next control">
-                        <label for="carousel01_1" class="control01_01"><i class="fa fa-arrow-right" aria-hidden="true"></i></label>
-                        <label for="carousel01_2" class="control01_02"><i class="fa fa-arrow-right" aria-hidden="true"></i></label>
-                        <label for="carousel01_3" class="control01_03"><i class="fa fa-arrow-right" aria-hidden="true"></i></label>
-                    </div>
-                    <div class="previous control">
-                        <label for="carousel01_1" class="control01_01"><i class="fa fa-arrow-left" aria-hidden="true"></i></label>
-                        <label for="carousel01_2" class="control01_02"><i class="fa fa-arrow-left" aria-hidden="true"></i></label>
-                        <label for="carousel01_3" class="control01_03"><i class="fa fa-arrow-left" aria-hidden="true"></i></label>
-                    </div>
-                    <div class="carousel slide01">
-                        <div>
-                            <img src="images/nature01.jpeg" alt="slide 1">
-                        </div>
-                    </div>
-                    <div class="carousel slide02">
-                        <div>
-                            <img src="images/nature02.jpeg" alt="slide 2">
-                        </div>
-                    </div>
-                    <div class="carousel slide03">
-                        <div>
-                            <img src="images/nature03.jpeg" alt="slide 3">
-                        </div>
+                    <div class="modal-btn-container">
+                        <button type="button" aria-label="Apply" class="modal-btn apply">Apply</button>
+                        <button type="button" aria-label="Cancel" class="modal-btn cancel">Cancel</button>
                     </div>
                 </div>
             </div>
-          </div>
-          <button class="btn-full-width">Show markup</button>
-          <div class="show-markup">
+        </div>
+        <button class="btn-full-width">Show markup</button>
+        <div class="show-markup">
             <pre class="language-markup">
                 <code>
-                  &lt;div class="ui-element-variation-01 carousel-wrapper">
-                      &lt;input type="radio" name="carousel01" class="slide01-radio1" checked id="carousel01_1">
-                      &lt;input type="radio" name="carousel01" class="slide01-radio2" id="carousel01_2">
-                      &lt;input type="radio" name="carousel01" class="slide01-radio3" id="carousel01_3">
-                      &lt;div class="carousel-pagination">
-                          &lt;label for="carousel01_1" class="page1">&lt;/label>
-                          &lt;label for="carousel01_2" class="page2">&lt;/label>
-                          &lt;label for="carousel01_3" class="page3">&lt;/label>
-                      &lt;/div>
-                      &lt;div class="next control">
-                          &lt;label for="carousel01_1" class="control01_01">&lt;i class="fa fa-arrow-right" aria-hidden="true">&lt;/i>&lt;/label>
-                          &lt;label for="carousel01_2" class="control01_02">&lt;i class="fa fa-arrow-right" aria-hidden="true">&lt;/i>&lt;/label>
-                          &lt;label for="carousel01_3" class="control01_03">&lt;i class="fa fa-arrow-right" aria-hidden="true">&lt;/i>&lt;/label>
-                      &lt;/div>
-                      &lt;div class="previous control">
-                          &lt;label for="carousel01_1" class="control01_01">&lt;i class="fa fa-arrow-left" aria-hidden="true">&lt;/i>&lt;/label>
-                          &lt;label for="carousel01_2" class="control01_02">&lt;i class="fa fa-arrow-left" aria-hidden="true">&lt;/i>&lt;/label>
-                          &lt;label for="carousel01_3" class="control01_03">&lt;i class="fa fa-arrow-left" aria-hidden="true">&lt;/i>&lt;/label>
-                      &lt;/div>
-                      &lt;div class="carousel slide01">
-                          &lt;div>
-                              &lt;img src="images/nature01.jpeg" alt="slide 1">
-                          &lt;/div>
-                      &lt;/div>
-                      &lt;div class="carousel slide02">
-                          &lt;div>
-                              &lt;img src="images/nature02.jpeg" alt="slide 2">
-                          &lt;/div>
-                      &lt;/div>
-                      &lt;div class="carousel slide03">
-                          &lt;div>
-                              &lt;img src="images/nature03.jpeg" alt="slide 3">
-                          &lt;/div>
-                      &lt;/div>
+                  &lt;div class="modal" role="modal" aria-labelledby="modal-title" aria-describedby="modal-description">  
+                  &lt;div class="modal-info-container">
+                  &lt;h1 id="modal-title">
+                  &lt;i class="fa fa-exclamation-circle" aria-hidden="true">&lt;/i>Update form Feb 12, 2015
+                  &lt;/h1>
+                  &lt;p id="modal-description" class="sr-only">Bender, we're trying our best.
+                  You'll have all the Slurm you can drink when 
+                  you're partying with Slurm McKenzie!&lt;/p>
                   &lt;/div>
-                </code>
-            </pre>
-          </div>
-
-          <div class="ui-element-container">
-            <h3 class="ui-element-heading">Card mode</h3>
-            <p class="ui-element-description">Carousel with previous/next buttons and pagination in a card layout.</p>
-
-            <div class="ui-element">
-                <div class="ui-element-variation-02 carousel-wrapper">
-                    <input type="radio" name="carousel02" class="slide02-radio1" checked id="carousel02_1">
-                    <input type="radio" name="carousel02" class="slide02-radio2" id="carousel02_2">
-                    <input type="radio" name="carousel02" class="slide02-radio3" id="carousel02_3">
-
-                    <div class="carousel-pagination">
-                        <label for="carousel02_1" class="page1"></label>
-                        <label for="carousel02_2" class="page2"></label>
-                        <label for="carousel02_3" class="page3"></label>
-                    </div>
-
-                    <div class="next control">
-                        <label for="carousel02_1" class="control02_01"><i class="fa fa-arrow-right" aria-hidden="true"></i></label>
-                        <label for="carousel02_2" class="control02_02"><i class="fa fa-arrow-right" aria-hidden="true"></i></label>
-                        <label for="carousel02_3" class="control02_03"><i class="fa fa-arrow-right" aria-hidden="true"></i></label>
-                    </div>
-                    <div class="previous control">
-                        <label for="carousel02_1" class="control02_01"><i class="fa fa-arrow-left" aria-hidden="true"></i></label>
-                        <label for="carousel02_2" class="control02_02"><i class="fa fa-arrow-left" aria-hidden="true"></i></label>
-                        <label for="carousel02_3" class="control02_03"><i class="fa fa-arrow-left" aria-hidden="true"></i></label>
-                    </div>
-                    <div class="carousel slide01">
-                        <div>
-                            <img src="images/nature01.jpeg" alt="slide 1">
-                        </div>
-                    </div>
-                    <div class="carousel slide02">
-                        <div>
-                            <img src="images/nature02.jpeg" alt="slide 2">
-                        </div>
-                    </div>
-                    <div class="carousel slide03">
-                        <div>
-                            <img src="images/nature03.jpeg" alt="slide 3">
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </div>
-          <button class="btn-full-width">Show markup</button>
-          <div class="show-markup">
-            <pre class="language-markup">
-                <code>
-                  &lt;div class="ui-element-variation-02 carousel-wrapper">
-                      &lt;input type="radio" name="carousel02" class="slide02-radio1" checked id="carousel02_1">
-                      &lt;input type="radio" name="carousel02" class="slide02-radio2" id="carousel02_2">
-                      &lt;input type="radio" name="carousel02" class="slide02-radio3" id="carousel02_3">
-                      
-                      &lt;div class="carousel-pagination">
-                          &lt;label for="carousel02_1" class="page1">&lt;/label>
-                          &lt;label for="carousel02_2" class="page2">&lt;/label>
-                          &lt;label for="carousel02_3" class="page3">&lt;/label>
-                      &lt;/div>
-                      
-                      &lt;div class="next control">
-                          &lt;label for="carousel02_1" class="control02_01">&lt;i class="fa fa-arrow-right" aria-hidden="true">&lt;/i>&lt;/label>
-                          &lt;label for="carousel02_2" class="control02_02">&lt;i class="fa fa-arrow-right" aria-hidden="true">&lt;/i>&lt;/label>
-                          &lt;label for="carousel02_3" class="control02_03">&lt;i class="fa fa-arrow-right" aria-hidden="true">&lt;/i>&lt;/label>
-                      &lt;/div>
-                      &lt;div class="previous control">
-                          &lt;label for="carousel02_1" class="control02_01">&lt;i class="fa fa-arrow-left" aria-hidden="true">&lt;/i>&lt;/label>
-                          &lt;label for="carousel02_2" class="control02_02">&lt;i class="fa fa-arrow-left" aria-hidden="true">&lt;/i>&lt;/label>
-                          &lt;label for="carousel02_3" class="control02_03">&lt;i class="fa fa-arrow-left" aria-hidden="true">&lt;/i>&lt;/label>
-                      &lt;/div>
-                      &lt;div class="carousel slide01">
-                          &lt;div>
-                              &lt;img src="images/nature01.jpeg" alt="slide 1">
-                          &lt;/div>
-                      &lt;/div>
-                      &lt;div class="carousel slide02">
-                          &lt;div>
-                              &lt;img src="images/nature02.jpeg" alt="slide 2">
-                          &lt;/div>
-                      &lt;/div>
-                      &lt;div class="carousel slide03">
-                          &lt;div>
-                              &lt;img src="images/nature03.jpeg" alt="slide 3">
-                          &lt;/div>
-                      &lt;/div>
+                  &lt;div class="modal-btn-container">
+                  &lt;button type="button" aria-label="Apply" class="modal-btn apply">Apply&lt;/button>
+                  &lt;button type="button" aria-label="Cancel" class="modal-btn cancel">Cancel&lt;/button>
                   &lt;/div>
-                </code>
-            </pre>
-          </div>
-        </section>
-        <section id="ui-component-groupLists" class="ui-element-main">
-
-          <h1 class="main-ui-heading">Group Lists</h1>
-          <p class="main-element-description">The Group List component is an effective and flexible way to display a group of list elements. You can create anything from simple list items to more complex feature rich list groups.</p>
-
-          <div class="ui-element-container">
-            <h3 class="ui-element-heading">Basic Group List</h3>
-            <p class="ui-element-description">A basic group of list items show on many websites</p>
-            <ul class="ui-element groupList">
-              <li class="groupList__item">Bubbles</li>
-              <li class="groupList__item">Giggles</li>
-              <li class="groupList__item">Pickles</li>
-              <li class="groupList__item">Speckles</li>
-              <li class="groupList__item">Freckles</li>
-            </ul>
-            <button class="btn-full-width">Show markup</button>
-            <div class="show-markup">
-              <pre class="language-markup">
-                <code>
-                  &lt;ul class="groupList">
-                    &lt;li class="groupList__item">Bubbles&lt;/li>
-                    &lt;li class="groupList__item">Giggles&lt;/li>
-                    &lt;li class="groupList__item">Pickles&lt;/li>
-                    &lt;li class="groupList__item">Speckles&lt;/li>
-                    &lt;li class="groupList__item">Freckles&lt;/li>
-                  &lt;/ul> 
-                </code>
-              </pre>
-            </div>
-          </div>
-          
-          <div class="ui-element-container">
-            <h3 class="ui-element-heading">Anchored Group List</h3>
-            <p class="ui-element-description">The group list can be composed as links if need be.</p>
-
-            <div class="ui-element groupList">
-              <a href="#!" class="groupList__link">Bubbles</a>
-              <a href="#!" class="groupList__link">Giggles</a>
-              <a href="#!" class="groupList__link active">Pickles</a>
-              <a href="#!" class="groupList__link">Speckles</a>
-              <a href="#!" class="groupList__link">Freckles</a>
-            </div>
-            <button class="btn-full-width">Show markup</button>
-            <div class="show-markup">
-              <pre class="language-markup">
-                <code>
-                  &lt;div class="groupList">
-                    &lt;a href="#" class="groupList__link">Bubbles&lt;/a>
-                    &lt;a href="#" class="groupList__link">Giggles&lt;/a>
-                    &lt;a href="#" class="groupList__link active">Pickles&lt;/a>
-                    &lt;a href="#" class="groupList__link">Speckles&lt;/a>
-                    &lt;a href="#" class="groupList__link">Freckles&lt;/a>
-                  &lt;/div>   
-                </code>
-              </pre>
-            </div>
-          </div>
-
-          <div class="ui-element-container">
-            <h3 class="ui-element-heading">Heading</h3>
-            <p class="ui-element-description">If a heading is needed for the group list</p>
-
-            <!-- UI-Element is to go below -->
-            <!-- Whatever the UI-Element is, give it a class of .ui-element -->
-            <ul class="ui-element groupList header--included">
-              <li class="groupList__header groupList__item">
-                <h3 class="main-ui-heading">"les" Names Braah!</h3>
-              </li>
-              <li class="groupList__item">Bubbles</li>
-              <li class="groupList__item">Giggles</li>
-              <li class="groupList__item">Pickles</li>
-              <li class="groupList__item">Speckles</li>
-              <li class="groupList__item">Freckles</li>
-            </ul>
-            <button class="btn-full-width">Show markup</button>
-            <div class="show-markup">
-              <pre class="language-markup">
-                <code>
-                  &lt;ul class="groupList header--included">
-                    &lt;li class="groupList__header groupList__item">
-                      &lt;h3 class="main-ui-heading">"les" Names Braah!&lt;/h3>
-                    &lt;/li>
-                    &lt;li class="groupList__item">Bubbles&lt;/li>
-                    &lt;li class="groupList__item">Giggles&lt;/li>
-                    &lt;li class="groupList__item">Pickles&lt;/li>
-                    &lt;li class="groupList__item">Speckles&lt;/li>
-                    &lt;li class="groupList__item">Freckles&lt;/li>
-                  &lt;/ul> 
-                </code>
-              </pre>
-            </div>
-          </div>
-
-          <div class="ui-element-container">
-            <h3 class="ui-element-heading">Secondary Content</h3>
-            <p class="ui-element-description">If a header is required with list items and a icon to display additional content in the same list item.</p>
-
-            <!-- UI-Element is to go below -->
-            <!-- Whatever the UI-Element is, give it a class of .ui-element -->
-            <ul class="ui-element groupList header--included">
-              <li class="groupList__header groupList__item">
-                <h3 class="main-ui-heading">"les" Names Braah!</h3>
-              </li>
-              <li class="groupList__item">Bubbles <span class="badge"></span><div class="groupList__item secondary__item">Yah so what, I love bubbles! Bubble bathes, bubbles in the park, snot bubbles from laughing!</div></li>
-              <li class="groupList__item">Giggles <span class="badge"></span><div class="groupList__item secondary__item">It's all shits and giggles over here!</div></li>
-              <li class="groupList__item">Pickles <span class="badge"></span><div class="groupList__item secondary__item">Pickles on a burger trascends space and time!</div></li>
-              <li class="groupList__item">Speckles <span class="badge"></span><div class="groupList__item secondary__item">A speckle of light will drown out the largest of fright!</div></li>
-              <li class="groupList__item">Freckles <span class="badge"></span><div class="groupList__item secondary__item">If I had more freckles, then, just maybe then I would be true Irish!</div></li>
-            </ul>
-            <button class="btn-full-width">Show markup</button>
-            <div class="show-markup">
-              <pre class="language-markup">
-                <code>
-                  &lt;ul class="ui-element groupList header--included">
-                    &lt;li class="groupList__header groupList__item">
-                      &lt;h3 class="main-ui-heading">"les" Names Braah!&lt;/h3>
-                    &lt;/li>
-                    &lt;li class="groupList__item">Bubbles &lt;span class="badge">&lt;/span>&lt;div class="groupList__item secondary__item">Yah so what, I love bubbles! Bubble bathes, bubbles in the park, snot bubbles from laughing!&lt;/div>&lt;/li>
-                    &lt;li class="groupList__item">Giggles &lt;span class="badge">&lt;/span>&lt;div class="groupList__item secondary__item">It's all shits and giggles over here!&lt;/div>&lt;/li>
-                    &lt;li class="groupList__item">Pickles &lt;span class="badge">&lt;/span>&lt;div class="groupList__item secondary__item">Pickles on a burger trascends space and time!&lt;/div>&lt;/li>
-                    &lt;li class="groupList__item">Speckles &lt;span class="badge">&lt;/span>&lt;div class="groupList__item secondary__item">A speckle of light will drown out the largest of fright!&lt;/div>&lt;/li>
-                    &lt;li class="groupList__item">Freckles &lt;span class="badge">&lt;/span>&lt;div class="groupList__item secondary__item">If I had more freckles, then, just maybe then I would be true Irish!&lt;/div>&lt;/li>
-                  &lt;/ul>
-                </code>
-              </pre>
-            </div>
-          </div>
-        </section>
+                  &lt;/div> 
+              </code>
+          </pre>
       </div>
+  </section>
+
+  <section id="ui-component-carousel" class="ui-element-main">
+      <h1 class="main-ui-heading">Carousel</h1>
+      <p class="main-element-description">CSS only carousels</p>
+
+      <div class="ui-element-container">
+        <h3 class="ui-element-heading">Basic</h3>
+        <p class="ui-element-description">Carousel with previous and next buttons.</p>
+
+        <div class="ui-element">
+            <div class="ui-element-variation-01 carousel-wrapper">
+                <input type="radio" name="carousel01" class="slide01-radio1" checked id="carousel01_1">
+                <input type="radio" name="carousel01" class="slide01-radio2" id="carousel01_2">
+                <input type="radio" name="carousel01" class="slide01-radio3" id="carousel01_3">
+                <div class="carousel-pagination">
+                    <label for="carousel01_1" class="page1"></label>
+                    <label for="carousel01_2" class="page2"></label>
+                    <label for="carousel01_3" class="page3"></label>
+                </div>
+                <div class="next control">
+                    <label for="carousel01_1" class="control01_01"><i class="fa fa-arrow-right" aria-hidden="true"></i></label>
+                    <label for="carousel01_2" class="control01_02"><i class="fa fa-arrow-right" aria-hidden="true"></i></label>
+                    <label for="carousel01_3" class="control01_03"><i class="fa fa-arrow-right" aria-hidden="true"></i></label>
+                </div>
+                <div class="previous control">
+                    <label for="carousel01_1" class="control01_01"><i class="fa fa-arrow-left" aria-hidden="true"></i></label>
+                    <label for="carousel01_2" class="control01_02"><i class="fa fa-arrow-left" aria-hidden="true"></i></label>
+                    <label for="carousel01_3" class="control01_03"><i class="fa fa-arrow-left" aria-hidden="true"></i></label>
+                </div>
+                <div class="carousel slide01">
+                    <div>
+                        <img src="images/nature01.jpeg" alt="slide 1">
+                    </div>
+                </div>
+                <div class="carousel slide02">
+                    <div>
+                        <img src="images/nature02.jpeg" alt="slide 2">
+                    </div>
+                </div>
+                <div class="carousel slide03">
+                    <div>
+                        <img src="images/nature03.jpeg" alt="slide 3">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <button class="btn-full-width">Show markup</button>
+    <div class="show-markup">
+        <pre class="language-markup">
+            <code>
+              &lt;div class="ui-element-variation-01 carousel-wrapper">
+              &lt;input type="radio" name="carousel01" class="slide01-radio1" checked id="carousel01_1">
+              &lt;input type="radio" name="carousel01" class="slide01-radio2" id="carousel01_2">
+              &lt;input type="radio" name="carousel01" class="slide01-radio3" id="carousel01_3">
+              &lt;div class="carousel-pagination">
+              &lt;label for="carousel01_1" class="page1">&lt;/label>
+              &lt;label for="carousel01_2" class="page2">&lt;/label>
+              &lt;label for="carousel01_3" class="page3">&lt;/label>
+              &lt;/div>
+              &lt;div class="next control">
+              &lt;label for="carousel01_1" class="control01_01">&lt;i class="fa fa-arrow-right" aria-hidden="true">&lt;/i>&lt;/label>
+              &lt;label for="carousel01_2" class="control01_02">&lt;i class="fa fa-arrow-right" aria-hidden="true">&lt;/i>&lt;/label>
+              &lt;label for="carousel01_3" class="control01_03">&lt;i class="fa fa-arrow-right" aria-hidden="true">&lt;/i>&lt;/label>
+              &lt;/div>
+              &lt;div class="previous control">
+              &lt;label for="carousel01_1" class="control01_01">&lt;i class="fa fa-arrow-left" aria-hidden="true">&lt;/i>&lt;/label>
+              &lt;label for="carousel01_2" class="control01_02">&lt;i class="fa fa-arrow-left" aria-hidden="true">&lt;/i>&lt;/label>
+              &lt;label for="carousel01_3" class="control01_03">&lt;i class="fa fa-arrow-left" aria-hidden="true">&lt;/i>&lt;/label>
+              &lt;/div>
+              &lt;div class="carousel slide01">
+              &lt;div>
+              &lt;img src="images/nature01.jpeg" alt="slide 1">
+              &lt;/div>
+              &lt;/div>
+              &lt;div class="carousel slide02">
+              &lt;div>
+              &lt;img src="images/nature02.jpeg" alt="slide 2">
+              &lt;/div>
+              &lt;/div>
+              &lt;div class="carousel slide03">
+              &lt;div>
+              &lt;img src="images/nature03.jpeg" alt="slide 3">
+              &lt;/div>
+              &lt;/div>
+              &lt;/div>
+          </code>
+      </pre>
+  </div>
 
-    <!-- If building more then one UI-Element, copy and paste entire section.ui-element-main and go to town!-->
+  <div class="ui-element-container">
+    <h3 class="ui-element-heading">Card mode</h3>
+    <p class="ui-element-description">Carousel with previous/next buttons and pagination in a card layout.</p>
 
-  </main>
+    <div class="ui-element">
+        <div class="ui-element-variation-02 carousel-wrapper">
+            <input type="radio" name="carousel02" class="slide02-radio1" checked id="carousel02_1">
+            <input type="radio" name="carousel02" class="slide02-radio2" id="carousel02_2">
+            <input type="radio" name="carousel02" class="slide02-radio3" id="carousel02_3">
 
-  <footer>
+            <div class="carousel-pagination">
+                <label for="carousel02_1" class="page1"></label>
+                <label for="carousel02_2" class="page2"></label>
+                <label for="carousel02_3" class="page3"></label>
+            </div>
+
+            <div class="next control">
+                <label for="carousel02_1" class="control02_01"><i class="fa fa-arrow-right" aria-hidden="true"></i></label>
+                <label for="carousel02_2" class="control02_02"><i class="fa fa-arrow-right" aria-hidden="true"></i></label>
+                <label for="carousel02_3" class="control02_03"><i class="fa fa-arrow-right" aria-hidden="true"></i></label>
+            </div>
+            <div class="previous control">
+                <label for="carousel02_1" class="control02_01"><i class="fa fa-arrow-left" aria-hidden="true"></i></label>
+                <label for="carousel02_2" class="control02_02"><i class="fa fa-arrow-left" aria-hidden="true"></i></label>
+                <label for="carousel02_3" class="control02_03"><i class="fa fa-arrow-left" aria-hidden="true"></i></label>
+            </div>
+            <div class="carousel slide01">
+                <div>
+                    <img src="images/nature01.jpeg" alt="slide 1">
+                </div>
+            </div>
+            <div class="carousel slide02">
+                <div>
+                    <img src="images/nature02.jpeg" alt="slide 2">
+                </div>
+            </div>
+            <div class="carousel slide03">
+                <div>
+                    <img src="images/nature03.jpeg" alt="slide 3">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<button class="btn-full-width">Show markup</button>
+<div class="show-markup">
+    <pre class="language-markup">
+        <code>
+          &lt;div class="ui-element-variation-02 carousel-wrapper">
+          &lt;input type="radio" name="carousel02" class="slide02-radio1" checked id="carousel02_1">
+          &lt;input type="radio" name="carousel02" class="slide02-radio2" id="carousel02_2">
+          &lt;input type="radio" name="carousel02" class="slide02-radio3" id="carousel02_3">
+
+          &lt;div class="carousel-pagination">
+          &lt;label for="carousel02_1" class="page1">&lt;/label>
+          &lt;label for="carousel02_2" class="page2">&lt;/label>
+          &lt;label for="carousel02_3" class="page3">&lt;/label>
+          &lt;/div>
+
+          &lt;div class="next control">
+          &lt;label for="carousel02_1" class="control02_01">&lt;i class="fa fa-arrow-right" aria-hidden="true">&lt;/i>&lt;/label>
+          &lt;label for="carousel02_2" class="control02_02">&lt;i class="fa fa-arrow-right" aria-hidden="true">&lt;/i>&lt;/label>
+          &lt;label for="carousel02_3" class="control02_03">&lt;i class="fa fa-arrow-right" aria-hidden="true">&lt;/i>&lt;/label>
+          &lt;/div>
+          &lt;div class="previous control">
+          &lt;label for="carousel02_1" class="control02_01">&lt;i class="fa fa-arrow-left" aria-hidden="true">&lt;/i>&lt;/label>
+          &lt;label for="carousel02_2" class="control02_02">&lt;i class="fa fa-arrow-left" aria-hidden="true">&lt;/i>&lt;/label>
+          &lt;label for="carousel02_3" class="control02_03">&lt;i class="fa fa-arrow-left" aria-hidden="true">&lt;/i>&lt;/label>
+          &lt;/div>
+          &lt;div class="carousel slide01">
+          &lt;div>
+          &lt;img src="images/nature01.jpeg" alt="slide 1">
+          &lt;/div>
+          &lt;/div>
+          &lt;div class="carousel slide02">
+          &lt;div>
+          &lt;img src="images/nature02.jpeg" alt="slide 2">
+          &lt;/div>
+          &lt;/div>
+          &lt;div class="carousel slide03">
+          &lt;div>
+          &lt;img src="images/nature03.jpeg" alt="slide 3">
+          &lt;/div>
+          &lt;/div>
+          &lt;/div>
+      </code>
+  </pre>
+</div>
+</section>
+<section id="ui-component-groupLists" class="ui-element-main">
+
+  <h1 class="main-ui-heading">Group Lists</h1>
+  <p class="main-element-description">The Group List component is an effective and flexible way to display a group of list elements. You can create anything from simple list items to more complex feature rich list groups.</p>
+
+  <div class="ui-element-container">
+    <h3 class="ui-element-heading">Basic Group List</h3>
+    <p class="ui-element-description">A basic group of list items show on many websites</p>
+    <ul class="ui-element groupList">
+      <li class="groupList__item">Bubbles</li>
+      <li class="groupList__item">Giggles</li>
+      <li class="groupList__item">Pickles</li>
+      <li class="groupList__item">Speckles</li>
+      <li class="groupList__item">Freckles</li>
+  </ul>
+  <button class="btn-full-width">Show markup</button>
+  <div class="show-markup">
+      <pre class="language-markup">
+        <code>
+          &lt;ul class="groupList">
+          &lt;li class="groupList__item">Bubbles&lt;/li>
+          &lt;li class="groupList__item">Giggles&lt;/li>
+          &lt;li class="groupList__item">Pickles&lt;/li>
+          &lt;li class="groupList__item">Speckles&lt;/li>
+          &lt;li class="groupList__item">Freckles&lt;/li>
+          &lt;/ul> 
+      </code>
+  </pre>
+</div>
+</div>
+
+<div class="ui-element-container">
+    <h3 class="ui-element-heading">Anchored Group List</h3>
+    <p class="ui-element-description">The group list can be composed as links if need be.</p>
+
+    <div class="ui-element groupList">
+      <a href="#!" class="groupList__link">Bubbles</a>
+      <a href="#!" class="groupList__link">Giggles</a>
+      <a href="#!" class="groupList__link active">Pickles</a>
+      <a href="#!" class="groupList__link">Speckles</a>
+      <a href="#!" class="groupList__link">Freckles</a>
+  </div>
+  <button class="btn-full-width">Show markup</button>
+  <div class="show-markup">
+      <pre class="language-markup">
+        <code>
+          &lt;div class="groupList">
+          &lt;a href="#" class="groupList__link">Bubbles&lt;/a>
+          &lt;a href="#" class="groupList__link">Giggles&lt;/a>
+          &lt;a href="#" class="groupList__link active">Pickles&lt;/a>
+          &lt;a href="#" class="groupList__link">Speckles&lt;/a>
+          &lt;a href="#" class="groupList__link">Freckles&lt;/a>
+          &lt;/div>   
+      </code>
+  </pre>
+</div>
+</div>
+
+<div class="ui-element-container">
+    <h3 class="ui-element-heading">Heading</h3>
+    <p class="ui-element-description">If a heading is needed for the group list</p>
+
+    <!-- UI-Element is to go below -->
+    <!-- Whatever the UI-Element is, give it a class of .ui-element -->
+    <ul class="ui-element groupList header--included">
+      <li class="groupList__header groupList__item">
+        <h3 class="main-ui-heading">"les" Names Braah!</h3>
+    </li>
+    <li class="groupList__item">Bubbles</li>
+    <li class="groupList__item">Giggles</li>
+    <li class="groupList__item">Pickles</li>
+    <li class="groupList__item">Speckles</li>
+    <li class="groupList__item">Freckles</li>
+</ul>
+<button class="btn-full-width">Show markup</button>
+<div class="show-markup">
+  <pre class="language-markup">
+    <code>
+      &lt;ul class="groupList header--included">
+      &lt;li class="groupList__header groupList__item">
+      &lt;h3 class="main-ui-heading">"les" Names Braah!&lt;/h3>
+      &lt;/li>
+      &lt;li class="groupList__item">Bubbles&lt;/li>
+      &lt;li class="groupList__item">Giggles&lt;/li>
+      &lt;li class="groupList__item">Pickles&lt;/li>
+      &lt;li class="groupList__item">Speckles&lt;/li>
+      &lt;li class="groupList__item">Freckles&lt;/li>
+      &lt;/ul> 
+  </code>
+</pre>
+</div>
+</div>
+
+<div class="ui-element-container">
+    <h3 class="ui-element-heading">Secondary Content</h3>
+    <p class="ui-element-description">If a header is required with list items and a icon to display additional content in the same list item.</p>
+
+    <!-- UI-Element is to go below -->
+    <!-- Whatever the UI-Element is, give it a class of .ui-element -->
+    <ul class="ui-element groupList header--included">
+      <li class="groupList__header groupList__item">
+        <h3 class="main-ui-heading">"les" Names Braah!</h3>
+    </li>
+    <li class="groupList__item">Bubbles <span class="badge"></span><div class="groupList__item secondary__item">Yah so what, I love bubbles! Bubble bathes, bubbles in the park, snot bubbles from laughing!</div></li>
+    <li class="groupList__item">Giggles <span class="badge"></span><div class="groupList__item secondary__item">It's all shits and giggles over here!</div></li>
+    <li class="groupList__item">Pickles <span class="badge"></span><div class="groupList__item secondary__item">Pickles on a burger trascends space and time!</div></li>
+    <li class="groupList__item">Speckles <span class="badge"></span><div class="groupList__item secondary__item">A speckle of light will drown out the largest of fright!</div></li>
+    <li class="groupList__item">Freckles <span class="badge"></span><div class="groupList__item secondary__item">If I had more freckles, then, just maybe then I would be true Irish!</div></li>
+</ul>
+<button class="btn-full-width">Show markup</button>
+<div class="show-markup">
+  <pre class="language-markup">
+    <code>
+      &lt;ul class="ui-element groupList header--included">
+      &lt;li class="groupList__header groupList__item">
+      &lt;h3 class="main-ui-heading">"les" Names Braah!&lt;/h3>
+      &lt;/li>
+      &lt;li class="groupList__item">Bubbles &lt;span class="badge">&lt;/span>&lt;div class="groupList__item secondary__item">Yah so what, I love bubbles! Bubble bathes, bubbles in the park, snot bubbles from laughing!&lt;/div>&lt;/li>
+      &lt;li class="groupList__item">Giggles &lt;span class="badge">&lt;/span>&lt;div class="groupList__item secondary__item">It's all shits and giggles over here!&lt;/div>&lt;/li>
+      &lt;li class="groupList__item">Pickles &lt;span class="badge">&lt;/span>&lt;div class="groupList__item secondary__item">Pickles on a burger trascends space and time!&lt;/div>&lt;/li>
+      &lt;li class="groupList__item">Speckles &lt;span class="badge">&lt;/span>&lt;div class="groupList__item secondary__item">A speckle of light will drown out the largest of fright!&lt;/div>&lt;/li>
+      &lt;li class="groupList__item">Freckles &lt;span class="badge">&lt;/span>&lt;div class="groupList__item secondary__item">If I had more freckles, then, just maybe then I would be true Irish!&lt;/div>&lt;/li>
+      &lt;/ul>
+  </code>
+</pre>
+</div>
+</div>
+</section>
+</div>
+</div>
+
+<!-- If building more then one UI-Element, copy and paste entire section.ui-element-main and go to town!-->
+
+</main>
+
+<footer>
     <div class="container">
       <div class="row">
         <div class="col-gap2 col8">
@@ -653,47 +679,47 @@
               <li class="sitemap__li">OUR MISSION</li>
               <li class="sitemap__li">CAREERS</li>
               <li class="sitemap__li">CONTACT</li>
-            </ul>
+          </ul>
 
-        </div>
       </div>
-      <div class="row">
-        <div class="col-gap5 col2">
+  </div>
+  <div class="row">
+    <div class="col-gap5 col2">
 
-            <ul class="social">
-              <li class="social__li"><i class="fa fa-twitter fa-2x"></i></li>
-              <li class="social__li"><i class="fa fa-instagram fa-2x"></i></li>
-              <li class="social__li"><i class="fa fa-social fa-2x"></i></li>
-            </ul>
+        <ul class="social">
+          <li class="social__li"><i class="fa fa-twitter fa-2x"></i></li>
+          <li class="social__li"><i class="fa fa-instagram fa-2x"></i></li>
+          <li class="social__li"><i class="fa fa-social fa-2x"></i></li>
+      </ul>
 
-        </div>
-      </div>
+  </div>
+</div>
 
-      <div class="row">
-        <div class="col-gap2 col8">
-          <div class="divider"></div>
-        </div>
-      </div>
+<div class="row">
+    <div class="col-gap2 col8">
+      <div class="divider"></div>
+  </div>
+</div>
 
-      <div class="row">
-        <div class="col-gap1 col10">
-          <h5 class="develop__title">Develop by Team 9</h5>
-          <ul class="develop__profiles">
-            <li class="develop__profile"><img class="develop__img circled" src="images/yerui.jpg" alt=""><h5 class="develop__name">Yerui Yu</h5></li>
-            <li class="develop__profile"><img class="develop__img circled" src="images/zoe.jpg" alt=""><h5 class="develop__name">Zoe Sadler</h5></li>
-            <li class="develop__profile"><img class="develop__img circled" src="images/justin.jpg" alt=""><h5 class="develop__name">Justin Browne</h5></li>
-            <li class="develop__profile"><img class="develop__img circled" src="images/blake.jpeg" alt=""><h5 class="develop__name">Blake Wilson</h5></li>
-            <li class="develop__profile"><img class="develop__img circled" src="images/layth.png" alt=""><h5 class="develop__name">Leyth Adan</h5></li>
-            <li class="develop__profile"><img class="develop__img circled" src="images/luis.jpg" alt=""><h5 class="develop__name">Luis Rojas</h5></li>
-          </li>
-        </div>
-      </div>
-    </div>
-  </footer>
-  
-  <!-- script for code snippets to work. -->
-  <script type="text/javascript" src="scripts/prism.js"></script>
-  <script type="text/javascript" src="scripts/markupDropDown.js"></script>
+<div class="row">
+    <div class="col-gap1 col10">
+      <h5 class="develop__title">Develop by Team 9</h5>
+      <ul class="develop__profiles">
+        <li class="develop__profile"><img class="develop__img circled" src="images/yerui.jpg" alt=""><h5 class="develop__name">Yerui Yu</h5></li>
+        <li class="develop__profile"><img class="develop__img circled" src="images/zoe.jpg" alt=""><h5 class="develop__name">Zoe Sadler</h5></li>
+        <li class="develop__profile"><img class="develop__img circled" src="images/justin.jpg" alt=""><h5 class="develop__name">Justin Browne</h5></li>
+        <li class="develop__profile"><img class="develop__img circled" src="images/blake.jpeg" alt=""><h5 class="develop__name">Blake Wilson</h5></li>
+        <li class="develop__profile"><img class="develop__img circled" src="images/layth.png" alt=""><h5 class="develop__name">Leyth Adan</h5></li>
+        <li class="develop__profile"><img class="develop__img circled" src="images/luis.jpg" alt=""><h5 class="develop__name">Luis Rojas</h5></li>
+    </li>
+</div>
+</div>
+</div>
+</footer>
+
+<!-- script for code snippets to work. -->
+<script type="text/javascript" src="scripts/prism.js"></script>
+<script type="text/javascript" src="scripts/markupDropDown.js"></script>
 </body>
 
 </html>
