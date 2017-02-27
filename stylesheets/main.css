@@ -13,6 +13,7 @@
 @import url("components/card.css");
 @import url("components/dropdown.css");
 @import url("components/tooltip.css");
+@import url("components/accordion.css");
 
 * {
   box-sizing: border-box;
