@@ -473,24 +473,30 @@
                                 <div class="lineright"></div>
                             </div>
                             <div class="dates">
-                                <select name="mm" class="datemonth">
-                                    <option value="mm">mm</option>
-                                    <option value="january">1</option>
-                                    <option value="february">2</option>
-                                    <option value="march">3</option>
-                                </select>
-                                <select name="dd" class="dateday">
-                                    <option value="dd">dd</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                                <select name="yyyy" class="dateyear">
-                                    <option value="yyyy">yyyy</option>
-                                    <option value="1989">1989</option>
-                                    <option value="1990">1990</option>
-                                    <option value="1991">1991</option>
-                                </select>
+                                <div class="select-container">
+                                    <select name="mm" class="datemonth">
+                                        <option value="" hidden>mm</option>
+                                        <option value="january">1</option>
+                                        <option value="february">2</option>
+                                        <option value="march">3</option>
+                                    </select>
+                                </div>
+                                <div class="select-container">
+                                    <select name="dd" class="dateday">
+                                        <option value="" hidden>dd</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                                <div class="select-container">
+                                    <select name="yyyy" class="dateyear">
+                                        <option value="" hidden>yyyy</option>
+                                        <option value="1989">1989</option>
+                                        <option value="1990">1990</option>
+                                        <option value="1991">1991</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="button">
                                 <button type="submit" class="btn">SIGN UP</button>
@@ -500,54 +506,60 @@
                         <div class="show-markup">
                             <pre class="language-markup">
                                 <code>
-                                    &lt;form>
-                                        &lt;div class="formInput">
-                                          &lt;label for="name">&lt;/label>
-                                          &lt;i class="fa fa-user" aria-hidden="true">&lt;/i>
-                                          &lt;input type="text" id="name" name="user_name" placeholder="Full Name">
-                                        &lt;/div>
-                                        &lt;div class="formInput">
-                                          &lt;label for="mail" placeholder="Email">&lt;/label>
-                                          &lt;i class="fa fa-envelope-o" aria-hidden="true">&lt;/i>
-                                          &lt;input type="email" id="mail" name="user_email" placeholder="Email">
-                                        &lt;/div>
-                                        &lt;div class="formInput">
-                                          &lt;label for="password">&lt;/label>
-                                          &lt;i class="fa fa-lock" aria-hidden="true">&lt;/i>
-                                          &lt;input type="password" id="password" class="formpassword" name="user_password" placeholder="Password">
-                                        &lt;/div>
-                                        &lt;div class="birthday-container">
-                                          &lt;div class="lineleft">
-                                          &lt;/div>
-                                          &lt;div class="birthday">
-                                            &lt;p>birthday&lt;/p>
-                                          &lt;/div>
-                                          &lt;div class="lineright">&lt;/div>
-                                        &lt;/div>
-                                        &lt;div class="dates">
-                                          &lt;select name="mm" class="datemonth">
-                                            &lt;option value="mm">mm&lt;/option>
-                                            &lt;option value="january">1&lt;/option>
-                                            &lt;option value="february">2&lt;/option>
-                                            &lt;option value="march">3&lt;/option>
-                                          &lt;/select>
-                                          &lt;select name="dd" class="dateday">
-                                            &lt;option value="dd">dd&lt;/option>
-                                            &lt;option value="1">1&lt;/option>
-                                            &lt;option value="2">2&lt;/option>
-                                            &lt;option value="3">3&lt;/option>
-                                          &lt;/select>
-                                          &lt;select name="yyyy" class="dateyear">
-                                            &lt;option value="yyyy">yyyy&lt;/option>
-                                            &lt;option value="1989">1989&lt;/option>
-                                            &lt;option value="1990">1990&lt;/option>
-                                            &lt;option value="1991">1991&lt;/option>
-                                          &lt;/select>
-                                        &lt;/div>
-                                        &lt;div class="button">
-                                          &lt;button type="submit" class="btn">SIGN UP&lt;/button>
-                                        &lt;/div>
-                                    &lt;/form>
+                        &lt;form>
+                            &lt;div class="formInput">
+                                &lt;label for="name">&lt;/label>
+                                &lt;i class="fa fa-user" aria-hidden="true">&lt;/i>
+                                &lt;input type="text" id="name" name="user_name" placeholder="Full Name">
+                            &lt;/div>
+                            &lt;div class="formInput">
+                                &lt;label for="mail" placeholder="Email">&lt;/label>
+                                &lt;i class="fa fa-envelope-o" aria-hidden="true">&lt;/i>
+                                &lt;input type="email" id="mail" name="user_email" placeholder="Email">
+                            &lt;/div>
+                            &lt;div class="formInput">
+                                &lt;label for="password">&lt;/label>
+                                &lt;i class="fa fa-lock" aria-hidden="true">&lt;/i>
+                                &lt;input type="password" id="password" class="formpassword" name="user_password" placeholder="Password">
+                            &lt;/div>
+                            &lt;div class="birthday-container">
+                                &lt;div class="lineleft">
+                                &lt;/div>
+                                &lt;div class="birthday">
+                                    &lt;p>birthday&lt;/p>
+                                &lt;/div>
+                                &lt;div class="lineright">&lt;/div>
+                            &lt;/div>
+                            &lt;div class="dates">
+                                &lt;div class="select-container">
+                                    &lt;select name="mm" class="datemonth">
+                                        &lt;option value="" hidden>mm&lt;/option>
+                                        &lt;option value="january">1&lt;/option>
+                                        &lt;option value="february">2&lt;/option>
+                                        &lt;option value="march">3&lt;/option>
+                                    &lt;/select>
+                                &lt;/div>
+                                &lt;div class="select-container">
+                                    &lt;select name="dd" class="dateday">
+                                        &lt;option value="" hidden>dd&lt;/option>
+                                        &lt;option value="1">1&lt;/option>
+                                        &lt;option value="2">2&lt;/option>
+                                        &lt;option value="3">3&lt;/option>
+                                    &lt;/select>
+                                &lt;/div>
+                                &lt;div class="select-container">
+                                    &lt;select name="yyyy" class="dateyear">
+                                        &lt;option value="" hidden>yyyy&lt;/option>
+                                        &lt;option value="1989">1989&lt;/option>
+                                        &lt;option value="1990">1990&lt;/option>
+                                        &lt;option value="1991">1991&lt;/option>
+                                    &lt;/select>
+                                &lt;/div>
+                            &lt;/div>
+                            &lt;div class="button">
+                                &lt;button type="submit" class="btn">SIGN UP&lt;/button>
+                            &lt;/div>
+                        &lt;/form>
                                 </code>
                             </pre>
                         </div>

@@ -12,15 +12,17 @@ h3 {
 /*** Form ****/
 
 form {
-    width: 300px;
+    width: 325px;
+
 }
 
 select {
-    width: 80px;
-    height: 40px;
-    padding-left: 20px;
-    text-transform: uppercase;
+    color: #c3cbd6;
+    font-size: 1rem;
+    height: 45px;
     margin-bottom: 10px;
+    padding-left: 15px;
+    text-transform: uppercase;
 }
 
 .formpassword {
@@ -30,115 +32,139 @@ select {
 /*** Input and Icons ***/
 
 input {
-    border: 1px solid #E1EDF0;
-    border-radius: 3px;
+    /*position: relative;*/
     background-color: #FAFCFF;
-    height: 40px;
-    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #E1EDF0;
+    color: #c3ced9;
+    font-size: 1rem;
+    height: 45px;
     margin-bottom: 13px;
-    padding-left: 25px;
-    font-size: 1em;
+    padding: 2px 0 0 42px;
+    width: 100%;
 }
 
-.fa-user {
-    position: absolute;
-    margin-left: 10px;
-    margin-top: 10px;
-}
-
-.fa-envelope-o {
-    position: absolute;
-    margin-left: 6px;
-    margin-top: 10px;
-}
-
+.fa-user,
+.fa-envelope-o,
 .fa-lock {
+    color: #8392a7;
+    font-size: 1.2rem;
+    margin-left: 16px;
+    margin-top: 14px;
     position: absolute;
-    margin-left: 9px;
-    margin-top: 10px;
 }
-
 
 
 /*** Birthday ****/
 
-
 .birthday-container {
-    width: 100%;
     height: 50px;
+    width: 100%;
 }
 
 .birthday {
-    width: 40%;
-    text-transform: uppercase;
     display: inline-block;
     float: left;
-    text-align: center;
     font-size: 12.5px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 40%;
 }
 
 .birthday p {
+    color: #b9c2cd;
     margin: 20px 10px 20px 10px;
 }
 
 .lineleft {
-    width: 30%;
-    height: 13px;
-    margin-top: 25px;
-    border-top: 1px solid #E1EDF0;
-    border-left: 1px solid #E1EDF0;
+    border-left: 1px solid #d6dde6;
+    border-top: 1px solid #d6dde6;
     display: inline-block;
     float: left;
+    height: 13px;
+    margin-top: 25px;
     vertical-align: bottom;
+    width: 30%;
 }
 
 .lineright {
-    width: 30%;
-    height: 13px;
-    margin-top: 25px;
-    border-top: 1px solid #E1EDF0;
-    border-right: 1px solid #E1EDF0;
+    border-right: 1px solid #d6dde6;
+    border-top: 1px solid #d6dde6;
     display: inline-block;
     float: left;
-}
-
-.dateday,
-.dateyear {
-    margin-left: 26px;
-}
-
-.dateyear {
-    padding-left: 15px;
+    height: 13px;
+    margin-top: 25px;
+    width: 30%;
 }
 
 .dates {
-    display: inline-block;
-    height: 40px;
+    align-content: space-between;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.select-container {
+    position: relative;
+    width: 33.33%;
+}
+
+.select-container:nth-child(2) {
+    margin: 0 12px;
+}
+
+.select-container::after {
+    color: #8392a7;
+    content: "❯";
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    transform: rotate(90deg);
+}
+
+.dates select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+}
+
+.dates select:focus {
+    outline: none;
+}
+
+
+select {
+    
 }
 
 select,
 input[type="color" i][list] {
     background-color: #FAFCFF;
-    border-width: 1px;
-    border-style: box;
     border-color: #E7F0F3;
     border-image: initial;
     border-radius: 5px;
+    border-style: box;
+    border-width: 1px;
 }
 
 
 /**Signup Button**/
 
 .btn {
-    margin: 10px 0 10px 0;
-    border: 1px solid #51D0EF;
-    border-radius: 3px;
-    color: white;
     background-color: #51D0EF;
-    text-transform: uppercase;
+    border-radius: 3px;
+    border: 1px solid #51D0EF;
+    color: white;
+    font-size: .85rem;
+    height: 45px;
+    margin: 10px 0 10px 0;
     text-align: center;
+    text-transform: uppercase;
     width: 100%;
-    height: 40px;
+}
+
+.btn:focus {
+    outline: none;
 }
 
 .btn:hover {
