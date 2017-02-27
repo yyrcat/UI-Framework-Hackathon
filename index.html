@@ -62,13 +62,14 @@
     <div class="row">
       <div class="col2">
           <h4 class="ui-nav-elements-title">UI ELEMENTS</h4>
-          <ul class="ui-nav-elements-menu">
-            <li class="ui-nav-elements__li"><label for="tab-under-21">Buttons</label></li>
-            <li class="ui-nav-elements__li"><label for="tab-under-22">Cards</label></li>
-            <li class="ui-nav-elements__li"><label for="tab-under-23">Accordion</label></li>
-            <li class="ui-nav-elements__li"><label for="tab-under-24">Tabs</label></li>
-            <li class="ui-nav-elements__li"><label for="tab-under-25">Carousel</label></li>
-            <li class="ui-nav-elements__li"><label for="tab-under-26">Forms</label></li>
+          <ul class="ui-nav-elements-menu active-vertical">
+            <li class="ui-nav-elements__li"><label for="tab-under-21"><a href="#buttons">Buttons</a></label></li>
+            <li class="ui-nav-elements__li"><label for="tab-under-22"><a href="#forms">Forms</a></label></li>
+            <li class="ui-nav-elements__li"><label for="tab-under-23"><a href="#ui-component-toggles">Toggle Switches</a></label></li>
+            <li class="ui-nav-elements__li"><label for="tab-under-24"><a href="#ui-component-pagination">Pagination</a></label></li>
+            <li class="ui-nav-elements__li"><label for="tab-under-25"><a href="#ui-component-modal">Modal</a></label></li>
+            <li class="ui-nav-elements__li"><label for="tab-under-26"><a href="#ui-component-carousel">Carousel</a></label></li>
+              <li class="ui-nav-elements__li"><label for="tab-under-27"><a href="#ui-component-groupLists">Group Lists</a></label></li>
             <input class="hide" type="radio" name="under" id="tab-under-21">
             <input class="hide" type="radio" name="under" id="tab-under-22">
             <input class="hide" type="radio" name="under" id="tab-under-23">
@@ -78,7 +79,7 @@
           </ul>
       </div>
       <div class="col10">
-        <section class="ui-element-main">
+        <section class="ui-element-main" id="buttons">
             <h1 class="main-ui-heading">Buttons</h1>
             <p class="main-element-description">Commonly used buttons</p>
             <div class="ui-element-container">
@@ -102,7 +103,7 @@
                 <button class="btn-default btn-full-width">Show markup</button>
             </div>
         </section>
-        <section class="ui-element-main">
+        <section class="ui-element-main" id="forms">
             <h1 class="main-ui-heading">Forms</h1>
             <div class="ui-element-container">
                 <h3 class="ui-element-heading">Basic</h3>
@@ -310,20 +311,20 @@
             <div class="show-markup">
                 <pre class="language-markup">
                     <code>
-                      &lt;div class="modal" role="modal" aria-labelledby="modal-title" aria-describedby="modal-description">  
+                      &lt;div class="modal" role="modal" aria-labelledby="modal-title" aria-describedby="modal-description">
                           &lt;div class="modal-info-container">
                               &lt;h1 id="modal-title">
                                   &lt;i class="fa fa-exclamation-circle" aria-hidden="true">&lt;/i>Update form Feb 12, 2015
                               &lt;/h1>
                               &lt;p id="modal-description" class="sr-only">Bender, we're trying our best.
-                              You'll have all the Slurm you can drink when 
+                              You'll have all the Slurm you can drink when
                               you're partying with Slurm McKenzie!&lt;/p>
                           &lt;/div>
                           &lt;div class="modal-btn-container">
                               &lt;button type="button" aria-label="Apply" class="modal-btn apply">Apply&lt;/button>
                               &lt;button type="button" aria-label="Cancel" class="modal-btn cancel">Cancel&lt;/button>
                           &lt;/div>
-                      &lt;/div> 
+                      &lt;/div>
                     </code>
                 </pre>
             </div>
@@ -470,13 +471,13 @@
                       &lt;input type="radio" name="carousel02" class="slide02-radio1" checked id="carousel02_1">
                       &lt;input type="radio" name="carousel02" class="slide02-radio2" id="carousel02_2">
                       &lt;input type="radio" name="carousel02" class="slide02-radio3" id="carousel02_3">
-                      
+
                       &lt;div class="carousel-pagination">
                           &lt;label for="carousel02_1" class="page1">&lt;/label>
                           &lt;label for="carousel02_2" class="page2">&lt;/label>
                           &lt;label for="carousel02_3" class="page3">&lt;/label>
                       &lt;/div>
-                      
+
                       &lt;div class="next control">
                           &lt;label for="carousel02_1" class="control02_01">&lt;i class="fa fa-arrow-right" aria-hidden="true">&lt;/i>&lt;/label>
                           &lt;label for="carousel02_2" class="control02_02">&lt;i class="fa fa-arrow-right" aria-hidden="true">&lt;/i>&lt;/label>
@@ -532,12 +533,12 @@
                     &lt;li class="groupList__item">Pickles&lt;/li>
                     &lt;li class="groupList__item">Speckles&lt;/li>
                     &lt;li class="groupList__item">Freckles&lt;/li>
-                  &lt;/ul> 
+                  &lt;/ul>
                 </code>
               </pre>
             </div>
           </div>
-          
+
           <div class="ui-element-container">
             <h3 class="ui-element-heading">Anchored Group List</h3>
             <p class="ui-element-description">The group list can be composed as links if need be.</p>
@@ -559,7 +560,7 @@
                     &lt;a href="#" class="groupList__link active">Pickles&lt;/a>
                     &lt;a href="#" class="groupList__link">Speckles&lt;/a>
                     &lt;a href="#" class="groupList__link">Freckles&lt;/a>
-                  &lt;/div>   
+                  &lt;/div>
                 </code>
               </pre>
             </div>
@@ -594,7 +595,7 @@
                     &lt;li class="groupList__item">Pickles&lt;/li>
                     &lt;li class="groupList__item">Speckles&lt;/li>
                     &lt;li class="groupList__item">Freckles&lt;/li>
-                  &lt;/ul> 
+                  &lt;/ul>
                 </code>
               </pre>
             </div>
@@ -690,10 +691,11 @@
       </div>
     </div>
   </footer>
-  
+
   <!-- script for code snippets to work. -->
   <script type="text/javascript" src="scripts/prism.js"></script>
   <script type="text/javascript" src="scripts/markupDropDown.js"></script>
+  <script type="text/javascript" src="scripts/scrollspy.js"></script>
 </body>
 
 </html>
