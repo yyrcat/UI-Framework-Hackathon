@@ -1,13 +1,19 @@
 @import url("reset.css");
 @import url("prism.css");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css?family=Roboto:300|Roboto+Slab:100,300');
 @import url("components/carousel.css");
 @import url("components/button.css");
 @import url("components/form.css");
 @import url("components/modal.css");
-@import url('https://fonts.googleapis.com/css?family=Roboto:300|Roboto+Slab:100,300');
 @import url("components/pagination.css");
-@import url(components/groupLists.css);
+@import url("components/groupLists.css");
+@import url("components/toggle-switches.css");
+@import url("components/tabs.css");
+@import url("components/card.css");
+@import url("components/dropdown.css");
+@import url("components/tooltip.css");
+@import url("components/accordion.css");
 
 * {
   box-sizing: border-box;
@@ -29,7 +35,6 @@ body {
 .container {
   overflow: auto;
   padding: 10px;
-  text-align: center;
   width: 100%;
 }
 
@@ -301,7 +306,9 @@ input[id^="tab-under"]:checked ~ li[class="ui-main-menu__underline"]{
   margin: 1em auto;
   text-align: center;
 }
-
+footer .sitemap, footer .social, footer .develop__title, footer .develop__profiles {
+    text-align: center;
+}
 
 /*Main UI element container surrounding all UI elements*/
 .ui-element-main {

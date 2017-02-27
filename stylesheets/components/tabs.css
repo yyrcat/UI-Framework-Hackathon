@@ -1,0 +1,118 @@
+.ui-tabs {
+    box-shadow: 0px 10px 24px 0px rgba(68, 68, 68, 0.1);
+}
+.tabs {
+    position: relative;
+    width: 40rem;
+    height: 15rem;
+    margin: 2rem auto;
+    border-left: 1px solid #f5f7fb;
+}
+
+.tab-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 260px;
+    background: #fff;
+}
+
+.tabs h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 2rem 0 0 0;
+    text-align: left;
+    color:#333;
+}
+
+.tabs p {
+    padding: 1rem 0;
+    color: rgba(128, 128, 128, 0.76);
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: .02rem;
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+p.tabnav {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+p.tabnav a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.tabs .btn-primary {
+    max-width: 150px;
+    padding: 0.9rem 0 1.7rem;
+    font-size: .85rem;
+    font-weight: 100;
+    box-shadow: none;
+}
+.tabs .btn-primary:hover {
+    box-shadow: none;
+    opacity: 1;
+    background-color: rgb(75, 197, 226);
+}
+.tabs div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 12rem;
+    padding: .5rem 2rem;
+    z-index: 0;
+}
+
+.tabs div:first-child {
+    z-index: 1;
+}
+
+.tabs div .tab {
+    position: absolute;
+    font-size: 0.9rem;
+    font-weight: normal;
+    width: 7rem;
+    height: 1.8rem;
+    top: 2.4rem;
+    left: -7rem;
+    padding: 0;
+    margin: 0;
+    color: #999;
+    text-transform: uppercase;
+    text-align: right;
+
+}
+.tabs div:nth-child(2) .tab {
+    top: 5rem;
+}
+.tabs div:nth-child(3) .tab {
+    top: 7.5rem;
+}
+
+.tabs div .tab a {
+    display: block;
+    width: 100%;
+    line-height: 1.8rem;
+    text-decoration: none;
+    color: inherit;
+    outline: 0 none;
+    padding-right: 1rem;
+}
+
+.tabs div,
+.tabs div .tab {
+    transition: all 500ms ease;
+}
+
+.tabs div:target,
+.tabs div:target .tab {
+    background-color: #fff;
+    color: #51d0ef;
+    z-index: 2;
+}
+.tabs div:target .tab {
+    border-right: 2px solid #51d0ef;
+}

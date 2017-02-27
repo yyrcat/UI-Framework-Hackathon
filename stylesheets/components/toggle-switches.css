@@ -1,0 +1,146 @@
+#ui-component-toggles .ui-element {
+    flex-direction: row;
+}
+.toggles {
+    display: flex;
+    flex-direction: column;
+    padding-right: 4rem;
+}
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 3.8rem;
+  height: 2.2rem;
+  margin: 1rem 0;
+}
+
+.toggle input {
+  display:none;
+}
+
+.switch {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+}
+
+.switch:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #fff;
+  transition: .4s;
+}
+
+input:checked + .switch {
+  background-color: #51d0ef;
+}
+
+input:focus + .switch {
+  box-shadow: 0 0 1px #51d0ef;
+}
+
+input:checked + .switch:before {
+  transform: translateX(26px);
+}
+
+.switch.round {
+  border-radius: 34px;
+}
+
+.switch.round:before {
+  border-radius: 50%;
+}
+
+
+.toggle.on-off label,
+.toggle.yes-no label {
+    position: relative;
+    width: 4rem;
+    height: 2rem;
+    cursor: pointer;
+    text-indent: 100%;
+    font-size: 0.875rem;
+    font-weight: normal;
+    line-height: 1.5;
+    border-radius: 2rem;
+    color: transparent;
+    background: #DDDDDD;
+    transition: left 0.15s ease-out;
+}
+.toggle.on-off label {
+    background: #ff0000;
+}
+.toggle input + label {
+    margin-left: 0;
+    margin-right: 0;
+}
+.toggle.on-off label:after,
+.toggle.yes-no label:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1.5rem;
+    left: .25rem;
+    top: .25rem;
+    width: 1.5rem;
+    border-radius: 2rem;
+    background: #FFFFFF;
+    transition: left 0.15s ease-out;
+    transform: translate3d(0, 0, 0);
+}
+input[type="checkbox"] {
+    box-sizing: border-box;
+    margin: 0 0 1rem 0;
+}
+.toggle.on-off input,
+.toggle.yes-no input {
+  display: block;
+  position: absolute;
+  left: 10px;
+  opacity: 0;
+  padding: 0;
+  top: 9px;
+}
+.toggle.on-off input[type="checkbox"] + label,
+.toggle.yes-no input[type="checkbox"] + label {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: baseline;
+}
+
+.toggle input:checked + label::after {
+    left: 2.25rem;
+}
+.toggle input:checked + label {
+    background: #51d0ef;
+}
+.toggle.on-off input:checked + label {
+    background: #1cda24;
+}
+.toggle.on-off .toggle-off,
+.toggle.yes-no .toggle-no {
+    position: absolute;
+    left: -25px;
+    top: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 9px;
+}
+.toggle.on-off .toggle-on,
+.toggle.yes-no .toggle-yes {
+    position: absolute;
+    left: -55px;
+    top: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 9px;
+}
