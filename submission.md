@@ -16,7 +16,9 @@ hack editing.
 
 But hey, everyone did a great job... we create more than the 5 elements we were assigned plus the website.
 
+
 **Zoe Sadler**
+
 The hackathon was a great experience. I really enjoyed working with team 9. @luis_rojas did a great job keeping the team up to date and coordinating everyone.
 
 My main role was to create components. We were each assigned 3 or 4 components and were able to start in right away. I was able to work through 5 components. They aren't as polished as I would have liked but that was mainly due to having to help my teammates when issues arose. Stoping to help them made the team stronger and I can iterate over the components to clean them up at a later date.
