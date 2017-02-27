@@ -7,10 +7,12 @@
 @import url("components/form.css");
 @import url("components/modal.css");
 @import url("components/pagination.css");
-@import url(components/groupLists.css);
+@import url("components/groupLists.css");
 @import url("components/toggle-switches.css");
 @import url("components/tabs.css");
-
+@import url("components/card.css");
+@import url("components/dropdown.css");
+@import url("components/tooltip.css");
 
 * {
   box-sizing: border-box;
@@ -32,7 +34,6 @@ body {
 .container {
   overflow: auto;
   padding: 10px;
-  text-align: center;
   width: 100%;
 }
 
