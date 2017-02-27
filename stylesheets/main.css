@@ -49,6 +49,7 @@ body {
 
 .col2 {
   width: 16.66%;
+  /*position: fixed;*/
 }
 
 .col3 {
@@ -191,6 +192,7 @@ header, footer {
 .ui-main-menu {
   float: right;
   margin-right: 3em;
+  /*position: fixed;*/
 }
 
 .ui-main-menu__li{
@@ -198,9 +200,16 @@ header, footer {
   margin: auto 14px 1em;
 }
 
+ul li a {
+  text-decoration: none;
+  color: gray;
+  font-size: 18px;
+}
+
 .ui-main-menu__li_el {
   cursor: pointer;
 }
+
 
 .ui-main-menu__underline {
   border-bottom: 5px solid #eb74aa;
@@ -386,10 +395,10 @@ input[id^="tab-under"]:checked ~ li[class="ui-main-menu__underline"]{
 .show-markup {
   transition: opacity 1s, height 1s;
   transition-timing-function: ease-out;
-  opacity: 0; 
+  opacity: 0;
   height: 0;
   overflow: hidden;
-} 
+}
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"]  {
@@ -410,4 +419,26 @@ pre[class*="language-"]  {
   height: auto;
   transition: opacity .5s, height 1s;
   transition-timing-function: ease-in;
+}
+
+/* scroll spy */
+
+/* ==========================================================================
+ * The Scrollspy is used to automatically update links in a navigation
+ * list based on scroll position.
+ * For a vertical navigation, add an `.active-vertical` on the first `li` list item
+ ========================================================================== */
+
+/* Vertical Navigation */
+.active-vertical {
+  border-right: 3px solid #eb74aa;
+  color: black;
+  text-decoration: none;
+}
+
+/* Horizental Navigation */
+.active-horizental {
+  border-bottom: 3px solid red;
+  color: black;
+  text-decoration: none;
 }
