@@ -306,7 +306,9 @@ input[id^="tab-under"]:checked ~ li[class="ui-main-menu__underline"]{
   margin: 1em auto;
   text-align: center;
 }
-
+footer .sitemap, footer .social, footer .develop__title, footer .develop__profiles {
+    text-align: center;
+}
 
 /*Main UI element container surrounding all UI elements*/
 .ui-element-main {
