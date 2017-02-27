@@ -151,7 +151,7 @@
               </ul>
               <button class="btn-default btn-primary btn-center">Buy Now</button>
             </div>
-            <div class="col5">
+            <div class="col5 col-gap1">
               <h3 class="ui-element-heading">Basic</h3>
               <p class="ui-element-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla iusto assumenda dolorem ipsum enim quos a fugit, odio quisquam quidem dicta libero sit. Magni nulla corrupti nostrum dolor dolorem, d.</p>
             </div>
@@ -200,7 +200,7 @@
               </div>
             </div>
 
-            <div class="col5">
+            <div class="col5 col-gap1">
               <h3 class="ui-element-heading">Card with image</h3>
               <p class="ui-element-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla iusto assumenda dolorem ipsum enim quos a fugit, odio quisquam quidem dicta libero sit. Magni nulla corrupti nostrum dolor dolorem, d.</p>
             </div>
@@ -281,8 +281,7 @@
         <div class="ui-element-container">
           <h3 class="ui-element-heading">Split Button Dropdowns</h3>
           <input type="checkbox" id="split-dropdown-state">
-          <a class="btn-default btn-primary btn-split btn-anchor" id="target1" href="#target1">primary</a>
-          <a href="#target2" id="target2" class="btn-default btn-primary btn-split">
+          <a class="btn-default btn-primary btn-split btn-anchor" id="target1" href="#target1">primary</a><a href="#target2" id="target2" class="btn-default btn-primary btn-split">
             <label for="split-dropdown-state"><i class="fa fa-caret-down btn-icon" aria-hidden="true"></i></label>
           </a>
           <ul class="dropdown-menu-list">
@@ -330,6 +329,76 @@
         </div>
 
       </section>
+<section class="ui-element-main" id="ui-element-tooltip">
+
+  <h1 class="main-ui-heading">Tooltip</h1>
+  <div class="ui-element-container">
+    <h3 class="ui-element-heading">Basic Click Popover</h3>
+    <div class="popover-container">
+      <input type="checkbox" id="popover-state-top" />
+      <label for="popover-state-top" class="btn-default btn-primary popover-bubble-top">popover top</label>
+    </div>
+
+    <div class="popover-container">
+      <input type="checkbox" id="popover-state-right" />
+      <label for="popover-state-right" class="btn-default btn-primary popover-bubble-right">popover right</label>
+    </div>
+
+    <div class="popover-container">
+      <input type="checkbox" id="popover-state-bottom" />
+      <label for="popover-state-bottom" class="btn-default btn-primary popover-bubble-bottom">popover bottom</label>
+    </div>
+
+    <div class="popover-container">
+      <input type="checkbox" id="popover-state-left" />
+      <label for="popover-state-left" class="btn-default btn-primary btn--flat popover-bubble-left">popover left</label>
+    </div>
+
+    <button class="btn-full-width">Show markup</button>
+     <div class="show-markup">
+            <pre class="language-markup">
+              <code>
+                &lt;div class="popover-container">
+                  &lt;input type="checkbox" id="popover-state-top" />
+                  &lt;label for="popover-state-top" class="btn-default btn-primary popover-bubble-top">popover top&lt;/label>
+                &lt;/div>
+
+                &lt;div class="popover-container">
+                  &lt;input type="checkbox" id="popover-state-right" />
+                  &lt;label for="popover-state-right" class="btn-default btn-primary popover-bubble-right">popover right&lt;/label>
+                &lt;/div>
+
+                &lt;div class="popover-container">
+                  &lt;input type="checkbox" id="popover-state-bottom" />
+                  &lt;label for="popover-state-bottom" class="btn-default btn-primary popover-bubble-bottom">popover bottom&lt;/label>
+                &lt;/div>
+
+                &lt;div class="popover-container">
+                  &lt;input type="checkbox" id="popover-state-left" />
+                  &lt;label for="popover-state-left" class="btn-default btn-primary btn--flat popover-bubble-left">popover left&lt;/label>
+                &lt;/div>
+              </code>
+            </pre>
+          </div>
+  </div>
+
+  <div class="ui-element-container">
+    <h3 class="ui-element-heading">Hover Popover</h3>
+   
+    
+    <button class="btn-full-width">Show markup</button>
+        <div class="show-markup">
+            <pre class="language-markup">
+              <code>
+               &lt;div class="popover-container">
+                &lt;label class="btn-default btn-primary popover-hover-top">popover top&lt;/label>
+              &lt;/div>
+              </code>
+            </pre>
+          </div>
+  </div>
+
+</section>
 
 
       <section class="ui-element-main">
