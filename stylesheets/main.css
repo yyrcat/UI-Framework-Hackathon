@@ -9,6 +9,7 @@
 @import url("components/pagination.css");
 @import url(components/groupLists.css);
 @import url("components/toggle-switches.css");
+@import url("components/tabs.css");
 
 
 * {

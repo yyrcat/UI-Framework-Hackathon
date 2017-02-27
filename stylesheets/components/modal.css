@@ -10,6 +10,7 @@
     font-weight: 100;
     letter-spacing: .02rem;
     line-height: 1.5rem;
+    text-align: left;
 }
 .modal h1 {
     display: flex;
