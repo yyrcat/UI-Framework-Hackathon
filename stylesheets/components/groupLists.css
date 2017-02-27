@@ -11,7 +11,7 @@
 .groupList__item,
 .groupList__link {
   position: relative;
-  background: #fff;
+  /*background: #fff;*/
   border-left: 1px solid #c3ced9;
   border-radius: 2px;
   border-right: 1px solid #c3ced9;
@@ -19,7 +19,7 @@
   color: #c3ced9;
   display: block;
   height: 45px;
-  padding: 14px 0 0 12px;
+  padding: 14px 12px;
   text-decoration: none;
   -webkit-transition: background .5s ease-in-out, color .5s;
   transition: background .5s ease-in-out, color .5s;     
@@ -42,12 +42,16 @@
   color: #fff;
 }
 
+.tagEmphasis {
+  background: #edfafd;
+  padding: 0 2px;
+}
+
 /*Group list with header*/
 .groupList__header {
-  height: 72px;
+  height: 84px;
   display: block;
-  padding-top: 24px;
-  background: #f3f5f7;
+  padding-top: 30px;
 }
 
 /*Header with Secondary Content*/
@@ -63,8 +67,23 @@
   color: #fff;
   opacity: 0;
   transition: opacity .5s;
+  /*padding-top: 8px;*/
+
 }
 
+@media screen and (max-width: 570px) {
+  .secondary__item {
+    padding: 7px 24px 0 6px;
+    font-size: .95rem;
+  }
+}
+
+@media screen and (min-width: 571px) and (max-width: 615px) {
+  .secondary__item {
+    font-size: .98rem;
+
+  }
+}
 .badge {
   position: absolute;
   top: 0;
@@ -81,7 +100,7 @@
 .badge::after {
   position: absolute;
   content: '◓';
-  right: 12px;
+  right: 8px;
   top: 14px;
   font-size: 1.4rem;
   color: #eb72a9;
@@ -91,16 +110,69 @@
 
 .badge:hover::after {
   content: "◒";
-  color: #fff;  
+  color:  #51d0ef;  
 }
 .badge:hover + .secondary__item {
   z-index: 1;
   opacity: 1;
 }
 
+/*Detailed list*/
+
+.detailed__item {
+  position: relative;
+  height: 84px;
+  padding: 0 12px 0 84px;
+  text-align: left;
+}
+
+.detail__image {
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  font-size: 2.2rem;
+  padding: 4px 0 0 2px;
+  color: #51d0ef;
+  z-index: 6;
+  width: 40px;
+  height: 40px;
+  background: #f3f5f8;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 0 1px #879eb2;
+}
 
 
+.title {
+  padding-top: 8px;
+  color: #879eb2;
+}
 
+.details {
+  padding-top: 6px;
+}
+.title,
+.details {
+  display: block;
+  height: 33.33%;
+  z-index: 4;
+}
+
+.secondary__details {
+  right: 0;
+  height: 84px;
+  padding: 12px 8% 0 90px;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+}
+
+@media  screen and (max-width: 540px) {
+  .secondary__details {
+    padding: 8px 8% 0 90px;
+    font-size: .95rem;  
+    line-height: 1.1rem; 
+  }
+}
 
 
 
