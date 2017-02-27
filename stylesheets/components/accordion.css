@@ -1,0 +1,82 @@
+.accordion {
+  background: #fafcff;
+  width: 100%;
+}
+
+.accordion__level {
+  padding: 1em 0 1em 0;
+  text-align: left;
+}
+
+.accordion__sublevel {
+  height: 0;
+  opacity: 0;
+
+  -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    -ms-transition: all .1s ease;
+    transition: all .1s ease;
+}
+
+.accordion__sublevel__li {
+  margin: 1em auto;
+}
+
+.accordion__sublevel__li:hover {
+  color: #51d0ef;
+  cursor: pointer;
+}
+
+.accordion__toggle {
+  cursor: pointer;
+  display: block;
+  line-height: 100%;
+  margin-left: 2em;
+  padding: 1em;
+}
+
+.accordion__toggle:hover {
+  color: #51d0ef;
+}
+
+.on {
+  float: right;
+  margin-right: 2em;
+}
+
+.off {
+  float: right;
+  margin-right: 2em;
+}
+
+#elm1:checked ~ .lvl1,
+#elm2:checked ~ .lvl2,
+#elm3:checked ~ .lvl3,
+#elm4:checked ~ .lvl4 {
+  background: #f3f5f7;
+  border-left: 2px solid #51d0ef;
+}
+
+#elm1:checked ~ .lvl1 .accordion__sublevel,
+#elm2:checked ~ .lvl2 .accordion__sublevel,
+#elm3:checked ~ .lvl3 .accordion__sublevel,
+#elm4:checked ~ .lvl4 .accordion__sublevel {
+  height: auto;
+  margin: 1em auto 1em 3em;
+  opacity: 1;
+}
+
+#elm1:checked ~ .lvl1 .accordion__toggle .on,
+#elm2:checked ~ .lvl2 .accordion__toggle .on,
+#elm3:checked ~ .lvl3 .accordion__toggle .on,
+#elm4:checked ~ .lvl4 .accordion__toggle .on {
+  display: none;
+}
+
+#elm1:checked ~ .lvl1 .accordion__toggle .off,
+#elm2:checked ~ .lvl2 .accordion__toggle .off,
+#elm3:checked ~ .lvl3 .accordion__toggle .off,
+#elm4:checked ~ .lvl4 .accordion__toggle .off {
+  display: block;
+}
