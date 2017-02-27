@@ -39,7 +39,7 @@
 
 #popover-state-top:checked ~ .popover-bubble-top:before,
 .popover-hover-top:before {
-  top: -300%;
+  top: -299%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -55,7 +55,7 @@
 }
 
 #popover-state-right:checked ~ .popover-bubble-right:before {
-  top: 50%;
+  top: 48%;
   left: 107%;
   transform: translate(0, -50%);
   z-index: 1;
@@ -78,7 +78,7 @@
 }
 
 #popover-state-bottom:checked ~ .popover-bubble-bottom:after {
-  top: 245%;
+  top: 246%;
   left: 50%;
   transform: translate(-50%, 0);
   border-right: 10px solid transparent;
@@ -88,7 +88,7 @@
 
 #popover-state-left:checked ~ .popover-bubble-left:before {
   top: 50%;
-  left: -67%;
+  left: -57%;
   transform: translate(-50%, -50%);
 }
 
