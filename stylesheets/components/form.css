@@ -133,10 +133,6 @@ input {
 }
 
 
-select {
-    
-}
-
 select,
 input[type="color" i][list] {
     background-color: #FAFCFF;
