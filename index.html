@@ -1255,73 +1255,133 @@
                 </section>
                 <section id="ui-component-inputGroups" class="ui-element-main">
 
-                  <h1 class="main-ui-heading">Input Groups</h1>
-                  <p class="main-element-description">An input element can be grouped with its label and an add on, checkbox ,or button element to create a handy standalone component or for form building.</p>
-                  
-                  <!-- Copy div.ui-element-container template for next UI-Element variation -->
-                  <div class="ui-element-container">
-                    <h3 class="ui-element-heading">Basic Input Group with Addon</h3>
-                    <p class="ui-element-description">The standard input group contains a label and addon. The addon can be placed on the left, right  or both sides of the input.</p>
+                    <h1 class="main-ui-heading">Input Groups</h1>
+                    <p class="main-element-description">An input element can be grouped with its label and an add on, checkbox ,or button element to create a handy standalone component or for form building.</p>
+                      
+                      <!-- Copy div.ui-element-container template for next UI-Element variation -->
+                    <div class="ui-element-container">
+                        <h3 class="ui-element-heading">Basic Input Group with Addon</h3>
+                        <p class="ui-element-description">The standard input group contains a label and addon. The addon can be placed on the left, right  or both sides of the input.</p>
 
-                    <!-- UI-Element is to go below -->
-                    <!-- Whatever the UI-Element is, give it a class of .ui-element -->
-                    <div class="inputBlock ui-element">
-                      <label for="" class="inputBlock__label">Left addon</label>
-                      <div class="control__container inputBlock--lg">
-                        <span class="inputBlock__addOn inputBlock--addOnLeft">@</span>
-                        <input type="text" class="inputBlock__control control--rtRadius"  placeholder="Avatar Name">
-                      </div>
+                        <!-- UI-Element is to go below -->
+                        <!-- Whatever the UI-Element is, give it a class of .ui-element -->
+                        <div class="inputBlock ui-element">
+                            <label for="" class="inputBlock__label">Left addon</label>
+                            <div class="control__container inputBlock--lg">
+                                <span class="inputBlock__addOn inputBlock--addOnLeft">@</span>
+                                <input type="text" class="inputBlock__control control--rtRadius"  placeholder="Avatar Name">
+                            </div>
+                        </div>
+
+                        <div class="inputBlock ui-element">
+                            <label for="" class="inputBlock__label">Right addon</label>
+                            <div class="control__container inputBlock--lg">
+                                <input type="text" class="inputBlock__control control--lftRadius" placeholder="username">
+                                <span class="inputBlock__addOn inputBlock--addOnRight">github.com</span>
+                            </div>
+                        </div>
+
+                        <div class="inputBlock ui-element">
+                            <label for="" class="inputBlock__label">Both-sided addon</label>
+                            <div class="control__container inputBlock--lg">
+                                <span class="inputBlock__addOn inputBlock--addOnLeft">$</span>
+                                <input type="text" class="inputBlock__control" placeholder="">
+                                <span class="inputBlock__addOn inputBlock--addOnRight">.00</span>
+                            </div>
+                        </div>
+                        
+                        <button class="btn-full-width">Show markup</button>
+                        <div class="show-markup">
+                            <pre class="language-markup">
+                                <code>
+                                    &lt;div class="inputBlock">
+                                        &lt;label for="" class="inputBlock__label">Left addon&lt;/label>
+                                        &lt;div class="control__container inputBlock--md">
+                                          &lt;span class="inputBlock__addOn inputBlock--addOnLeft">@&lt;/span>
+                                          &lt;input type="text" class="inputBlock__control control--rtRadius"  placeholder="Avatar Name">
+                                        &lt;/div>
+                                    &lt;/div>
+
+                                    &lt;div class="inputBlock">
+                                        &lt;label for="" class="inputBlock__label">Right addon&lt;/label>
+                                        &lt;div class="control__container inputBlock--md">
+                                            &lt;input type="text" class="inputBlock__control control--lftRadius" placeholder="username">
+                                             &lt;span class="inputBlock__addOn inputBlock--addOnRight">github.com&lt;/span>
+                                        &lt;/div>
+                                    &lt;/div>
+
+                                    &lt;div class="inputBlock">
+                                        &lt;label for="" class="inputBlock__label">Both-sided addon&lt;/label>
+                                        &lt;div class="control__container inputBlock--md">
+                                            &lt;span class="inputBlock__addOn inputBlock--addOnLeft">$&lt;/span>
+                                            &lt;input type="text" class="inputBlock__control" placeholder="">
+                                            &lt;span class="inputBlock__addOn inputBlock--addOnRight">.00&lt;/span>
+                                        &lt;/div>
+                                    &lt;/div>
+                                </code>
+                            </pre>
+                        </div>
                     </div>
+                    <div class="ui-element-container">
+                        <h3 class="ui-element-heading">Sizes</h3>
+                        <p class="ui-element-description">Inputs groups can be either small, medium or large.</p>
 
-                    <div class="inputBlock ui-element">
-                      <label for="" class="inputBlock__label">Right addon</label>
-                      <div class="control__container inputBlock--lg">
-                        <input type="text" class="inputBlock__control control--lftRadius" placeholder="username">
-                        <span class="inputBlock__addOn inputBlock--addOnRight">github.com</span>
-                      </div>
+                        <div class="inputBlock ui-element">
+                          <label for="" class="inputBlock__label">Small - <mark>inputBlock--sm</mark></label>
+                          <div class="control__container inputBlock--sm">
+                            <span class="inputBlock__addOn inputBlock--addOnLeft">@</span>
+                            <input type="text" class="inputBlock__control control--rtRadius"  placeholder="Avatar Name">
+                          </div>
+                        </div>
+
+                        <div class="inputBlock ui-element">
+                          <label for="" class="inputBlock__label">Medium - <mark>inputBlock--md</mark></label>
+                          <div class="control__container inputBlock--md">
+                            <input type="text" class="inputBlock__control control--lftRadius" placeholder="username">
+                            <span class="inputBlock__addOn inputBlock--addOnRight">@github.com</span>
+                          </div>
+                        </div>
+
+                        <div class="inputBlock ui-element">
+                          <label for="" class="inputBlock__label">Large - <mark>inputBlock--lg</mark></label>
+                          <div class="control__container inputBlock--lg">
+                            <span class="inputBlock__addOn inputBlock--addOnLeft">$</span>
+                            <input type="text" class="inputBlock__control" placeholder="">
+                            <span class="inputBlock__addOn inputBlock--addOnRight">.00</span>
+                          </div>
+                        </div>
+                            <button class="btn-full-width">Show markup</button>
+                        <div class="show-markup">
+                          <pre class="language-markup">
+                            <code>
+                              &lt;div class="inputBlock ui-element">
+                                &lt;label for="" class="inputBlock__label">Small - &lt;mark>inputBlock--sm&lt;/mark>&lt;/label>
+                                &lt;div class="control__container inputBlock--sm">
+                                  &lt;span class="inputBlock__addOn inputBlock--addOnLeft">@&lt;/span>
+                                  &lt;input type="text" class="inputBlock__control control--rtRadius"  placeholder="Avatar Name">
+                                &lt;/div>
+                              &lt;/div>
+
+                              &lt;div class="inputBlock ui-element">
+                                &lt;label for="" class="inputBlock__label">Medium - &lt;mark>inputBlock--md&lt;/mark>&lt;/label>
+                                &lt;div class="control__container inputBlock--md">
+                                  &lt;input type="text" class="inputBlock__control control--lftRadius" placeholder="username">
+                                  &lt;span class="inputBlock__addOn inputBlock--addOnRight">@github.com&lt;/span>
+                                &lt;/div>
+                              &lt;/div>
+
+                              &lt;div class="inputBlock ui-element">
+                                &lt;label for="" class="inputBlock__label">Large - &lt;mark>inputBlock--lg&lt;/mark>&lt;/label>
+                                &lt;div class="control__container inputBlock--lg">
+                                  &lt;span class="inputBlock__addOn inputBlock--addOnLeft">$&lt;/span>
+                                  &lt;input type="text" class="inputBlock__control" placeholder="">
+                                  &lt;span class="inputBlock__addOn inputBlock--addOnRight">.00&lt;/span>
+                                &lt;/div>
+                              &lt;/div>
+                            </code>
+                          </pre>
+                        </div>
                     </div>
-
-                    <div class="inputBlock ui-element">
-                      <label for="" class="inputBlock__label">Both-sided addon</label>
-                      <div class="control__container inputBlock--lg">
-                        <span class="inputBlock__addOn inputBlock--addOnLeft">$</span>
-                        <input type="text" class="inputBlock__control" placeholder="">
-                        <span class="inputBlock__addOn inputBlock--addOnRight">.00</span>
-                      </div>
-                    </div>
-                    
-                    <button class="btn-full-width">Show markup</button>
-                    <div class="show-markup">
-                      <pre class="language-markup">
-                        <code>
-                          &lt;div class="inputBlock">
-                            &lt;label for="" class="inputBlock__label">Left addon&lt;/label>
-                            &lt;div class="control__container inputBlock--md">
-                              &lt;span class="inputBlock__addOn inputBlock--addOnLeft">@&lt;/span>
-                              &lt;input type="text" class="inputBlock__control control--rtRadius"  placeholder="Avatar Name">
-                            &lt;/div>
-                          &lt;/div>
-
-                          &lt;div class="inputBlock">
-                            &lt;label for="" class="inputBlock__label">Right addon&lt;/label>
-                            &lt;div class="control__container inputBlock--md">
-                              &lt;input type="text" class="inputBlock__control control--lftRadius" placeholder="username">
-                              &lt;span class="inputBlock__addOn inputBlock--addOnRight">github.com&lt;/span>
-                            &lt;/div>
-                          &lt;/div>
-
-                          &lt;div class="inputBlock">
-                            &lt;label for="" class="inputBlock__label">Both-sided addon&lt;/label>
-                            &lt;div class="control__container inputBlock--md">
-                              &lt;span class="inputBlock__addOn inputBlock--addOnLeft">$&lt;/span>
-                              &lt;input type="text" class="inputBlock__control" placeholder="">
-                              &lt;span class="inputBlock__addOn inputBlock--addOnRight">.00&lt;/span>
-                            &lt;/div>
-                          &lt;/div>
-                        </code>
-                      </pre>
-                    </div>
-                  </div>
                   <!-- Paste div.ui-element-container template for next UI-Element variation -->
                 </section>
             </div>
