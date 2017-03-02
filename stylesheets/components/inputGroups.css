@@ -1,0 +1,87 @@
+.inputBlock {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.inputBlock__label {
+  margin-bottom: 8px;
+  color: #62652a;
+}
+
+.control__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+/*Actual input*/
+.inputBlock__control {
+  background-color: #FAFCFF;
+  border: 1px solid #E1EDF0;
+  color: #c3ced9;
+  font-size: 1rem;
+  height: 100%;
+  width: 100%;
+  padding-left: 8px;
+}
+
+/*Right and left radius on input depending on whether right or left addOns*/
+.control--lftRadius {
+  border-radius: 3px 0 0 3px;
+}
+
+.control-rtRadius {
+  border-radius: 0 3px 3px 0;
+}
+
+.inputBlock__addOn {
+  height: 100%;
+  padding: 0 8px;
+  border: 1px solid #E1EDF0;
+  border-radius: 3px;
+  background: #c3ced9;
+  color: #fff;
+}
+
+.inputBlock--addOnLeft {
+  border-radius: 3px 0 0 3px;
+  border-right: none;
+}
+
+.inputBlock--addOnRight {
+  border-radius: 0 3px 3px 0;
+  border-left: none;
+}
+
+/*Input sizes and pasitioning of addon.*/
+
+.inputBlock__control:focus {
+  outline: none;
+}
+
+.inputBlock--sm {
+  height: 28px;
+}
+
+.inputBlock--md {
+  height: 36px;
+}
+
+.inputBlock--lg {
+  height: 45px;
+}
+
+.inputBlock--sm > .inputBlock__addOn  {
+  padding-top: 4px;
+
+}
+
+.inputBlock--md > .inputBlock__addOn {
+  padding-top: 8px;
+}
+
+.inputBlock--lg > .inputBlock__addOn {
+  padding: 12px;
+}
