@@ -38,7 +38,7 @@
 
 .inputBlock__addOn {
   height: 100%;
-  padding: 0 8px;
+  padding: 0 10px;
   border: 1px solid #E1EDF0;
   border-radius: 3px;
   background: #c3ced9;
@@ -83,5 +83,5 @@
 }
 
 .inputBlock--lg > .inputBlock__addOn {
-  padding: 12px;
+  padding-top: 14px;
 }
