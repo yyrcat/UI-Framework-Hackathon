@@ -9,6 +9,12 @@
   color: #62652a;
 }
 
+.inputBlock__label > mark {
+  background: #c3ced9;
+  color: #fff;
+  padding: 0 2px;
+}
+
 .control__container {
   display: flex;
   flex-direction: row;
