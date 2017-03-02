@@ -14,6 +14,7 @@
 @import url("components/dropdown.css");
 @import url("components/tooltip.css");
 @import url("components/accordion.css");
+@import url("components/inputGroups.css");
 
 * {
   box-sizing: border-box;
