@@ -9,9 +9,8 @@
   color: #62652a;
 }
 
-.inputBlock__label > mark {
-  background: #c3ced9;
-  color: #fff;
+.inputBlock__label > em {
+  color: #c3ced9;
   padding: 0 2px;
 }
 
