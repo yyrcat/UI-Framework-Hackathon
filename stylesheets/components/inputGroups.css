@@ -19,6 +19,7 @@
   flex-direction: row;
   justify-content: flex-start;
   width: 100%;
+  position: relative;
 }
 
 /*Actual input*/
@@ -30,6 +31,17 @@
   height: 100%;
   width: 100%;
   padding-left: 8px;
+}
+
+/*Placeholder color*/
+.inputBlock__control::-webkit-input-placeholder {
+  color: #c3ced9;
+}
+.inputBlock__control:-moz-placeholder {
+  color: #c3ced9;
+}
+.inputBlock__control::-ms-input-placeholder {
+  color: #c3ced9;
 }
 
 /*Right and left radius on input depending on whether right or left addOns*/
@@ -66,27 +78,53 @@
   outline: none;
 }
 
+/*Small Input*/
 .inputBlock--sm {
   height: 28px;
 }
+.inputBlock--sm > .inputBlock__addOn  {
+  padding-top: 4px;
+}
+.inputBlock--sm > .inputBlock__insetAddon {
+  margin-top: 4px;
+  font-size: 1.45rem;
+}
 
+/*Medium Input*/
 .inputBlock--md {
   height: 36px;
 }
-
-.inputBlock--lg {
-  height: 45px;
-}
-
-.inputBlock--sm > .inputBlock__addOn  {
-  padding-top: 4px;
-
-}
-
 .inputBlock--md > .inputBlock__addOn {
   padding-top: 8px;
 }
+.inputBlock--md > .inputBlock__insetAddon {
+  margin-top: 7px;
+  font-size: 1.5rem;
+}
 
+/*Large Input*/
+.inputBlock--lg {
+  height: 45px;
+}
 .inputBlock--lg > .inputBlock__addOn {
   padding-top: 14px;
+}
+.inputBlock--lg > .inputBlock__insetAddon {
+  margin-top: 10px;
+}
+
+/*Input block with inset addon*/
+
+.inputBlock__insetAddon {
+  position: absolute;
+  color: #51d0ef;
+  font-size: 1.65rem;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.inputBlock__insetAddon + .inputBlock__control {
+  padding-left: 42px;
+  color: #c3ced9;
+  border-radius: 3px;
 }
