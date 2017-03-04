@@ -1265,77 +1265,90 @@
                 </section>
                 <section id="ui-component-inputGroups" class="ui-element-main">
 
-                    <h1 class="main-ui-heading">Input Groups</h1>
-                    <p class="main-element-description">An input element can be grouped with its label and an add on, checkbox ,or button element to create a handy standalone component or for form building.</p>
-                      
-                      <!-- Copy div.ui-element-container template for next UI-Element variation -->
-                    <div class="ui-element-container">
-                        <h3 class="ui-element-heading">Basic Input Group with Addon</h3>
-                        <p class="ui-element-description">The standard input group contains a label and addon. The addon can be placed on the left, right  or both sides of the input.</p>
+                  <h1 class="main-ui-heading">Input Groups</h1>
+                  <p class="main-element-description">An input element can be grouped with its label and an add on, checkbox ,or button element to create a handy standalone component or for form building.</p>
+                  
+                  <!-- Copy div.ui-element-container template for next UI-Element variation -->
 
-                        <!-- UI-Element is to go below -->
-                        <!-- Whatever the UI-Element is, give it a class of .ui-element -->
-                        <div class="inputBlock ui-element">
-                            <label for="" class="inputBlock__label">Left addon</label>
-                            <div class="control__container inputBlock--lg">
-                                <span class="inputBlock__addOn inputBlock--addOnLeft">@</span>
-                                <input type="text" class="inputBlock__control control--rtRadius"  placeholder="Avatar Name">
-                            </div>
-                        </div>
+                  <div class="ui-element-container">
+                    <h3 class="ui-element-heading">Basic Input Group with Addon</h3>
+                    <p class="ui-element-description">The standard input group contains a label and addon. The addon can be placed on the left, right  or both sides of the input.</p>
 
+                    <div class="grid">
+                      <div class="col-xs col-sm-12 col-md-4">
                         <div class="inputBlock ui-element">
-                            <label for="" class="inputBlock__label">Right addon</label>
-                            <div class="control__container inputBlock--lg">
-                                <input type="text" class="inputBlock__control control--lftRadius" placeholder="username">
-                                <span class="inputBlock__addOn inputBlock--addOnRight">github.com</span>
-                            </div>
-                        </div>
-
-                        <div class="inputBlock ui-element">
-                            <label for="" class="inputBlock__label">Both-sided addon</label>
-                            <div class="control__container inputBlock--lg">
-                                <span class="inputBlock__addOn inputBlock--addOnLeft">$</span>
-                                <input type="text" class="inputBlock__control" placeholder="">
-                                <span class="inputBlock__addOn inputBlock--addOnRight">.00</span>
-                            </div>
+                          <label for="" class="inputBlock__label">Left addon</label>
+                          <div class="control__container inputBlock--lg">
+                            <span class="inputBlock__addOn inputBlock--addOnLeft">@</span>
+                            <input type="text" class="inputBlock__control control--rtRadius"  placeholder="Avatar Name">
+                          </div>
                         </div>
                         
-                        <button class="btn-full-width">Show markup</button>
-                        <div class="show-markup">
-                            <pre class="language-markup">
-                                <code>
-                                    &lt;div class="inputBlock">
-                                        &lt;label for="" class="inputBlock__label">Left addon&lt;/label>
-                                        &lt;div class="control__container inputBlock--md">
-                                          &lt;span class="inputBlock__addOn inputBlock--addOnLeft">@&lt;/span>
-                                          &lt;input type="text" class="inputBlock__control control--rtRadius"  placeholder="Avatar Name">
-                                        &lt;/div>
-                                    &lt;/div>
-
-                                    &lt;div class="inputBlock">
-                                        &lt;label for="" class="inputBlock__label">Right addon&lt;/label>
-                                        &lt;div class="control__container inputBlock--md">
-                                            &lt;input type="text" class="inputBlock__control control--lftRadius" placeholder="username">
-                                             &lt;span class="inputBlock__addOn inputBlock--addOnRight">github.com&lt;/span>
-                                        &lt;/div>
-                                    &lt;/div>
-
-                                    &lt;div class="inputBlock">
-                                        &lt;label for="" class="inputBlock__label">Both-sided addon&lt;/label>
-                                        &lt;div class="control__container inputBlock--md">
-                                            &lt;span class="inputBlock__addOn inputBlock--addOnLeft">$&lt;/span>
-                                            &lt;input type="text" class="inputBlock__control" placeholder="">
-                                            &lt;span class="inputBlock__addOn inputBlock--addOnRight">.00&lt;/span>
-                                        &lt;/div>
-                                    &lt;/div>
-                                </code>
-                            </pre>
+                      </div>
+                      <div class="col-xs col-sm-12 col-md-4">
+                        <div class="inputBlock ui-element">
+                          <label for="" class="inputBlock__label">Right addon</label>
+                          <div class="control__container inputBlock--lg">
+                            <input type="text" class="inputBlock__control control--lftRadius" placeholder="username">
+                            <span class="inputBlock__addOn inputBlock--addOnRight">github.com</span>
+                          </div>
                         </div>
+                        
+                      </div>
+                      <div class="col-xs col-sm-12 col-md-4">
+                        <div class="inputBlock ui-element">
+                          <label for="" class="inputBlock__label">Both-sided addon</label>
+                          <div class="control__container inputBlock--lg">
+                            <span class="inputBlock__addOn inputBlock--addOnLeft">$</span>
+                            <input type="text" class="inputBlock__control" placeholder="">
+                            <span class="inputBlock__addOn inputBlock--addOnRight">.00</span>
+                          </div>
+                        </div>
+                        
+                      </div>
                     </div>
-                    <div class="ui-element-container">
-                        <h3 class="ui-element-heading">Sizes</h3>
-                        <p class="ui-element-description">Inputs groups can be either small, medium or large.</p>
 
+
+                    
+                    <button class="btn-full-width">Show markup</button>
+                    <div class="show-markup">
+                      <pre class="language-markup">
+                        <code>
+                          &lt;div class="inputBlock">
+                            &lt;label for="" class="inputBlock__label">Left addon&lt;/label>
+                            &lt;div class="control__container inputBlock--md">
+                              &lt;span class="inputBlock__addOn inputBlock--addOnLeft">@&lt;/span>
+                              &lt;input type="text" class="inputBlock__control control--rtRadius"  placeholder="Avatar Name">
+                            &lt;/div>
+                          &lt;/div>
+
+                          &lt;div class="inputBlock">
+                            &lt;label for="" class="inputBlock__label">Right addon&lt;/label>
+                            &lt;div class="control__container inputBlock--md">
+                              &lt;input type="text" class="inputBlock__control control--lftRadius" placeholder="username">
+                              &lt;span class="inputBlock__addOn inputBlock--addOnRight">github.com&lt;/span>
+                            &lt;/div>
+                          &lt;/div>
+
+                          &lt;div class="inputBlock">
+                            &lt;label for="" class="inputBlock__label">Both-sided addon&lt;/label>
+                            &lt;div class="control__container inputBlock--md">
+                              &lt;span class="inputBlock__addOn inputBlock--addOnLeft">$&lt;/span>
+                              &lt;input type="text" class="inputBlock__control" placeholder="">
+                              &lt;span class="inputBlock__addOn inputBlock--addOnRight">.00&lt;/span>
+                            &lt;/div>
+                          &lt;/div>
+                        </code>
+                      </pre>
+                    </div>
+                  </div>
+                  
+                  <div class="ui-element-container">
+                    <h3 class="ui-element-heading">Sizes</h3>
+                    <p class="ui-element-description">Inputs groups can be either small, medium or large.</p>
+
+                    <div class="grid">
+                      <div class="col-xs col-sm-12 col-md-4">
                         <div class="inputBlock ui-element">
                           <label for="" class="inputBlock__label">Small - <em>inputBlock--sm</em></label>
                           <div class="control__container inputBlock--sm">
@@ -1343,7 +1356,9 @@
                             <input type="text" class="inputBlock__control control--rtRadius"  placeholder="Avatar Name">
                           </div>
                         </div>
+                      </div>
 
+                      <div class="col-xs col-sm-12 col-md-4">
                         <div class="inputBlock ui-element">
                           <label for="" class="inputBlock__label">Medium - <em>inputBlock--md</em></label>
                           <div class="control__container inputBlock--md">
@@ -1351,7 +1366,9 @@
                             <span class="inputBlock__addOn inputBlock--addOnRight">@github.com</span>
                           </div>
                         </div>
+                      </div>
 
+                      <div class="col-xs col-sm-12 col-md-4">
                         <div class="inputBlock ui-element">
                           <label for="" class="inputBlock__label">Large - <em>inputBlock--lg</em></label>
                           <div class="control__container inputBlock--lg">
@@ -1360,42 +1377,50 @@
                             <span class="inputBlock__addOn inputBlock--addOnRight">.00</span>
                           </div>
                         </div>
-                        <button class="btn-full-width">Show markup</button>
-                        <div class="show-markup">
-                          <pre class="language-markup">
-                            <code>
-                              &lt;div class="inputBlock ui-element">
-                                &lt;label for="" class="inputBlock__label">Small - &lt;em>inputBlock--sm&lt;/em>&lt;/label>
-                                &lt;div class="control__container inputBlock--sm">
-                                  &lt;span class="inputBlock__addOn inputBlock--addOnLeft">@&lt;/span>
-                                  &lt;input type="text" class="inputBlock__control control--rtRadius"  placeholder="Avatar Name">
-                                &lt;/div>
-                              &lt;/div>
-
-                              &lt;div class="inputBlock ui-element">
-                                &lt;label for="" class="inputBlock__label">Medium - &lt;em>inputBlock--md&lt;/em>&lt;/label>
-                                &lt;div class="control__container inputBlock--md">
-                                  &lt;input type="text" class="inputBlock__control control--lftRadius" placeholder="username">
-                                  &lt;span class="inputBlock__addOn inputBlock--addOnRight">@github.com&lt;/span>
-                                &lt;/div>
-                              &lt;/div>
-
-                              &lt;div class="inputBlock ui-element">
-                                &lt;label for="" class="inputBlock__label">Large - &lt;em>inputBlock--lg&lt;/em>&lt;/label>
-                                &lt;div class="control__container inputBlock--lg">
-                                  &lt;span class="inputBlock__addOn inputBlock--addOnLeft">$&lt;/span>
-                                  &lt;input type="text" class="inputBlock__control" placeholder="">
-                                  &lt;span class="inputBlock__addOn inputBlock--addOnRight">.00&lt;/span>
-                                &lt;/div>
-                              &lt;/div>
-                            </code>
-                          </pre>
-                        </div>
                       </div>
-                    <div class="ui-element-container">
-                        <h3 class="ui-element-heading">Inset Addons</h3>
-                        <p class="ui-element-description">Addons can also be placed inside the input field.</p>
 
+                    </div>
+
+
+                    <button class="btn-full-width">Show markup</button>
+                    <div class="show-markup">
+                      <pre class="language-markup">
+                        <code>
+                          &lt;div class="inputBlock ui-element">
+                            &lt;label for="" class="inputBlock__label">Small - &lt;em>inputBlock--sm&lt;/em>&lt;/label>
+                            &lt;div class="control__container inputBlock--sm">
+                              &lt;span class="inputBlock__addOn inputBlock--addOnLeft">@&lt;/span>
+                              &lt;input type="text" class="inputBlock__control control--rtRadius"  placeholder="Avatar Name">
+                            &lt;/div>
+                          &lt;/div>
+
+                          &lt;div class="inputBlock ui-element">
+                            &lt;label for="" class="inputBlock__label">Medium - &lt;em>inputBlock--md&lt;/em>&lt;/label>
+                            &lt;div class="control__container inputBlock--md">
+                              &lt;input type="text" class="inputBlock__control control--lftRadius" placeholder="username">
+                              &lt;span class="inputBlock__addOn inputBlock--addOnRight">@github.com&lt;/span>
+                            &lt;/div>
+                          &lt;/div>
+
+                          &lt;div class="inputBlock ui-element">
+                            &lt;label for="" class="inputBlock__label">Large - &lt;em>inputBlock--lg&lt;/em>&lt;/label>
+                            &lt;div class="control__container inputBlock--lg">
+                              &lt;span class="inputBlock__addOn inputBlock--addOnLeft">$&lt;/span>
+                              &lt;input type="text" class="inputBlock__control" placeholder="">
+                              &lt;span class="inputBlock__addOn inputBlock--addOnRight">.00&lt;/span>
+                            &lt;/div>
+                          &lt;/div>
+                        </code>
+                      </pre>
+                    </div>
+                  </div>
+
+                  <div class="ui-element-container">
+                    <h3 class="ui-element-heading">Inset Addons</h3>
+                    <p class="ui-element-description">Addons can also be placed inside the input field.</p>
+                    
+                    <div class="grid">
+                      <div class="col-xs col-sm-12 col-md-4">
                         <div class="inputBlock ui-element">
                           <label for="" class="inputBlock__label"></em></label>
                           <div class="control__container inputBlock--lg">
@@ -1403,7 +1428,8 @@
                             <input type="email" class="inputBlock__control"  placeholder="Email">
                           </div>
                         </div>
-
+                      </div>
+                      <div class="col-xs col-sm-12 col-md-4">
                         <div class="inputBlock ui-element">
                           <label for="" class="inputBlock__label"></em></label>
                           <div class="control__container inputBlock--lg">
@@ -1411,7 +1437,8 @@
                             <input type="text" class="inputBlock__control" placeholder="Feedback">
                           </div>
                         </div>
-                        
+                      </div>
+                      <div class="col-xs col-sm-12 col-md-4">
                         <div class="inputBlock ui-element">
                           <label for="" class="inputBlock__label"></em></label>
                           <div class="control__container inputBlock--lg">
@@ -1419,38 +1446,92 @@
                             <input type="tel" class="inputBlock__control" placeholder="Telephone">
                           </div>
                         </div>
-                        
-                        <button class="btn-full-width">Show markup</button>
-                        <div class="show-markup">
-                          <pre class="language-markup">
-                            <code>
-                              &lt;div class="inputBlock ui-element">
-                                &lt;label for="" class="inputBlock__label">&lt;/em>&lt;/label>
-                                &lt;div class="control__container inputBlock--lg">
-                                  &lt;span class="inputBlock__insetAddon">✉&lt;/span>
-                                  &lt;input type="email" class="inputBlock__control"  placeholder="Email">
-                                &lt;/div>
-                              &lt;/div>
+                      </div>
 
-                              &lt;div class="inputBlock ui-element">
-                                &lt;label for="" class="inputBlock__label">&lt;/em>&lt;/label>
-                                &lt;div class="control__container inputBlock--lg">
-                                  &lt;span class="inputBlock__insetAddon">✎&lt;/span>
-                                  &lt;input type="text" class="inputBlock__control" placeholder="Feedback">
-                                &lt;/div>
-                              &lt;/div>
-                              
-                              &lt;div class="inputBlock ui-element">
-                                &lt;label for="" class="inputBlock__label">&lt;/em>&lt;/label>
-                                &lt;div class="control__container inputBlock--lg">
-                                  &lt;span class="inputBlock__insetAddon">✆&lt;/span>
-                                  &lt;input type="tel" class="inputBlock__control" placeholder="Telephone">
-                                &lt;/div>
-                              &lt;/div>
-                            </code>
-                          </pre>
-                        </div>
                     </div>
+
+                    
+                    
+                    <button class="btn-full-width">Show markup</button>
+                    <div class="show-markup">
+                      <pre class="language-markup">
+                        <code>
+                          &lt;div class="inputBlock ui-element">
+                            &lt;label for="" class="inputBlock__label">&lt;/em>&lt;/label>
+                            &lt;div class="control__container inputBlock--lg">
+                              &lt;span class="inputBlock__insetAddon">✉&lt;/span>
+                              &lt;input type="email" class="inputBlock__control"  placeholder="Email">
+                            &lt;/div>
+                          &lt;/div>
+
+                          &lt;div class="inputBlock ui-element">
+                            &lt;label for="" class="inputBlock__label">&lt;/em>&lt;/label>
+                            &lt;div class="control__container inputBlock--lg">
+                              &lt;span class="inputBlock__insetAddon">✎&lt;/span>
+                              &lt;input type="text" class="inputBlock__control" placeholder="Feedback">
+                            &lt;/div>
+                          &lt;/div>
+                          
+                          &lt;div class="inputBlock ui-element">
+                            &lt;label for="" class="inputBlock__label">&lt;/em>&lt;/label>
+                            &lt;div class="control__container inputBlock--lg">
+                              &lt;span class="inputBlock__insetAddon">✆&lt;/span>
+                              &lt;input type="tel" class="inputBlock__control" placeholder="Telephone">
+                            &lt;/div>
+                          &lt;/div>
+                        </code>
+                      </pre>
+                    </div>
+                  </div>
+
+                  <div class="ui-element-container">
+                    <h3 class="ui-element-heading">With Buttons</h3>
+                    <p class="ui-element-description">The addon can also be replaced with a button for immediate action.</p>
+
+                    <div class="grid">
+                      <div class="col-xs col-sm-6">
+                        <div class="inputBlock ui-element">
+                          <label for="" class="inputBlock__label"></em></label>
+                          <div class="control__container inputBlock--md">
+                            <button class="inputBlock__button">Send!</button>
+                            <input type="email" class="inputBlock__control"  placeholder="Email">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs col-sm-6">
+                        <div class="inputBlock ui-element">
+                          <label for="" class="inputBlock__label"></em></label>
+                          <div class="control__container inputBlock--md">
+                            <input type="text" class="inputBlock__control" placeholder="Your thoughts...">
+                            <button class="inputBlock__button inputBlock__buttonRt">Feedback!</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <button class="btn-full-width">Show markup</button>
+                    <div class="show-markup">
+                      <pre class="language-markup">
+                        <code>
+                          &lt;div class="inputBlock">
+                            &lt;label for="" class="inputBlock__label">&lt;/em>&lt;/label>
+                            &lt;div class="control__container inputBlock--lg">
+                              &lt;button class="inputBlock__button">Send!&lt;/button>
+                              &lt;input type="email" class="inputBlock__control"  placeholder="Email">
+                            &lt;/div>
+                          &lt;/div>
+
+                          &lt;div class="inputBlock">
+                            &lt;label for="" class="inputBlock__label">&lt;/em>&lt;/label>
+                            &lt;div class="control__container inputBlock--lg">
+                              &lt;input type="text" class="inputBlock__control" placeholder="Your thoughts...">
+                              &lt;button class="inputBlock__button inputBlock__buttonRt">Feedback!&lt;/button>
+                            &lt;/div>
+                          &lt;/div> 
+                        </code>
+                      </pre>
+                    </div>
+                  </div>
                   <!-- Paste div.ui-element-container template for next UI-Element variation -->
                 </section>
             </div>
