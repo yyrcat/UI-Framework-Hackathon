@@ -5,10 +5,10 @@
 }
 
  
-img {
+/*img {
   width: 100%;
 }
-
+*/
 
 .grid > [class^="pil"] {
   min-height: 1px;
