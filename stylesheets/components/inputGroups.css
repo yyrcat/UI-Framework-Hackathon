@@ -6,7 +6,7 @@
 
 .inputBlock__label {
   margin-bottom: 8px;
-  color: #62652a;
+  color: #7d95ab;
 }
 
 .inputBlock__label > em {
@@ -128,3 +128,36 @@
   color: #c3ced9;
   border-radius: 3px;
 }
+
+/*Input block with button addon*/
+.inputBlock__button {
+  border: none;
+  height: 100%;
+  padding: 0 12px;
+  border: 1px solid #E1EDF0;
+  border-radius: 3px 0 0 3px;
+  border-right: none;
+  background: #c3ced9;
+  color: #fff;
+  font-size: .9rem;
+  -webkit-transition: background .5s ease-in-out, color .5s;
+}
+
+.inputBlock__button:focus {
+  outline: none;
+}
+
+.inputBlock__button:hover {
+  background: #51d0ef;
+  color: #fff;
+  cursor: pointer;
+}
+
+.inputBlock__buttonRt {
+  border-radius: 0 3px 3px 0;
+  border-left: none;
+}
+.inputBlock__button + .inputBlock__control {
+  border-radius: 0 3px 3px 0;
+}
+
