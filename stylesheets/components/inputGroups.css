@@ -5,7 +5,7 @@
 }
 
 .inputBlock__label {
-  margin-bottom: 8px;
+  padding-bottom: 8px;
   color: #7d95ab;
 }
 
@@ -14,7 +14,7 @@
   padding: 0 2px;
 }
 
-.control__container {
+.input__container {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -33,7 +33,7 @@
   padding-left: 8px;
 }
 
-/*Placeholder color*/
+/*Placeholder color inside input*/
 .inputBlock__control::-webkit-input-placeholder {
   color: #c3ced9;
 }
@@ -53,6 +53,7 @@
   border-radius: 0 3px 3px 0;
 }
 
+/*Input Addon*/
 .inputBlock__addOn {
   height: 100%;
   padding: 0 10px;
@@ -60,6 +61,7 @@
   border-radius: 3px;
   background: #c3ced9;
   color: #fff;
+  position: relative;
 }
 
 .inputBlock--addOnLeft {
@@ -78,7 +80,7 @@
   outline: none;
 }
 
-/*Small Input*/
+/*Small Input and relavent positioning.*/
 .inputBlock--sm {
   height: 28px;
 }
@@ -90,7 +92,7 @@
   font-size: 1.45rem;
 }
 
-/*Medium Input*/
+/*Medium Input and relavent positioning.*/
 .inputBlock--md {
   height: 36px;
 }
@@ -102,7 +104,7 @@
   font-size: 1.5rem;
 }
 
-/*Large Input*/
+/*Large Input and relavent positioning.*/
 .inputBlock--lg {
   height: 45px;
 }
@@ -161,3 +163,93 @@
   border-radius: 0 3px 3px 0;
 }
 
+/*Input block with checkbox and radio button.*/
+
+.inputBlock__addOn > input[type=checkbox],
+.inputBlock__addOn > input[type=radio] {
+  opacity: 0;
+  margin: 0 6px;
+}
+
+label.inputBlock__addOn {
+  cursor: pointer;
+} 
+
+.inputBlock--sm .checkbox--addOn1,
+.inputBlock--sm .checkbox--addOn2,
+.inputBlock--sm .radio--addOn1 {
+  top: 4px;
+  left: 14px;
+  font-size: 1.1rem;
+}
+.inputBlock--sm .radio--addOn2 {
+  top: 8px;
+  left: 17.5px;
+  font-size: .65rem;
+}
+.inputBlock--md .checkbox--addOn1,
+.inputBlock--md .checkbox--addOn2,
+.inputBlock--md .radio--addOn1 {
+  top: 7px;
+  left: 12px;
+  font-size: 1.25rem;
+}
+.inputBlock--md .radio--addOn2 {
+  top: 12px;
+  left: 16px;
+  font-size: .75rem;
+}
+.checkbox--addOn1,
+.checkbox--addOn2,
+.radio--addOn1,
+.radio--addOn2 {
+  position: absolute;
+  top: 10px;
+  left: 25%;
+  font-size: 1.45rem;
+}
+
+.checkbox--addOn1,
+.checkbox--addOn2 {
+  -webkit-transition: transform 1s, color 2s;
+}
+.radio--addOn1,
+.radio--addOn2 {
+  -webkit-transition: transform .5s, color 1s;
+}
+
+.checkbox--addOn1 {
+  color: grey;
+  transform: rotateY(-180deg);
+}
+.checkbox--addOn2 {
+  color: #FAFCFF; 
+  transform: rotateY(180deg);
+}
+.radio--addOn1 {
+  color: #FAFCFF;
+}
+.radio--addOn2 {
+  font-size: .75rem;
+  top: 16.45px;
+  left: 16.5px;
+  color: grey;
+}
+
+
+.inputBlock__addOn > input[type=checkbox]:checked + .checkbox--addOn1 {
+  color: #eb72a9;
+  transform: rotateX(-180deg);
+}
+.inputBlock__addOn > input[type=checkbox]:checked ~ .checkbox--addOn2 {
+  color: #51d0ef;
+  transform: rotateX(-180deg);
+}
+.inputBlock__addOn > input[type=radio]:checked + .radio--addOn1 {
+  color: #eb72a9;
+  transform: rotateX(360deg);
+}
+.inputBlock__addOn > input[type=radio]:checked ~ .radio--addOn2 {
+  color: #51d0ef;
+  transform: rotateX(360deg);
+}
