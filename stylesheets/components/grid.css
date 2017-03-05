@@ -7,20 +7,20 @@
  
 /*img {
   width: 100%;
-}
-*/
+}*/
 
-.grid > [class^="pil"] {
+
+.grid > [class^="pillar"] {
   min-height: 1px;
   margin-right: 2%;
   float: left;
 }
 
-.grid > [class^="pil"]:first-child {
+.grid > [class^="pillar"]:first-child {
   margin-left: 0;
 }
 
-.grid > [class^="pil"]:last-child {
+.grid > [class^="pillar"]:last-child {
   margin-right: 0;
 }
 
@@ -33,11 +33,10 @@
 }
 
 @media (max-width: 599px) {
-  .pillar-xs {
+  .grid > [class^="pillar"] {
     width: 100%;
   }
 }
-
 
 @media  (min-width: 600px)  {
   
@@ -194,9 +193,9 @@
   
 }
 
-/*@media (min-width: 1800px) {
+@media (min-width: 1800px) {
   
-}*/
+}
 
 .group:after, .grid:after {
   content: "";
