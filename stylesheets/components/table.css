@@ -11,7 +11,7 @@
 }
 /*table header with price*/
 .tb-header-price {
-  padding: 0 16px;
+  padding: 32px 16px 0;
   font-size:48px;
 }
 .tb-header-type:nth-child(2) {
@@ -33,7 +33,7 @@
 }
 /*table header with date*/
 .tb-header-period {
-  padding:0 0 16px 0;
+  padding:0 0 32px 0;
 }
 
 .tb-body td,
