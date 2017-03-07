@@ -16,6 +16,7 @@
 @import url("components/accordion.css");
 @import url("components/inputGroups.css");
 @import url("components/grid.css");
+@import url("components/typography.css");
 
 * {
   box-sizing: border-box;
@@ -394,10 +395,10 @@ footer .sitemap, footer .social, footer .develop__title, footer .develop__profil
 .show-markup {
   transition: opacity 1s, height 1s;
   transition-timing-function: ease-out;
-  opacity: 0; 
+  opacity: 0;
   height: 0;
   overflow: hidden;
-} 
+}
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"]  {
