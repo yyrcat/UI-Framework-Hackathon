@@ -1,0 +1,31 @@
+.breadcrumb {
+  padding: 10px 5px;
+}
+
+.breadcrumb__el {
+  color: #879eb2;
+  display: inline;
+}
+
+.breadcrumb__el+.breadcrumb__el:before {
+    padding: 8px;
+    color: #eb74aa;
+    font-family: FontAwesome;
+    content: "\f0da";
+}
+
+.breadcrumb__link {
+  color: #51d0ef;
+  text-decoration: none;
+}
+
+.breadcrumb__link:hover {
+  font-weight: bolder;
+}
+
+.breadcrumb__el:hover~.breadcrumb__el:before {
+    padding: 8px;
+    color: #879eb2;
+    font-family: FontAwesome;
+    content: "\f0da";
+}
