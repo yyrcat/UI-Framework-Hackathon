@@ -9,7 +9,7 @@
 .tabs {
   position: relative;
   width: 40rem;
-  min-height: 17rem;
+  height: 19rem;
   margin: 2rem auto;
   border-left: 1px solid #f5f7fb;
 }
@@ -21,6 +21,7 @@
   top: 0;
   left: 0;
   padding: .5rem 2rem;
+  margin:3rem 0 0 0;
   min-height: 12rem;
   background: #fff;
 }
@@ -130,7 +131,7 @@
   position:absolute;
   top:-3px;
   right:-1.5px;
-  border-top:1.8rem solid #F3F5F6;
+  border-top:1.8rem solid #fff;
   border-right:.5rem solid transparent;
   border-left:.5rem solid transparent;
 }
