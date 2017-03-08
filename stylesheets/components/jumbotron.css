@@ -3,11 +3,21 @@
     color: #32383E;
 }
 
+form {
+    width: 100%;
+}
+
 .jumbotron .display {
     font-size: 4.5rem;
     height: 80px;
     text-align: center;
 }
+
+.jumbotron2 .display, .jumbotron2 .location{
+    color: #F7F7F7;
+}
+
+
 
 .jumbotron .location {
     text-align: center;
@@ -16,11 +26,16 @@
 }
 
 .jumbotron {
-    margin: 0 auto;
+    margin: 10px auto;
     width: 600px;
     height: 300px;
     border-radius: 5px;
     box-shadow: 0px 10px 24px 0px rgba(68, 68, 68, 0.1);
+}
+
+.jumbotron2 {
+    background: #00ff00 url("https://static.pexels.com/photos/23049/pexels-photo.jpg") no-repeat fixed;
+    background-size: auto;
 }
 
 .jumbotron .lead {
@@ -29,11 +44,23 @@
     text-align: center;
 }
 
+.jumbotron2 .lead {
+    color: #F7F7F7;
+}
+
 .jumbotron .line {
     border: 1px solid #51D0EF;
     width: 80%;
     margin: 0 auto;
 }
+
+.jumbotron2 .line {
+    border: 1px solid #324158;
+    width: 80%;
+    margin: 0 auto; 
+}
+
+
 
 .jumbotron .btn-default {
     height: 45px;
@@ -52,6 +79,30 @@
     box-shadow: 0px 3px 5px 0px rgba(204, 204, 204, 1);
 }
 
+.jumbotron2 .btn-default {
+    height: 45px;
+    width: 157px;
+    padding: 15px 34px;
+    margin: 15px auto;
+    display: block;
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+    background-color: #324158;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
 .jumbotron .btn-primary {
     background: #51d0ef;
 }
+
+.jumbotron2 .btn-primary {
+    background-color: #324158;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+
