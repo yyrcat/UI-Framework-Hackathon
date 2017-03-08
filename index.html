@@ -84,6 +84,161 @@
           </ul>
         </div>
         <div class="col10">
+
+          <section id="ui-element-grid" class="ui-element-main">
+            <h1 class="main-ui-heading">12 Column Grid System</h1>
+            <p class="main-element-description">Here is a 12 Column responsive grid system.</p>
+            <div class="ui-element-container">
+              <h3 class="ui-element-heading">Responsive Grid</h3>
+              <p class="ui-element-description">The 12 pillar grid is a fluid percentage based system with a 2% margin between each pillar.</p>
+              <p class="ui-element-description">The grid has responsive break points at common screen sizes of <em class="emphasis">600px</em>, <em class="emphasis">900px</em>,and <em class="emphasis">1200px</em>. Screen sizes below 600px default to horizontal layout.</p>
+              <div class="table-container">
+                <table class="grid-table">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Extra Small Screen <br> <em>{max-width: 600px}</em> </th>
+                      <th>Small Screens <br> <em>{min-width: 600px}</em></th>
+                      <th>Medium Screens <br> <em>{min-width: 900px}</em></th>
+                      <th>Large Screens <br> <em>{min-width: 1200px}</em></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>Grid Behaviour</th>
+                      <td>Horizontal below 600px</td>
+                      <td colspan="3">Determined by assigned class.</td>
+                    </tr>
+                    <tr>
+                      <th>Class Prefix</th>
+                      <td>.pillar-xs-#</td>
+                      <td>.pillar-sm-#</td>
+                      <td>.pillar-md-#</td>
+                      <td>.pillar-lg-#</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="grid-container">
+                <div class="grid">
+                  <div class="pillar-md-12 pillar-sm-12">pillar-sm-12 pillar-md-12</div>
+                </div>
+                <div class="grid">
+                  <div class="pillar-sm-11 pillar-md-11">pillar-sm-11 pillar-md-11</div>
+                  <div class="pillar-sm-1 pillar-md-1">sm-1 md-1</div>
+                </div>
+                <div class="grid">
+                  <div class="pillar-sm-10 pillar-md-10">pillar-sm-10 pillar-md-10</div>
+                  <div class="pillar-sm-2 pillar-md-2">pillar-sm-2 pillar-md-2</div>
+                </div>
+                <div class="grid">
+                  <div class="pillar-sm-9 pillar-md-9">pillar-sm-9 pillar-md-9</div>
+                  <div class="pillar-sm-3 pillar-md-3">pillar-sm-3 pillar-md-3</div>
+                </div>
+                <div class="grid">
+                  <div class="pillar-sm-8 pillar-md-8">pillar-sm-8 pillar-md-8</div>
+                  <div class="pillar-sm-4 pillar-md-4">pillar-sm-4 pillar-md-4</div>
+                </div>
+                <div class="grid">
+                  <div class="pillar-sm-7 pillar-md-7">pillar-sm-7 pillar-md-7</div>
+                  <div class="pillar-sm-5 pillar-md-5">pillar-sm-5 pillar-md-5</div>
+                </div>
+                <div class="grid">
+                  <div class="pillar-sm-6 pillar-md-6">pillar-sm-6 pillar-md-6</div>
+                  <div class="pillar-sm-6 pillar-md-6">pillar-sm-6 pillar-md-6</div>
+                </div>
+              </div>
+              <button class="btn-full-width">Show markup</button>
+              <div class="show-markup">
+                <pre class="language-markup">
+                  <code>
+                    &lt;div class="grid">
+                      &lt;div class="pillar-md-12 pillar-sm-12">pillar-sm-12 pillar-md-12&lt;/div>
+                    &lt;/div>
+                    &lt;div class="grid">
+                      &lt;div class="pillar-sm-11 pillar-md-11">pillar-sm-11 pillar-md-11&lt;/div>
+                      &lt;div class="pillar-sm-1 pillar-md-1">sm-1 md-1&lt;/div>
+                    &lt;/div>
+                    &lt;div class="grid">
+                      &lt;div class="pillar-sm-10 pillar-md-10">pillar-sm-10 pillar-md-10&lt;/div>
+                      &lt;div class="pillar-sm-2 pillar-md-2">pillar-sm-2 pillar-md-2&lt;/div>
+                    &lt;/div>
+                    &lt;div class="grid">
+                      &lt;div class="pillar-sm-9 pillar-md-9">pillar-sm-9 pillar-md-9&lt;/div>
+                      &lt;div class="pillar-sm-3 pillar-md-3">pillar-sm-3 pillar-md-3&lt;/div>
+                    &lt;/div>
+                    &lt;div class="grid">
+                      &lt;div class="pillar-sm-8 pillar-md-8">pillar-sm-8 pillar-md-8&lt;/div>
+                      &lt;div class="pillar-sm-4 pillar-md-4">pillar-sm-4 pillar-md-4&lt;/div>
+                    &lt;/div>
+                    &lt;div class="grid">
+                      &lt;div class="pillar-sm-7 pillar-md-7">pillar-sm-7 pillar-md-7&lt;/div>
+                      &lt;div class="pillar-sm-5 pillar-md-5">pillar-sm-5 pillar-md-5&lt;/div>
+                    &lt;/div>
+                    &lt;div class="grid">
+                      &lt;div class="pillar-sm-6 pillar-md-6">pillar-sm-6 pillar-md-6&lt;/div>
+                      &lt;div class="pillar-sm-6 pillar-md-6">pillar-sm-6 pillar-md-6&lt;/div>
+                    &lt;/div>
+                  </code>
+                </pre>
+              </div>
+            </div>
+
+            <div class="ui-element-container">
+              <h3 class="ui-element-heading">Grid Offsets</h3>
+              <p class="ui-element-description">If the grid requires spacing on the left side of the row, a <em class="emphasis">.space-#</em> class with the pillar amount can be specified.</p>
+              <p class="ui-element-description">Only the left side is specified as all pillars float left. If a right spacing is required, simply specify the pillar spacing to the left and the remainder on the right will remain open.</p>
+
+              <div class="offsetGrid-container">
+                <div class="grid">
+                  <div class="space-2 pillar-sm-2 pillar-md-2">space-2 pillar-sm-2 pillar-md-2</div>
+                  <div class="space-4 pillar-sm-2 pillar-md-2">space-4 pillar-sm-2 pillar-md-2</div>
+                </div>
+                <div class="grid">
+                  <div class="space-4 pillar-sm-4 pillar-md-4">space-4 pillar-sm-4 pillar-md-4</div>
+                </div>
+                <div class="grid">
+                  <div class="space-1 pillar-sm-2 pillar-md-2">space-1 pillar-sm-2 pillar-md-2</div>
+                  <div class="space-6 pillar-sm-2 pillar-md-2">space-6 pillar-sm-2 pillar-md-2</div>
+                </div>
+                 <div class="grid">
+                  <div class="space-3 pillar-sm-2 pillar-md-2">space-3 pillar-sm-2 pillar-md-2</div>
+                  <div class="space-2 pillar-sm-2 pillar-md-2">space-2 pillar-sm-2 pillar-md-2</div>
+                </div>
+                <div class="grid">
+                  <div class="space-5 pillar-sm-2 pillar-md-2">space-5 pillar-sm-2 pillar-md-2</div>
+                </div>
+              </div>
+              <button class="btn-full-width">Show markup</button>
+              <div class="show-markup">
+                <pre class="language-markup">
+                  <code>
+                    &lt;div class="grid">
+                      &lt;div class="space-2 pillar-sm-2 pillar-md-2">space-2 pillar-sm-2 pillar-md-2&lt;/div>
+                      &lt;div class="space-4 pillar-sm-2 pillar-md-2">space-4 pillar-sm-2 pillar-md-2&lt;/div>
+                    &lt;/div>
+                    &lt;div class="grid">
+                      &lt;div class="space-4 pillar-sm-4 pillar-md-4">space-4 pillar-sm-4 pillar-md-4&lt;/div>
+                    &lt;/div>
+                    &lt;div class="grid">
+                      &lt;div class="space-1 pillar-sm-2 pillar-md-2">space-1 pillar-sm-2 pillar-md-2&lt;/div>
+                      &lt;div class="space-6 pillar-sm-2 pillar-md-2">space-6 pillar-sm-2 pillar-md-2&lt;/div>
+                    &lt;/div>
+                    &lt;div class="grid">
+                      &lt;div class="space-3 pillar-sm-2 pillar-md-2">space-3 pillar-sm-2 pillar-md-2&lt;/div>
+                      &lt;div class="space-2 pillar-sm-2 pillar-md-2">space-2 pillar-sm-2 pillar-md-2&lt;/div>
+                    &lt;/div>
+                    &lt;div class="grid">
+                      &lt;div class="space-5 pillar-sm-2 pillar-md-2">space-5 pillar-sm-2 pillar-md-2&lt;/div>
+                    &lt;/div> 
+                  </code>
+                </pre>
+              </div>
+            </div>
+            <!-- Paste div.ui-element-container template for next UI-Element variation -->
+          </section>
+
+
           <section class="ui-element-main" id="ui-element-button">
             <h1 class="main-ui-heading">Buttons</h1>
             <p class="main-element-description">Commonly used buttons</p>
