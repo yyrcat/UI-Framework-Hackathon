@@ -41,7 +41,7 @@ select {
     height: 45px;
     margin-bottom: 13px;
     padding: 2px 0 0 42px;
-    width: 100%;
+    width: 35%;
 }
 
 .formStyleTwo input {
@@ -77,7 +77,7 @@ select {
 
 .birthday-container {
     height: 50px;
-    width: 100%;
+    width: 35%;
 }
 
 .birthday {
@@ -124,8 +124,9 @@ select {
 
 .select-container {
     position: relative;
-    width: 33.33%;
+    width: 33.3%;
 }
+
 
 .select-container:nth-child(2) {
     margin: 0 12px;
@@ -161,6 +162,9 @@ input[type="color" i][list] {
     border-width: 1px;
 }
 
+.dateyear, .datemonth, .dateday {
+    cursor: pointer;
+}
 
 /**Signup Button**/
 
@@ -174,7 +178,7 @@ input[type="color" i][list] {
     margin: 10px 0 10px 0;
     text-align: center;
     text-transform: uppercase;
-    width: 100%;
+    width: 35%;
 }
 
 .formStyleTwo .btn {
