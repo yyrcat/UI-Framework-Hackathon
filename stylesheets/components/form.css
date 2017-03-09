@@ -12,7 +12,7 @@ h3 {
 /*** Form ****/
 
 form {
-    width: 325px;
+    width: 35%;
 
 }
 
@@ -29,6 +29,17 @@ select {
     margin-bottom: 0;
 }
 
+.formContainerOne {
+    width: 100%;
+    height: 100%;
+}
+
+.formStyleOne, .formStyleTwo {
+    width: 35%;
+    margin: 0 auto;
+}
+
+
 /*** Input and Icons ***/
 
 .formInput>input {
@@ -44,9 +55,27 @@ select {
     width: 100%;
 }
 
+.formStyleTwo input {
+    background-color: #ddd;
+    border: 1px solid #9CA8BA;
+    color: black;
+    border-radius: 0px;
+}
+
+.formInput>input:focus { 
+    background-color: transparent;
+    border: 1px solid #51D0EF;
+}
+
+.formStyleTwo textarea:focus,.formStyleTwo input:focus,.formStyleTwo input[type]:focus,.formStyleTwo .uneditable-input:focus {   
+    border-color: #51D0EF;
+    outline: 0 none;
+}
+
 .fa-user,
 .fa-envelope-o,
-.fa-lock {
+.fa-lock,
+.formStyleTwo .fa-phone {
     color: #8392a7;
     font-size: 1.2rem;
     margin-left: 16px;
@@ -106,8 +135,9 @@ select {
 
 .select-container {
     position: relative;
-    width: 33.33%;
+    width: 33.3%;
 }
+
 
 .select-container:nth-child(2) {
     margin: 0 12px;
@@ -143,6 +173,9 @@ input[type="color" i][list] {
     border-width: 1px;
 }
 
+.dateyear, .datemonth, .dateday {
+    cursor: pointer;
+}
 
 /**Signup Button**/
 
@@ -159,10 +192,23 @@ input[type="color" i][list] {
     width: 100%;
 }
 
+.formStyleTwo .btn {
+    background-color: #DDDDDD;
+    border: 1px solid #51D0EF;
+    color: #51D0EF;
+    border-radius: 0px;
+}
+
 .btn:focus {
     outline: none;
 }
 
 .btn:hover {
     cursor: pointer;
+}
+
+.formStyleTwo .btn:hover {
+    cursor: pointer;
+    border: 2px solid #51D0EF;
+    background-color: transparent;
 }

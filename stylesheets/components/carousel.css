@@ -1,219 +1,307 @@
-/* carousel ui element container*/
 #ui-component-carousel .ui-element-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 380px;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 380px;
+  height: 100%;
 }
+
 
 /* carousel ui element*/
+
 #ui-component-carousel .ui-element {
-    position: relative;
-    height: 320px;
-}
-#ui-component-carousel .carousel-wrapper {
-    display: block;
-    background: #FFF;
-    overflow: hidden;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    height: 300px;
-}
-#ui-component-carousel input {
-    visibility: hidden;
-}
-/* carousel */
-#ui-component-carousel .carousel {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 1;
-    z-index: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    transition: transform 1600ms;
-    transform: scale(1);
+  position: relative;
+  height: 320px;
 }
 
-#ui-component-carousel .slide01 {
-    left: 0;
+.carousel-wrapper {
+  display: block;
+  background: #FFF;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 300px;
 }
-#ui-component-carousel .slide02 {
-    left: 100%
+
+#ui-component-carousel input {
+  visibility: hidden;
 }
-#ui-component-carousel .slide03 {
-    left: 200%
+
+
+/* carousel */
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  z-index: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  transition: transform 1600ms;
+  transform: scale(1);
 }
-#ui-component-carousel .carousel > div {
-    text-align: center;
+
+.carousel-variation-01 .slide01 {
+  left: 0;
 }
+
+.carousel-variation-01 .slide02 {
+  left: 100%
+}
+
+.carousel-variation-01 .slide03 {
+  left: 200%
+}
+
+.carousel > div {
+  text-align: center;
+}
+
 
 /* carousel inner slide effect */
-#ui-component-carousel .carousel img {
-    width: 100%;
+
+.carousel img {
+  width: 100%;
 }
 
-/* Next and Previous arrow */ 
-#ui-component-carousel .control {
-    position: absolute;
-    top: 50%;
-    width: 50px;
-    height: 50px;
-    margin-top: -25px;
-    z-index: 55;
+
+/* Next and Previous arrow */
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  z-index: 55;
 }
-#ui-component-carousel .control label {
-    z-index: 0;
-    display: none;
-    text-align: center;
-    line-height: 50px;
-    background: #333;
-    border-radius: 30px;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    opacity: 0.7;
+
+.carousel-control label {
+  z-index: 0;
+  display: none;
+  text-align: center;
+  line-height: 50px;
+  background: #333;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  opacity: 0.7;
 }
-#ui-component-carousel .control label:hover {
-    opacity: 1;
+
+.carousel-control label:hover {
+  opacity: 1;
 }
-#ui-component-carousel .next {
-    right: 1%;
+
+.carousel-control-next {
+  right: 1%;
 }
-#ui-component-carousel .previous {
-    left: 1%;
+
+.carousel-control-previous {
+  left: 1%;
 }
+
 
 /* pager for base version */
-.ui-element-variation-01 .carousel-pagination {
-    visibility: hidden;
+
+.carousel-variation-01 .carousel-pagination {
+  visibility: hidden;
 }
+
+
 /* disabled state */
-#ui-component-carousel .slide01-radio1:checked ~ .previous .control01_02,
-#ui-component-carousel .slide01-radio3:checked ~ .next .control01_03  {
-    display: block;
-    opacity: .3;
-    cursor: default;
+
+.slide01-radio1:checked ~ .carousel-control-previous .control01_02,
+.slide01-radio3:checked ~ .carousel-control-next .control01_03 {
+  display: block;
+  opacity: .3;
+  cursor: default;
 }
+
+
 /* carousel Pager arrow event */
-#ui-component-carousel .slide01-radio1:checked ~ .next .control01_02,
-#ui-component-carousel .slide01-radio2:checked ~ .next .control01_03,
-#ui-component-carousel .slide01-radio2:checked ~ .previous .control01_01,
-#ui-component-carousel .slide01-radio3:checked ~ .previous .control01_02 {
-    display: block;
-    z-index: 1
+
+.slide01-radio1:checked ~ .carousel-control-next .control01_02,
+.slide01-radio2:checked ~ .carousel-control-next .control01_03,
+.slide01-radio2:checked ~ .carousel-control-previous .control01_01,
+.slide01-radio3:checked ~ .carousel-control-previous .control01_02 {
+  display: block;
+  z-index: 1
 }
+
+
 /* carousel Pager event */
-#ui-component-carousel .slide01-radio1:checked ~ .carousel-pagination .page1,
-#ui-component-carousel .slide01-radio2:checked ~ .carousel-pagination .page2,
-#ui-component-carousel .slide01-radio3:checked ~ .carousel-pagination .page3 {
-    background: #51d0ef;
+
+.slide01-radio1:checked ~ .carousel-pagination .page1,
+.slide01-radio2:checked ~ .carousel-pagination .page2,
+.slide01-radio3:checked ~ .carousel-pagination .page3 {
+  background: #51d0ef;
 }
+
+
 /* carousel slide effect V1 */
-#ui-component-carousel .slide01-radio1:checked ~ .carousel {
-    transform: translateX(0%);
+
+.slide01-radio1:checked ~ .carousel {
+  transform: translateX(0%);
 }
-#ui-component-carousel .slide01-radio2:checked ~ .carousel {
-    transform: translateX(-100%);
+
+.slide01-radio2:checked ~ .carousel {
+  transform: translateX(-100%);
 }
-#ui-component-carousel .slide01-radio3:checked ~ .carousel {
-    transform: translateX(-200%);
+
+.slide01-radio3:checked ~ .carousel {
+  transform: translateX(-200%);
 }
+
 
 /* pager for cards version */
 
+.carousel-variation-02 .slide01 {
+  left: 184px;
+}
 
-#ui-component-carousel .ui-element-variation-02 .slide01 {
-    left: 184px;
+.carousel-variation-02 .slide02 {
+  left: 100%
 }
-#ui-component-carousel .ui-element-variation-02 .slide02 {
-    left: 100%
+
+.carousel-variation-02 .slide03 {
+  left: 180%
 }
-#ui-component-carousel .ui-element-variation-02 .slide03 {
-    left: 180%
-}
+
 
 /* disabled state */
-#ui-component-carousel .slide02-radio1:checked ~ .previous .control02_02,
-#ui-component-carousel .slide02-radio3:checked ~ .next .control02_03  {
-    display: block;
-    opacity: .3;
-    cursor: default;
+
+.slide02-radio1:checked ~ .carousel-control-previous .control02_02,
+.slide02-radio3:checked ~ .carousel-control-next .control02_03 {
+  display: block;
+  opacity: .3;
+  cursor: default;
 }
+
+
 /* carousel Pager arrow event */
-#ui-component-carousel .slide02-radio1:checked ~ .next .control02_02,
-#ui-component-carousel .slide02-radio2:checked ~ .next .control02_03,
-#ui-component-carousel .slide02-radio2:checked ~ .previous .control02_01,
-#ui-component-carousel .slide02-radio3:checked ~ .previous .control02_02 {
-    display: block;
-    z-index: 1
+
+.slide02-radio1:checked ~ .carousel-control-next .control02_02,
+.slide02-radio2:checked ~ .carousel-control-next .control02_03,
+.slide02-radio2:checked ~ .carousel-control-previous .control02_01,
+.slide02-radio3:checked ~ .carousel-control-previous .control02_02 {
+  display: block;
+  z-index: 1
 }
+
+
 /* carousel Pager event */
-#ui-component-carousel .slide02-radio1:checked ~ .carousel-pagination .page1,
-#ui-component-carousel .slide02-radio2:checked ~ .carousel-pagination .page2,
-#ui-component-carousel .slide02-radio3:checked ~ .carousel-pagination .page3 {
-    background-color: #51d0ef;
+
+.slide02-radio1:checked ~ .carousel-pagination .page1,
+.slide02-radio2:checked ~ .carousel-pagination .page2,
+.slide02-radio3:checked ~ .carousel-pagination .page3 {
+  background-color: #51d0ef;
 }
+
+
 /* carousel slide effect V2 */
-#ui-component-carousel .slide02-radio1:checked ~ .carousel {
-    transform: translateX(0%);
-}
-#ui-component-carousel .slide02-radio2:checked ~ .carousel {
-    transform: translateX(-100%);
-}
-#ui-component-carousel .slide02-radio3:checked ~ .carousel {
-    transform: translateX(-200%);
-}
-#ui-component-carousel .slide02-radio1:checked ~ .carousel,
-#ui-component-carousel .slide02-radio2:checked ~ .carousel,
-#ui-component-carousel .slide02-radio3:checked ~ .carousel {
-    width: 80%;
-    margin-left: -95px;
-    transition: all 0.5s ease;
+
+.slide02-radio1:checked ~ .carousel {
+  transform: translateX(0%);
 }
 
-#ui-component-carousel .slide02-radio1:checked ~ .slide02 img,
-#ui-component-carousel .slide02-radio2:checked ~ .slide01 img,
-#ui-component-carousel .slide02-radio2:checked ~ .slide03 img,
-#ui-component-carousel .slide02-radio3:checked ~ .slide02 img {
-    height: 230px;
-    opacity: .5;
+.slide02-radio2:checked ~ .carousel {
+  transform: translateX(-100%);
 }
 
-/* Slider Pager */ 
+.slide02-radio3:checked ~ .carousel {
+  transform: translateX(-200%);
+}
+
+.slide02-radio1:checked ~ .carousel,
+.slide02-radio2:checked ~ .carousel,
+.slide02-radio3:checked ~ .carousel {
+  width: 80%;
+  margin-left: -95px;
+  transition: all 0.5s ease;
+}
+
+.slide02-radio1:checked ~ .slide02 img,
+.slide02-radio2:checked ~ .slide01 img,
+.slide02-radio2:checked ~ .slide03 img,
+.slide02-radio3:checked ~ .slide02 img {
+  height: 230px;
+  opacity: .5;
+}
+
+
+/*carousel variation 03*/
+
+.carousel-variation-03 {
+  position: absolute;
+  top:30%;
+  left:20%;
+  outline: 1px solid transparent;
+}
+
+.carousel-variation-03:nth-of-type(1),
+#carousel-3d-controller-1:checked ~ .carousel-variation-03:nth-of-type(3),
+#carousel-3d-controller-3:checked ~ .carousel-variation-03:nth-of-type(2) {
+  transform: translateX(-175px) scale(.7);
+  opacity: .9;
+  transition: all 1s cubic-bezier(.48, .16, .15, .98);
+  z-index: 1;
+}
+
+.carousel-variation-03:nth-of-type(2),
+#carousel-3d-controller-1:checked ~ .carousel-variation-03:nth-of-type(1),
+#carousel-3d-controller-3:checked ~ .carousel-variation-03:nth-of-type(3) {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 1s cubic-bezier(.48, .16, .15, .98);
+  z-index: 2;
+}
+
+.carousel-variation-03:nth-of-type(3),
+#carousel-3d-controller-1:checked ~ .carousel-variation-03:nth-of-type(2),
+#carousel-3d-controller-3:checked ~ .carousel-variation-03:nth-of-type(1) {
+  transform: translateX(175px) scale(.7);
+  opacity: .9;
+  transition: all 1s cubic-bezier(.48, .16, .15, .98);
+  z-index: 1;
+}
+
+
+/* Slider Pager */
+
 .carousel-pagination {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    left: 0;
-    text-align: center;
-    z-index: 1000;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  z-index: 1000;
 }
+
 .carousel-pagination label {
-    width: 70px;
-    height: 4px;
-    display: inline-block;
-    background: #f5f7fb;
-    margin: 0 2px;
-    cursor: pointer;
+  width: 70px;
+  height: 4px;
+  display: inline-block;
+  background: #f5f7fb;
+  margin: 0 2px;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 767px) {
-
-    #ui-component-carousel .carousel > div {
-        padding: 0 2%
-    }
-    #ui-component-carousel .control label {
-        font-size: 35px;
-    }
+  #ui-component-carousel .carousel > div {
+    padding: 0 2%
+  }
+  #ui-component-carousel .carousel-control label {
+    font-size: 35px;
+  }
 }
