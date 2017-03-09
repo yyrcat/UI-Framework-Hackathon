@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300|Roboto+Slab:100,300');
 @import url("components/carousel.css");
 @import url("components/button.css");
+@import url("components/breadcrumb.css");
 @import url("components/form.css");
 @import url("components/modal.css");
 @import url("components/pagination.css");
