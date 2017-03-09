@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Components</title>
+  <!-- vendor css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!-- component css  -->
+  <link rel="stylesheet" href="../stylesheets/main.css">
+
+</head>
+<body>
+  <main class="page-content">
+    <section id="ui-component-COMPONENTNAME" class="ui-element-main">
+
+      <h1 class="main-ui-heading">Typography</h1>
+      <p class="main-element-description">The elements used when talk about fonts... and more.</p>
+
+      <!-- Copy div.ui-element-container template for next UI-Element variation -->
+      <div class="ui-element-container">
+        <h3 class="ui-element-heading">Headings</h3>
+        <p class="ui-element-description left-space">Need a title?</p>
+
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+
+        <h3 class="ui-element-heading">Important</h3>
+
+        <p class="important left-space">This could be an important comment.</p>
+
+        <h3 class="ui-element-heading">Underline</h3>
+
+        <p class="underline left-space">Wanna make something clear? Underline the text.</p>
+
+        <h3 class="ui-element-heading">Mark</h3>
+
+        <p class="left-space">You can combine a paragraph that needs to be </p><mark class="left-space">maybe more eye-candy.</mark>
+
+        <h3 class="ui-element-heading">Small</h3>
+
+        <p class="small left-space">Always read the small words.</p>
+
+        <!-- UI-Element is to go below -->
+        <!-- Whatever the UI-Element is, give it a class of .ui-element -->
+        <button class="btn-full-width">Show markup</button>
+        <div class="show-markup">
+          <pre class="language-markup">
+            <code>
+              <!-- Language markup copied from text-editor and place between <code> tags -->
+              <!-- Also, you  need to escape the beginning of the tags (<) with &lt; for the code to display properly like the code below.-->
+
+              <h3 class="ui-element-heading">Headings</h3>
+
+              &lt;h1>Heading 1&lt;/h1>
+              &lt;h2>Heading 2&lt;/h2>
+              &lt;h3>Heading 3&lt;/h3>
+              &lt;h4>Heading 4&lt;/h4>
+              &lt;h5>Heading 5&lt;/h5>
+              &lt;h6>Heading 6&lt;/h6>
+
+              <h3 class="ui-element-heading">Important</h3>
+
+              &lt;p class="important left-space">This could be an important comment.&lt;/p>
+
+              <h3 class="ui-element-heading">Underline</h3>
+
+              &lt;p class="underline left-space">Wanna make something clear? Underline the text.&lt;/p>
+
+              <h3 class="ui-element-heading">Mark</h3>
+
+              &lt;p class="left-space">You can combine a paragraph that needs to be &lt;/p>&lt;mark class="left-space">maybe more eye-candy.&lt;/mark>
+
+              <h3 class="ui-element-heading">Small</h3>
+
+              &lt;p class="small left-space">Always read the small words.&lt;/p>
+            </code>
+          </pre>
+        </div>
+      </div>
+      <!-- Paste div.ui-element-container template for next UI-Element variation -->
+    </section>
+    <!-- If building more then one UI-Element, copy and paste entire section.ui-element-main and go to town!-->
+  </main>
+  <!-- script for code snippets to work. -->
+  <script type="text/javascript" src="../scripts/prism.js"></script>
+  <script type="text/javascript" src="../scripts/markupDropDown.js"></script>
+</body>
+</html>
