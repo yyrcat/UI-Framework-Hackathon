@@ -1,0 +1,52 @@
+.ui-main-navbar {
+  float: right;
+  margin-right: 3em;
+}
+
+.ui-main-navbar__li{
+  display: inline-block;
+  margin: auto 14px 1em;
+}
+
+.ui-main-navbar__li_el {
+  cursor: pointer;
+}
+
+.ui-main-navbar__underline {
+  border-bottom: 5px solid #eb74aa;
+  display: block;
+	margin:0 0 0 15px;
+	padding:0;
+	width: 85px;
+}
+
+.ui-navbar-elements-title {
+  font-weight: bolder;
+  margin: 2em;
+  text-align: left;
+}
+
+.ui-navbar-elements__li {
+  cursor: pointer;
+  margin: 2em auto 2em 2em;
+  padding: 1em 1em 1em 0;
+  text-align: left;
+}
+
+input[id^="tab-under"]:checked ~ li[class="ui-main-navbar__underline"]{
+	transition: all .3s ease-in-out;
+}
+
+#tab-under-11:checked ~ .ui-main-navbar__underline {
+	margin-left: 15px;
+}
+
+#tab-under-12:checked ~ .ui-main-navbar__underline {
+	margin-left: 130px;
+  width: 85px;
+}
+
+#tab-under-13:checked ~ .ui-main-navbar__underline{
+  margin-left: 245px;
+  width: 144px;
+}

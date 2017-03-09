@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Components</title>
+  <!-- vendor css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!-- component css  -->
+  <link rel="stylesheet" href="../stylesheets/main.css">
+
+</head>
+<body>
+  <main class="page-content">
+    <section id="ui-component-COMPONENTNAME" class="ui-element-main">
+
+      <h1 class="main-ui-heading">Navbar</h1>
+      <p class="main-element-description">Need a guide? The navbar is your guy.</p>
+
+      <!-- Copy div.ui-element-container template for next UI-Element variation -->
+      <div class="ui-element-container">
+
+        <ul class="ui-main-navbar">
+            <li class="ui-main-navbar__li">
+                <label class="ui-main-navbar__li_el" for="tab-under-11">UI Elements</label>
+            </li>
+            <li class="ui-main-navbar__li">
+                <label class="ui-main-navbar__li_el" for="tab-under-12">Maintainers</label>
+            </li>
+            <li class="ui-main-navbar__li">
+                <label class="ui-main-navbar__li_el" for="tab-under-13">About Bov Academy</label>
+            </li>
+            <input class="hide" type="radio" name="under" id="tab-under-11">
+            <input class="hide" type="radio" name="under" id="tab-under-12">
+            <input class="hide" type="radio" name="under" id="tab-under-13">
+            <li class="ui-main-navbar__underline"></li>
+        </ul>
+        <button class="btn-full-width">Show markup</button>
+        <div class="show-markup">
+          <pre class="language-markup">
+            <code>
+              <!-- Language markup copied from text-editor and place between <code> tags -->
+              <!-- Also, you  need to escape the beginning of the tags (<) with &lt; for the code to display properly like the code below.-->
+              &lt;ul class="ui-main-navbar">
+                  &lt;li class="ui-main-navbar__li">
+                      &lt;label class="ui-main-navbar__li_el" for="tab-under-11">UI Elements&lt;/label>
+                  &lt;/li>
+                  &lt;li class="ui-main-navbar__li">
+                      &lt;label class="ui-main-navbar__li_el" for="tab-under-12">Maintainers&lt;/label>
+                  &lt;/li>
+                  &lt;li class="ui-main-navbar__li">
+                      &lt;label class="ui-main-navbar__li_el" for="tab-under-13">About Bov Academy&lt;/label>
+                  &lt;/li>
+                  &lt;input class="hide" type="radio" name="under" id="tab-under-11">
+                  &lt;input class="hide" type="radio" name="under" id="tab-under-12">
+                  &lt;input class="hide" type="radio" name="under" id="tab-under-13">
+                  &lt;li class="ui-main-navbar__underline">&lt;/li>
+              &lt;/ul>
+            </code>
+          </pre>
+        </div>
+      </div>
+      <!-- Paste div.ui-element-container template for next UI-Element variation -->
+    </section>
+    <!-- If building more then one UI-Element, copy and paste entire section.ui-element-main and go to town!-->
+  </main>
+  <!-- script for code snippets to work. -->
+  <script type="text/javascript" src="../scripts/prism.js"></script>
+  <script type="text/javascript" src="../scripts/markupDropDown.js"></script>
+</body>
+</html>
