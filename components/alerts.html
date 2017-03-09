@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Components</title>
+  <!-- vendor css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!-- component css  -->
+  <link rel="stylesheet" href="../stylesheets/main.css">
+
+</head>
+<body>
+  <main class="page-content">
+    <section id="ui-component-COMPONENTNAME" class="ui-element-main">
+
+      <h1 class="main-ui-heading">Alerts</h1>
+      <p class="main-element-description">When you have to tell someone HEY Listen!!!</p>
+
+      <!-- Copy div.ui-element-container template for next UI-Element variation -->
+      <div class="ui-element-container">
+        <h3 class="ui-element-heading">Heading for each UI-Element variation</h3>
+        <p class="ui-element-description">Paragraph(if necessary) with description of UI-Element variation.</p>
+
+        <div class="alert alert__success">
+          <p class="alert__text">This is a success alert!!!</p>
+        </div>
+
+        <div class="alert alert__warning">
+          <p class="alert__text">This is a warning alert!!!</p>
+        </div>
+
+        <div class="alert alert__danger">
+          <p class="alert__text">This is a danger alert!!!</p>
+        </div>
+
+        <button class="btn-full-width">Show markup</button>
+        <div class="show-markup">
+          <pre class="language-markup">
+            <code>
+              <!-- Language markup copied from text-editor and place between <code> tags -->
+              <!-- Also, you  need to escape the beginning of the tags (<) with &lt; for the code to display properly like the code below.-->
+
+              &lt;div class="alert alert__success">
+                &lt;p class="alert__text">This is a success alert!!!&lt;/p>
+              &lt;/div>
+
+              &lt;div class="alert alert__warning">
+                &lt;p class="alert__text">This is a warning alert!!!&lt;/p>
+              &lt;/div>
+
+              &lt;div class="alert alert__danger">
+                &lt;p class="alert__text">This is a danger alert!!!&lt;/p>
+              &lt;/div>
+            </code>
+          </pre>
+        </div>
+      </div>
+      <!-- Paste div.ui-element-container template for next UI-Element variation -->
+    </section>
+    <!-- If building more then one UI-Element, copy and paste entire section.ui-element-main and go to town!-->
+  </main>
+  <!-- script for code snippets to work. -->
+  <script type="text/javascript" src="../scripts/prism.js"></script>
+  <script type="text/javascript" src="../scripts/markupDropDown.js"></script>
+</body>
+</html>
