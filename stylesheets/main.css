@@ -22,6 +22,7 @@
 @import url("components/grid.css");
 @import url("components/typography.css");
 @import url("components/jumbotron.css");
+@import url("components/spiralButtons.css");
 
 * {
   box-sizing: border-box;
