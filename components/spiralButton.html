@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Spiral Button</title>
+  <!-- vendor css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!-- component css  -->
+  <link rel="stylesheet" href="stylesheets/main.css">
+  
+</head>
+<body>
+  <main class="page-content">
+    <section id="ui-component-spiralButton" class="ui-element-main">
+
+      <h1 class="main-ui-heading">Spiral Button Text(Innovative)</h1>
+      <p class="main-element-description">Spiral the text of a button upon button action.</p>
+      
+      <!-- Copy div.ui-element-container template for next UI-Element variation -->
+      <div class="ui-element-container">
+        <h3 class="ui-element-heading">Button with Spiraled Text</h3>
+        <p class="ui-element-description">Watch the text transform into a spiral when the button is hovered over.</p>
+
+        <div class="inputBlock  ui-element">
+          <div class="inputBlock__control spiral__container inputBlock--lg">
+            <input type="button" id="spiral">
+            <label for="spiral" class="spiral__addOn"><em>B</em><em>L</em><em>A</em><em>K</em><em>E</em><span class="space"></span><em>W</em><em>I</em><em>L</em><em>S</em><em>O</em><em>N</em></label>
+          </div>
+        </div>
+        
+        <button class="btn-full-width">Show markup</button>
+        <div class="show-markup">
+          <pre class="language-markup">
+            <code>
+              &lt;div class="inputBlock  ui-element">
+                &lt;div class="inputBlock__control spiral__container inputBlock--lg">
+                  &lt;input type="button" id="spiral">
+                  &lt;label for="spiral" class="spiral__addOn">&lt;em>B&lt;/em>&lt;em>L&lt;/em>&lt;em>A&lt;/em>&lt;em>K&lt;/em>&lt;em>E&lt;/em>&lt;span class="space">&lt;/span>&lt;em>W&lt;/em>&lt;em>I&lt;/em>&lt;em>L&lt;/em>&lt;em>S&lt;/em>&lt;em>O&lt;/em>&lt;em>N&lt;/em>&lt;/label>
+                &lt;/div>
+              &lt;/div>
+            </code>
+          </pre>
+        </div>
+      </div>
+      <div class="ui-element-container">
+        <h3 class="ui-element-heading">Anchor with Spiraled Text</h3>
+        <p class="ui-element-description">Watch the text transform into a spiral when a link is hovered over.</p>
+
+        <div class="inputBlock  ui-element">
+          <div class="inputBlock__control spiral__container inputBlock--lg">
+            <a href="#">
+              <span for="spiral" class="spiral__addOn"><em>B</em><em>L</em><em>A</em><em>K</em><em>E</em><span class="space"></span><em>W</em><em>I</em><em>L</em><em>S</em><em>O</em><em>N</em></span>
+            </a>
+          </div>
+        </div>
+        <button class="btn-full-width">Show markup</button>
+        <div class="show-markup">
+          <pre class="language-markup">
+            <code>
+              &lt;div class="inputBlock">
+                &lt;div class="inputBlock__control spiral__container inputBlock--lg">
+                  &lt;a href="#">
+                    &lt;span for="spiral" class="spiral__addOn">&lt;em>B&lt;/em>&lt;em>L&lt;/em>&lt;em>A&lt;/em>&lt;em>K&lt;/em>&lt;em>E&lt;/em>&lt;span class="space">&lt;/span>&lt;em>W&lt;/em>&lt;em>I&lt;/em>&lt;em>L&lt;/em>&lt;em>S&lt;/em>&lt;em>O&lt;/em>&lt;em>N&lt;/em>&lt;/span>
+                  &lt;/a>
+                &lt;/div>
+              &lt;/div>
+            </code>
+          </pre>
+        </div>
+      </div>
+      <!-- Paste div.ui-element-container template for next UI-Element variation -->
+    </section>
+    <!-- If building more then one UI-Element, copy and paste entire section.ui-element-main and go to town!-->
+  </main>
+  <!-- script for code snippets to work. -->
+  <script type="text/javascript" src="scripts/prism.js"></script>
+  <script type="text/javascript" src="scripts/markupDropDown.js"></script>
+</body>
+</html>
