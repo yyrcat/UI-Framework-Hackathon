@@ -4,7 +4,7 @@
   var timInt;
   var timOut;
   var cnt = document.getElementsByClassName("safety__count")[0]
-  var alert = document.getElementsByClassName("alert")[0];
+  var alert = document.getElementsByClassName("safety__alert")[0];
 
   alert.style.visibility = "hidden";
 
