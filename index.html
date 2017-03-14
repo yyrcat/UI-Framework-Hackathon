@@ -1609,39 +1609,143 @@
         </section>
         <section id="ui-component-modal" class="ui-element-main">
           <h1 class="main-ui-heading">Modal</h1>
-          <p class="main-element-description">CSS only modal layout</p>
           <div class="ui-element-container">
             <h3 class="ui-element-heading">Basic</h3>
             <p class="ui-element-description">Basic modal to display information.</p>
-            <div class="ui-element">
+       
+              <input type="checkbox" id="modal-1"  class="hide"/>
+
+              <label class="btn-default btn-primary" for="modal-1">Basic Modal</label>
               <div class="modal" role="modal" aria-labelledby="modal-title" aria-describedby="modal-description">
-                <div class="modal-info-container">
-                  <h1 id="modal-title"><i class="fa fa-exclamation-circle" aria-hidden="true"></i>Update form Feb 12, 2015</h1>
-                  <p id="modal-description" class="sr-only">Bender, we're trying our best. You'll have all the Slurm you can drink when you're partying with Slurm McKenzie!</p>
-                </div>
-                <div class="modal-btn-container">
-                  <button type="button" aria-label="Apply" class="modal-btn apply">Apply</button>
-                  <button type="button" aria-label="Cancel" class="modal-btn cancel">Cancel</button>
+                <div class="modal-container modal-basic">
+                  <div class="modal-info-container">
+                    <h1 class="modal-title"><i class="fa fa-exclamation-circle" aria-hidden="true"></i>Update form Feb 12, 2015</h1>
+                    <p class="modal-description" class="sr-only">Bender, we're trying our best. You'll have all the Slurm you can drink when you're partying with Slurm McKenzie!</p>
+                  </div>
+                  <div class="modal-btn-container">
+                    <label aria-label="Apply" class="modal-btn apply" for="modal-1">Apply</label>
+                    <label aria-label="Cancel" class="modal-btn cancel" for="modal-1">Cancel</label>
+                  </div>
+
                 </div>
               </div>
-            </div>
-            <button class="btn-full-width">Show markup</button>
+         
+            
+                <button class="btn-full-width">Show markup</button>
             <div class="show-markup">
               <pre class="language-markup">
                   <code>
+                    &lt;input type="checkbox" id="modal-1"  class="hide"/>
+
+                    &lt;label class="btn-default btn-primary" for="modal-1">Basic Modal&lt;/label>
                     &lt;div class="modal" role="modal" aria-labelledby="modal-title" aria-describedby="modal-description">
-                    &lt;div class="modal-info-container">
-                    &lt;h1 id="modal-title">&lt;i class="fa fa-exclamation-circle" aria-hidden="true">&lt;/i>Update form Feb 12, 2015&lt;/h1>
-                    &lt;p id="modal-description" class="sr-only">Bender, we're trying our best. You'll have all the Slurm you can drink when you're partying with Slurm McKenzie!&lt;/p>
-                    &lt;/div>
-                    &lt;div class="modal-btn-container">
-                    &lt;button type="button" aria-label="Apply" class="modal-btn apply">Apply&lt;/button>
-                    &lt;button type="button" aria-label="Cancel" class="modal-btn cancel">Cancel&lt;/button>
-                    &lt;/div>
+                      &lt;div class="modal-container modal-basic">
+                        &lt;div class="modal-info-container">
+                          &lt;h1 class="modal-title">&lt;i class="fa fa-exclamation-circle" aria-hidden="true">&lt;/i>Update form Feb 12, 2015&lt;/h1>
+                          &lt;p class="modal-description" class="sr-only">Bender, we're trying our best. You'll have all the Slurm you can drink when you're partying with Slurm McKenzie!&lt;/p>
+                        &lt;/div>
+                        &lt;div class="modal-btn-container">
+                          &lt;label aria-label="Apply" class="modal-btn apply" for="modal-1">Apply&lt;/label>
+                          &lt;label aria-label="Cancel" class="modal-btn cancel" for="modal-1">Cancel&lt;/label>
+                        &lt;/div>
+
+                      &lt;/div>
                     &lt;/div>
                   </code>
                 </pre>
+              </div>
+
+          </div>
+          <div class="ui-element-container">
+            <h3 class="ui-element-heading">Modal coming in from side</h3>
+
+          
+             <input type="checkbox" id="modal-2"  class="hide"/>
+
+             <label class="btn-default btn-primary" for="modal-2">Basic Modal 2</label>
+             <div class="modal" role="modal" aria-labelledby="modal-title" aria-describedby="modal-description">
+              <div class="modal-container modal-slide">
+                <div class="modal-info-container">
+                  <h1 class="modal-title"><i class="fa fa-exclamation-circle" aria-hidden="true"></i>Update form Feb 12, 2015</h1>
+                  <p class="modal-description" class="sr-only">Bender, we're trying our best. You'll have all the Slurm you can drink when you're partying with Slurm McKenzie!</p>
+                </div>
+                <div class="modal-btn-container">
+                  <label aria-label="Apply" class="modal-btn apply" for="modal-2">Apply</label>
+                  <label aria-label="Cancel" class="modal-btn cancel" for="modal-2">Cancel</label>
+                </div>
+
+              </div>
             </div>
+           
+           
+             <button class="btn-full-width">Show markup</button>
+            <div class="show-markup">
+              <pre class="language-markup">
+                  <code>
+                    &lt;input type="checkbox" id="modal-2"  class="hide"/>
+
+                    &lt;label class="btn-default btn-primary" for="modal-2">Basic Modal 2&lt;/label>
+                    &lt;div class="modal" role="modal" aria-labelledby="modal-title" aria-describedby="modal-description">
+                      &lt;div class="modal-container modal-slide">
+                        &lt;div class="modal-info-container">
+                          &lt;h1 class="modal-title">&lt;i class="fa fa-exclamation-circle" aria-hidden="true">&lt;/i>Update form Feb 12, 2015&lt;/h1>
+                          &lt;p class="modal-description" class="sr-only">Bender, we're trying our best. You'll have all the Slurm you can drink when you're partying with Slurm McKenzie!&lt;/p>
+                        &lt;/div>
+                        &lt;div class="modal-btn-container">
+                          &lt;label aria-label="Apply" class="modal-btn apply" for="modal-2">Apply&lt;/label>
+                          &lt;label aria-label="Cancel" class="modal-btn cancel" for="modal-2">Cancel&lt;/label>
+                        &lt;/div>
+
+                      &lt;/div>
+                    &lt;/div>
+                  </code>
+                </pre>
+              </div>
+          </div>
+          <div class="ui-element-container">
+            <h3 class="ui-element-heading">Whirling Modal</h3>
+
+             <input type="checkbox" id="modal-3"  class="hide" />
+
+             <label class="btn-default btn-primary" for="modal-3">Basic Modal 3</label>
+             <div class="modal" role="modal" aria-labelledby="modal-title" aria-describedby="modal-description">
+              <div class="modal-container modal-whirlIn">
+                <div class="modal-info-container">
+                  <h1 class="modal-title"><i class="fa fa-exclamation-circle" aria-hidden="true"></i>Update form Feb 12, 2015</h1>
+                  <p class="modal-description" class="sr-only">Bender, we're trying our best. You'll have all the Slurm you can drink when you're partying with Slurm McKenzie!</p>
+                </div>
+                <div class="modal-btn-container">
+                  <label aria-label="Apply" class="modal-btn apply" for="modal-3">Apply</label>
+                  <label aria-label="Cancel" class="modal-btn cancel" for="modal-3">Cancel</label>
+                </div>
+
+              </div>
+            </div>
+         
+           
+             <button class="btn-full-width">Show markup</button>
+            <div class="show-markup">
+              <pre class="language-markup">
+                  <code>
+                    &lt;input type="checkbox" id="modal-3" class="hide" />
+
+                    &lt;label class="btn-default btn-primary" for="modal-3">Basic Modal 3&lt;/label>
+                    &lt;div class="modal" role="modal" aria-labelledby="modal-title" aria-describedby="modal-description">
+                      &lt;div class="modal-container modal-whirlIn">
+                        &lt;div class="modal-info-container">
+                          &lt;h1 class="modal-title">&lt;i class="fa fa-exclamation-circle" aria-hidden="true">&lt;/i>Update form Feb 12, 2015&lt;/h1>
+                          &lt;p class="modal-description" class="sr-only">Bender, we're trying our best. You'll have all the Slurm you can drink when you're partying with Slurm McKenzie!&lt;/p>
+                        &lt;/div>
+                        &lt;div class="modal-btn-container">
+                          &lt;label aria-label="Apply" class="modal-btn apply" for="modal-3">Apply&lt;/label>
+                          &lt;label aria-label="Cancel" class="modal-btn cancel" for="modal-3">Cancel&lt;/label>
+                        &lt;/div>
+
+                      &lt;/div>
+                    &lt;/div>
+                  </code>
+                </pre>
+              </div>
           </div>
         </section>
         <section id="ui-component-accordion" class="ui-element-main">

@@ -382,6 +382,7 @@ footer .sitemap, footer .social, footer .develop__title, footer .develop__profil
   font-size: .9rem;
   height: 45px;
   width: 100%;
+  margin:2rem 0;
 }
 /* Class added to change bottom radius of button when language markup is displayed */
 .btn-bottom-no-radius {

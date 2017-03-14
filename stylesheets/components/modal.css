@@ -1,47 +1,170 @@
-.modal {
-    width: 370px;
-    border-radius: 4px;
-    box-shadow: 0px 10px 24px 0px rgba(68, 68, 68, 0.1);
+.ui-element-main {
+  max-width: 1050px;
+  margin: 50px auto;
+  padding: 60px 65px;
+  box-shadow: 0 0 1px #e8eff7;
+  background: #fff;
+  border-radius: 3px;
 }
-.modal .modal-info-container {
-    padding: 25px 30px;
-    color: rgba(128, 128, 128, 0.76);
-    font-size: 14px;
-    font-weight: 100;
-    letter-spacing: .02rem;
-    line-height: 1.5rem;
-    text-align: left;
+
+
+/*Parent level element heading*/
+
+.main-ui-heading {
+  color: #2c3339;
+  font-size: 1.8rem;
 }
-.modal h1 {
-    display: flex;
-    font-size: 16px;
-    font-weight: 400;
-    color: rgba(95, 95, 95, 0.9);
-    align-items: center;
-    padding-bottom: 0.7rem;
+
+.main-element-description {
+  margin: 24px 0 44px;
+  color: #879eb2;
+  line-height: 1.3rem;
 }
+
+
+/*Container surrounding each individual UI element*/
+
+.ui-element-container {
+  margin: 50px 0;
+  padding-bottom: 44px;
+  border-bottom: 2px solid #f5f7fb;
+}
+
+
+/*child level element heading*/
+
+.ui-element-heading {
+  margin-bottom: 28px;
+  color: #62652a;
+  font-size: 1.3rem;
+}
+
+.ui-element-description {
+  margin-bottom: 28px;
+  color: #879eb2;
+}
+
+
+
+
+
+#modal-1 ~ .modal,
+#modal-2 ~ .modal,
+#modal-3 ~ .modal {
+  visibility:hidden;
+  background-color:rgba(0,0,0,0);
+  transition:background-color 5s ease;
+}
+#modal-1:checked ~ .modal,
+#modal-2:checked ~ .modal,
+#modal-3:checked ~ .modal {
+  display:block;
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  background-color:rgba(0,0,0,.7);
+  visibility:visible;
+  transition:background-color .5s ease;
+ 
+}
+#modal-1 ~ .modal .modal-container,
+#modal-2 ~ .modal .modal-container,
+#modal-3 ~ .modal .modal-container {
+  position:absolute;
+  top:50%;
+  left:50%;
+  width: 370px;
+  border-radius: 4px;
+  box-shadow: 0px 10px 24px 0px rgba(68, 68, 68, 0.1);
+  transition:all .5s ease;
+  z-index:2;
+  background:#fff;
+}
+
+
+#modal-1:checked ~ .modal .modal-container,
+#modal-2:checked ~ .modal .modal-container,
+#modal-3:checked ~ .modal .modal-container {
+  transition:all .5s ease;
+}
+/*style for basic modal display*/
+#modal-1 ~ .modal .modal-basic {
+  transform:translate(-50%,-200%);
+  
+}
+#modal-1:checked ~ .modal .modal-basic {
+  transform:translate(-50%,-50%);
+  
+}
+
+/*style for sliding modal*/
+#modal-2 ~ .modal .modal-slide {
+  transform:translate(-400%,-50%) skew(10deg);
+}
+#modal-2:checked ~ .modal .modal-slide {
+  transform:translate(-50%,-50%) skew(0);
+}
+
+/*style for whirl in*/
+#modal-3 ~ .modal .modal-whirlIn {
+  transform-origin:center center;
+  transform:translate(-50%,-50%) scale(0,0) rotateY(0);
+}
+#modal-3:checked ~ .modal .modal-whirlIn {
+  transform:translate(-50%,-50%) scale(1,1) rotateY(360deg);
+}
+
+
+.modal-info-container {
+  padding: 25px 30px;
+  color: rgba(128, 128, 128, 0.76);
+  font-size: 14px;
+  font-weight: 100;
+  letter-spacing: .02rem;
+  line-height: 1.5rem;
+  text-align: left;
+  
+}
+
+
+.modal-title {
+  display: flex;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(95, 95, 95, 0.9);
+  align-items: center;
+  padding-bottom: 0.7rem;
+}
+
 .modal .fa-exclamation-circle {
-    color: #ff9948;
-    font-size: 28px;
-    padding-right: 0.7rem;
+  color: #ff9948;
+  font-size: 28px;
+  padding-right: 0.7rem;
 }
-.modal .modal-btn-container {
-    display: flex;
-    border-top: 1px solid #e4edfb;  
+
+.modal-btn-container {
+  display: flex;
+  border-top: 1px solid #e4edfb;
 }
-.modal .modal-btn {
-    background: #fff;
-    border: 0;
-    width: 50%;
-    text-transform: uppercase;
-    font-weight: 100;
-    font-size: 14px;
-    padding: 17px 0;
+
+.modal-btn {
+  background: #fff;
+  border: 0;
+  width: 50%;
+  text-align:center;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 14px;
+  padding: 17px 0;
 }
-.modal .modal-btn.apply {
-    border-right: 1px solid #e4edfb;
-    color: #51d0ef;
+
+.modal-btn.apply {
+  border-right: 1px solid #e4edfb;
+  color: #51d0ef;
 }
-.modal .modal-btn.cancel {
-    color: rgba(95, 95, 95, 0.9);
+
+.modal-btn.cancel {
+  color: rgba(95, 95, 95, 0.9);
 }
