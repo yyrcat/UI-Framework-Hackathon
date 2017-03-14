@@ -1,82 +1,118 @@
+/*accordion*/
+
 .accordion {
-  background: #fafcff;
   width: 100%;
 }
 
-.accordion__level {
-  padding: 1em 0 1em 0;
+.accordion-level {
   text-align: left;
+  border-bottom: 1px solid #52B5D5;
 }
 
-.accordion__sublevel {
-  height: 0;
-  opacity: 0;
-
-  -webkit-transition: all .1s ease;
-    -moz-transition: all .1s ease;
-    -o-transition: all .1s ease;
-    -ms-transition: all .1s ease;
-    transition: all .1s ease;
+.accordion-sublevel {
+  padding: 0 3em;
+  color: #000;
 }
 
-.accordion__sublevel__li {
-  margin: 1em auto;
+.accordion-sublevel__item {
+  padding: .5em 0;
 }
 
-.accordion__sublevel__li:hover {
-  color: #51d0ef;
+.accordion-sublevel__item:hover {
+  color: #8FA5B7;
   cursor: pointer;
 }
 
 .accordion__toggle {
-  cursor: pointer;
   display: block;
+  cursor: pointer;
+  color: white;
   line-height: 100%;
-  margin-left: 2em;
-  padding: 1em;
+  padding: .5em 1em;
+  background: #4BC5E2;
 }
 
 .accordion__toggle:hover {
-  color: #51d0ef;
+  color: #000;
 }
 
 .on {
   float: right;
-  margin-right: 2em;
-}
-
-.off {
-  float: right;
-  margin-right: 2em;
 }
 
 #elm1:checked ~ .lvl1,
 #elm2:checked ~ .lvl2,
 #elm3:checked ~ .lvl3,
-#elm4:checked ~ .lvl4 {
+#elm4:checked ~ .lvl4,
+.accordion-level-js .accordion-sublevel {
   background: #f3f5f7;
   border-left: 2px solid #51d0ef;
 }
 
-#elm1:checked ~ .lvl1 .accordion__sublevel,
-#elm2:checked ~ .lvl2 .accordion__sublevel,
-#elm3:checked ~ .lvl3 .accordion__sublevel,
-#elm4:checked ~ .lvl4 .accordion__sublevel {
-  height: auto;
-  margin: 1em auto 1em 3em;
+#elm1:checked ~ .lvl1 .accordion__toggle,
+#elm2:checked ~ .lvl2 .accordion__toggle,
+#elm3:checked ~ .lvl3 .accordion__toggle,
+#elm4:checked ~ .lvl4 .accordion__toggle {
+  background: #52B5D5;
+}
+
+#elm1 ~ .lvl1 .accordion-sublevel,
+#elm2 ~ .lvl2 .accordion-sublevel,
+#elm3 ~ .lvl3 .accordion-sublevel,
+#elm4 ~ .lvl4 .accordion-sublevel,
+.accordion-level-js.accordion--hide .accordion-sublevel {
+  height: 0;
+  overflow: hidden;
+  transition: all .3s ease-in;
+}
+
+.accordion-level-js.accordion--hide .sublevel--pop {
+  padding:0;
+  margin: 0;
+  opacity: 0;
+  -webkit-transform: scale(1, 0);
+  transform: scale(1, 0);
+  -webkit-transform-origin: center top;
+  transform-origin: center top;
+}
+
+.accordion-level-js .sublevel--pop { 
+  height:auto;
+  padding:2em;
+  margin: 0 -1em 1em;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.16);
   opacity: 1;
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+#elm1:checked ~ .lvl1 .accordion-sublevel,
+#elm2:checked ~ .lvl2 .accordion-sublevel,
+#elm3:checked ~ .lvl3 .accordion-sublevel,
+#elm4:checked ~ .lvl4 .accordion-sublevel,
+.accordion-level-js .accordion-sublevel {
+  height: 7em;
+  overflow: hidden;
+  background: #F3F5F6;
+  transition: all .3s ease-in;
+}
+
+#elm1 ~ .lvl1 .accordion__toggle .on,
+#elm2 ~ .lvl2 .accordion__toggle .on,
+#elm3 ~ .lvl3 .accordion__toggle .on,
+#elm4 ~ .lvl4 .accordion__toggle .on,
+.accordion-level-js .accordion__toggle .on {
+  transform: rotate(90deg);
+  transition: transform .3s ease-in;
 }
 
 #elm1:checked ~ .lvl1 .accordion__toggle .on,
 #elm2:checked ~ .lvl2 .accordion__toggle .on,
 #elm3:checked ~ .lvl3 .accordion__toggle .on,
-#elm4:checked ~ .lvl4 .accordion__toggle .on {
-  display: none;
-}
-
-#elm1:checked ~ .lvl1 .accordion__toggle .off,
-#elm2:checked ~ .lvl2 .accordion__toggle .off,
-#elm3:checked ~ .lvl3 .accordion__toggle .off,
-#elm4:checked ~ .lvl4 .accordion__toggle .off {
-  display: block;
+#elm4:checked ~ .lvl4 .accordion__toggle .on,
+.accordion-level-js.accordion--hide .accordion__toggle .on {
+  transform: rotate(0);
+  transition: transform .3s ease-in;
 }
