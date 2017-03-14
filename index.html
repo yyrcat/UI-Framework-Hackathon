@@ -27,7 +27,7 @@
       </div>
     
      <div class="row">
-        <div class="col-gap7 col5">
+        <div class="col-gap5 col7">
           <ul class="ui-main-menu">
             <li class="ui-main-menu__li">
               <label class="ui-main-menu__li_el" for="tab-under-11">UI Elements</label>
@@ -52,16 +52,16 @@
           <h4 class="ui-nav-elements-title">UI ELEMENTS</h4>
           <ul class="ui-nav-elements-menu">
             <li class="ui-nav-elements__li">
-              <a href="#ui-element-grid" class="is-active">Grid</a>
+              <a href="#ui-component-grid" class="is-active">Grid</a>
             </li>
             <li class="ui-nav-elements__li">
               <a href="#ui-component-typography">Typography</a>
             </li>
             <li class="ui-nav-elements__li">
-              <a href="#ui-element-list">List</a>
+              <a href="#ui-component-list">List</a>
             </li>
             <li class="ui-nav-elements__li">
-              <a href="#ui-element-button">Button</a>
+              <a href="#ui-component-button">Button</a>
             </li>
             <li class="ui-nav-elements__li">
               <a href="#ui-component-tabs">Tab</a>
@@ -70,22 +70,22 @@
               <a href="#ui-component-navbar">Navbar</a>
             </li>
             <li class="ui-nav-elements__li">
-              <a href="#ui-element-card">Card</a>
+              <a href="#ui-component-card">Card</a>
             </li>
             <li class="ui-nav-elements__li">
-              <a href="#ui-element-dropdown">Dropdown</a>
+              <a href="#ui-component-dropdown">Dropdown</a>
             </li>
             <li class="ui-nav-elements__li">
-              <a href="#ui-element-tooltip">Tooltip</a>
+              <a href="#ui-component-tooltip">Tooltip</a>
             </li>
             <li class="ui-nav-elements__li">
-              <a href="#ui-element-table">Table</a>
+              <a href="#ui-component-table">Table</a>
             </li>
             <li class="ui-nav-elements__li">
-              <a href="#ui-element-form">Form</a>
+              <a href="#ui-component-form">Form</a>
             </li>
             <li class="ui-nav-elements__li">
-              <a href="#ui-element-jumbotron">Jumbotron</a>
+              <a href="#ui-component-jumbotron">Jumbotron</a>
             </li>
             <li class="ui-nav-elements__li">
               <a href="#ui-component-toggles">Switch</a>
@@ -114,12 +114,23 @@
             <li class="ui-nav-elements__li">
               <a href="#ui-component-breadcrumb">Breadcrumb</a>
             </li>
-            
+             <li class="ui-nav-elements__li">
+              <a href="#ui-component-safety">Safety</a>
+            </li>
+             <li class="ui-nav-elements__li">
+              <a href="#ui-component-spiralButton">Spiral Button</a>
+            </li>
+             <li class="ui-nav-elements__li">
+              <a href="#ui-component-innovative-carousel">Innovative Carousel</a>
+            </li>
+            <li class="ui-nav-elements__li">
+              <a href="#ui-component-svg-pagination">SVG Pagination</a>
+            </li>
           
           </ul>
         </div>
         <div class="col10 col-gap2">
-        <section id="ui-element-grid" class="ui-element-main">
+        <section id="ui-component-grid" class="ui-element-main">
           <h1 class="main-ui-heading">12 Column Grid System</h1>
           <p class="main-element-description">Here is a 12 Column responsive grid system.</p>
           <div class="ui-element-container">
@@ -329,7 +340,178 @@
           </div>
           <!-- Paste div.ui-element-container template for next UI-Element variation -->
         </section>
-        <section class="ui-element-main" id="ui-element-button">
+        <section id="ui-component-list" class="ui-element-main">
+          <h1 class="main-ui-heading">List</h1>
+          <div class="ui-element-container">
+            <h3 class="ui-element-heading">Ordered List</h3>
+            <ol class="list-ordered">
+              <li class="list-item">
+                CP1
+                <ol class="list-ordered list-sub">
+                  <li class="list-item">CP1</li>
+                  <li class="list-item">CP2</li>
+                </ol>
+              </li>
+              <li class="list-item">
+                CP2
+                <ol class="list-ordered list-sub">
+                  <li class="list-item">CP1</li>
+                  <li class="list-item">CP2</li>
+                </ol>
+              </li>
+              <li class="list-item">
+                CP3
+                <ol class="list-ordered list-sub">
+                 <li class="list-item">CP1</li>
+                 <li class="list-item">CP2</li>
+                </ol>
+              </li>
+            </ol>
+             <button class="btn-full-width">Show markup</button>
+            <div class="show-markup">
+              <pre class="language-markup">
+                  <code>
+                   &lt;ol class="list-ordered">
+                    &lt;li class="list-item">
+                      CP1
+                      &lt;ol class="list-ordered list-sub">
+                        &lt;li class="list-item">CP1&lt;/li>
+                        &lt;li class="list-item">CP2&lt;/li>
+                      &lt;/ol>
+                    &lt;/li>
+                    &lt;li class="list-item">
+                      CP2
+                      &lt;ol class="list-ordered list-sub">
+                        &lt;li class="list-item">CP1&lt;/li>
+                        &lt;li class="list-item">CP2&lt;/li>
+                      &lt;/ol>
+                    &lt;/li>
+                    &lt;li class="list-item">
+                      CP3
+                      &lt;ol class="list-ordered list-sub">
+                       &lt;li class="list-item">CP1&lt;/li>
+                       &lt;li class="list-item">CP2&lt;/li>
+                     &lt;/ol>
+                   &lt;/li>
+                 &lt;/ol>
+                  </code>
+                </pre>
+              </div>
+          </div>
+          <div class="ui-element-container">
+            <h3 class="ui-element-heading">Unordered List</h3>
+             <ul class="list-unordered">
+              <li class="list-item">
+                CP1
+                <ul class="list-unordered list-sub">
+                  <li class="list-item">CP1</li>
+                  <li class="list-item">CP2</li>
+                </ul>
+              </li>
+              <li class="list-item">
+                CP2
+                <ul class="list-unordered list-sub">
+                  <li class="list-item">CP1</li>
+                  <li class="list-item">CP2</li>
+                </ul>
+              </li>
+              <li class="list-item">
+                CP3
+                <ul class="list-unordered list-sub">
+                 <li class="list-item">CP1</li>
+                 <li class="list-item">CP2</li>
+                </ul>
+              </li>
+            </ul>
+             <button class="btn-full-width">Show markup</button>
+            <div class="show-markup">
+              <pre class="language-markup">
+                  <code>
+                    &lt;ul class="list-unordered">
+                      &lt;li class="list-item">
+                        CP1
+                        &lt;ul class="list-unordered list-sub">
+                          &lt;li class="list-item">CP1&lt;/li>
+                          &lt;li class="list-item">CP2&lt;/li>
+                        &lt;/ul>
+                      &lt;/li>
+                      &lt;li class="list-item">
+                        CP2
+                        &lt;ul class="list-unordered list-sub">
+                          &lt;li class="list-item">CP1&lt;/li>
+                          &lt;li class="list-item">CP2&lt;/li>
+                        &lt;/ul>
+                      &lt;/li>
+                      &lt;li class="list-item">
+                        CP3
+                        &lt;ul class="list-unordered list-sub">
+                         &lt;li class="list-item">CP1&lt;/li>
+                         &lt;li class="list-item">CP2&lt;/li>
+                       &lt;/ul>
+                     &lt;/li>
+                   &lt;/ul>
+                  </code>
+                </pre>
+              </div>
+          </div>
+          <div class="ui-element-container">
+            <h3 class="ui-element-heading">List with Icon</h3>
+              <ul class="list-no-style">
+                <li class="list-item">
+                  <i class="fa fa-tag" aria-hidden="true"></i>CP1
+                  <ul class="list-no-style list-sub">
+                    <li class="list-item"><i class="fa fa-bell-o" aria-hidden="true"></i>CP1</li>
+                    <li class="list-item"><i class="fa fa-bell-o" aria-hidden="true"></i>CP2</li>
+                  </ul>
+                </li>
+                <li class="list-item">
+                  <i class="fa fa-tag" aria-hidden="true"></i>CP2
+                  <ul class="list-no-style list-sub">
+                    <li class="list-item"><i class="fa fa-bell-o" aria-hidden="true"></i>CP1</li>
+                    <li class="list-item"><i class="fa fa-bell-o" aria-hidden="true"></i>CP2</li>
+                  </ul>
+                </li>
+                <li class="list-item">
+                  <i class="fa fa-tag" aria-hidden="true"></i>CP3
+                  <ul class="list-no-style list-sub">
+                   <li class="list-item"><i class="fa fa-bell-o" aria-hidden="true"></i>CP1</li>
+                   <li class="list-item"><i class="fa fa-bell-o" aria-hidden="true"></i>CP2</li>
+                 </ul>
+                </li>
+            </ul>
+            <button class="btn-full-width">Show markup</button>
+            <div class="show-markup">
+              <pre class="language-markup">
+                  <code>
+                   &lt;ul class="list-no-style">
+                    &lt;li class="list-item">
+                      &lt;i class="fa fa-tag" aria-hidden="true">&lt;/i>CP1
+                      &lt;ul class="list-no-style list-sub">
+                        &lt;li class="list-item">&lt;i class="fa fa-bell-o" aria-hidden="true">&lt;/i>CP1&lt;/li>
+                        &lt;li class="list-item">&lt;i class="fa fa-bell-o" aria-hidden="true">&lt;/i>CP2&lt;/li>
+                      &lt;/ul>
+                    &lt;/li>
+                    &lt;li class="list-item">
+                      &lt;i class="fa fa-tag" aria-hidden="true">&lt;/i>CP2
+                      &lt;ul class="list-no-style list-sub">
+                        &lt;li class="list-item">&lt;i class="fa fa-bell-o" aria-hidden="true">&lt;/i>CP1&lt;/li>
+                        &lt;li class="list-item">&lt;i class="fa fa-bell-o" aria-hidden="true">&lt;/i>CP2&lt;/li>
+                      &lt;/ul>
+                    &lt;/li>
+                    &lt;li class="list-item">
+                      &lt;i class="fa fa-tag" aria-hidden="true">&lt;/i>CP3
+                      &lt;ul class="list-no-style list-sub">
+                       &lt;li class="list-item">&lt;i class="fa fa-bell-o" aria-hidden="true">&lt;/i>CP1&lt;/li>
+                       &lt;li class="list-item">&lt;i class="fa fa-bell-o" aria-hidden="true">&lt;/i>CP2&lt;/li>
+                     &lt;/ul>
+                   &lt;/li>
+                 &lt;/ul>
+                  </code>
+                </pre>
+              </div>
+          </div>
+        </section>
+        <section id="ui-component-button" class="ui-element-main" >
           <h1 class="main-ui-heading">Buttons</h1>
           <p class="main-element-description">Commonly used buttons</p>
           <div class="ui-element-container">
@@ -635,7 +817,7 @@
           </div>
           <!-- Paste div.ui-element-container template for next UI-Element variation -->
         </section>
-        <section class="ui-element-main" id="ui-element-card">
+        <section id="ui-component-card" class="ui-element-main" >
           <h1 class="main-ui-heading">Cards</h1>
           <p class="main-element-description">Commonly used cards</p>
           <div class="ui-element-container">
@@ -733,7 +915,7 @@
             </div>
           </div>
         </section>
-        <section class="ui-element-main" id="ui-element-dropdown">
+        <section id="ui-component-dropdown" class="ui-element-main" >
           <h1 class="main-ui-heading">Dropdown</h1>
           <div class="ui-element-container">
             <h3 class="ui-element-heading">Basic</h3>
@@ -820,7 +1002,7 @@
             </div>
           </div>
         </section>
-        <section class="ui-element-main" id="ui-element-tooltip">
+        <section id="ui-component-tooltip" class="ui-element-main" >
           <h1 class="main-ui-heading">Tooltip</h1>
           <div class="ui-element-container">
             <h3 class="ui-element-heading">Basic Click Popover</h3>
@@ -884,7 +1066,7 @@
             </div>
           </div>
         </section>
-        <section class="ui-element-main" id="ui-element-table">
+        <section id="ui-component-table" class="ui-element-main" >
           <h1 class="main-ui-heading">
               Table
             </h1>
@@ -1215,7 +1397,7 @@
             </div>
           </div>
         </section>
-        <section class="ui-element-main" id="ui-element-form">
+        <section id="ui-component-form" class="ui-element-main" >
           <h1 class="main-ui-heading">Forms</h1>
           <div class="ui-element-container">
             <div class="formContainer">
@@ -1433,63 +1615,60 @@
             </div>
           </div>
         </section>
-        <section class="ui-element-main" id="ui-element-jumbotron">
+        <section id="ui-component-jumbotron" class="ui-element-main" >
+          <h1 class="main-ui-heading">Jumbotron</h1>
           <div class="ui-element-container">
-            <form>
+        
               <div class="jumbotron">
-                <h1 class="main-ui-heading display">Jumbotron</h1>
-                <h3 class="ui-element-heading location">Basic</h3>
-                <div class="line"></div>
-                <p class="lead">
+                <h1 class="main-ui-heading jumbotron-title">Jumbotron</h1>
+                <h3 class="ui-element-heading jumbotron-location">Basic</h3>
+                <div class="jumbotron-line"></div>
+                <p class="jumbotron-lead">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus, ligula at tristique maximus, massa elit congue nulla, eu dictum odio ligula ac nisl. Cras euismod enim ut quam molestie semper. Sed dapibus tellus nec sem blandit, sed placerat lorem vehicula.
                 </p>
                 <button class="btn-default btn-primary">Learn More</button>
               </div>
-            </form>
+      
             <button class="btn-full-width">Show markup</button>
             <div class="show-markup">
               <pre class="language-markup">
                   <code>
-                    &lt;form&gt;
-                    &lt;div class=&quot;jumbotron&quot;&gt;
-                    &lt;h1 class=&quot;main-ui-heading display&quot;&gt;Jumbotron&lt;/h1&gt;
-                    &lt;h3 class=&quot;ui-element-heading location&quot;&gt;Basic&lt;/h3&gt;
-                    &lt;div class=&quot;line&quot;&gt;&lt;/div&gt;
-                    &lt;p class=&quot;lead&quot;&gt;
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus, ligula at tristique maximus, massa elit congue nulla, eu dictum odio ligula ac nisl. Cras euismod enim ut quam molestie semper. Sed dapibus tellus nec sem blandit, sed placerat lorem vehicula.
-                    &lt;/p&gt;
-                    &lt;button class=&quot;btn-default btn-primary&quot;&gt;Learn More&lt;/button&gt;
-                    &lt;/div&gt;
-                    &lt;/form&gt;
+                   &lt;div class="jumbotron">
+                    &lt;h1 class="main-ui-heading jumbotron-title">Jumbotron&lt;/h1>
+                    &lt;h3 class="ui-element-heading jumbotron-location">Basic&lt;/h3>
+                    &lt;div class="jumbotron-line">&lt;/div>
+                    &lt;p class="jumbotron-lead">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus, ligula at tristique maximus, massa elit congue nulla, eu dictum odio ligula ac nisl. Cras euismod enim ut quam molestie semper. Sed dapibus tellus nec sem blandit, sed placerat lorem vehicula.
+                    &lt;/p>
+                    &lt;button class="btn-default btn-primary">Learn More&lt;/button>
+                  &lt;/div>
                   </code>
                 </pre>
             </div>
-            <form>
-              <div class="jumbotron jumbotron2">
-                <h1 class="main-ui-heading display">Jumbotron</h1>
-                <h3 class="ui-element-heading location">Basic #2</h3>
-                <div class="line"></div>
-                <p class="lead">
+        
+              <div class="jumbotron jumbotron-with-bg">
+                <h1 class="main-ui-heading jumbotron-title">Jumbotron</h1>
+                <h3 class="ui-element-heading jumbotron-location">Basic #2</h3>
+                <div class="jumbotron-line jumbotron-line-light"></div>
+                <p class="jumbotron-lead jumbotron-lead-light ">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus, ligula at tristique maximus, massa elit congue nulla, eu dictum odio ligula ac nisl. Cras euismod enim ut quam molestie semper. Sed dapibus tellus nec sem blandit, sed placerat lorem vehicula.
                 </p>
                 <button class="btn-default btn-primary">Learn More</button>
               </div>
-            </form>
+          
             <button class="btn-full-width">Show markup</button>
             <div class="show-markup">
               <pre class="language-markup">
                   <code>
-                    &lt;form&gt;
-                    &lt;div class=&quot;jumbotron&quot;&gt;
-                    &lt;h1 class=&quot;main-ui-heading display&quot;&gt;Jumbotron&lt;/h1&gt;
-                    &lt;h3 class=&quot;ui-element-heading location&quot;&gt;Basic #2&lt;/h3&gt;
-                    &lt;div class=&quot;line&quot;&gt;&lt;/div&gt;
-                    &lt;p class=&quot;lead&quot;&gt;
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus, ligula at tristique maximus, massa elit congue nulla, eu dictum odio ligula ac nisl. Cras euismod enim ut quam molestie semper. Sed dapibus tellus nec sem blandit, sed placerat lorem vehicula.
-                    &lt;/p&gt;
-                    &lt;button class=&quot;btn-default btn-primary&quot;&gt;Learn More&lt;/button&gt;
-                    &lt;/div&gt;
-                    &lt;/form&gt;
+                    &lt;div class="jumbotron jumbotron-with-bg">
+                      &lt;h1 class="main-ui-heading jumbotron-title">Jumbotron&lt;/h1>
+                      &lt;h3 class="ui-element-heading jumbotron-location">Basic #2&lt;/h3>
+                      &lt;div class="jumbotron-line jumbotron-line-light">&lt;/div>
+                      &lt;p class="jumbotron-lead jumbotron-lead-light ">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus, ligula at tristique maximus, massa elit congue nulla, eu dictum odio ligula ac nisl. Cras euismod enim ut quam molestie semper. Sed dapibus tellus nec sem blandit, sed placerat lorem vehicula.
+                      &lt;/p>
+                      &lt;button class="btn-default btn-primary">Learn More&lt;/button>
+                    &lt;/div>
                   </code>
                 </pre>
             </div>
@@ -3443,7 +3622,7 @@
   <script type="text/javascript" src="scripts/markupDropDown.js"></script>
   <script type="text/javascript" src="scripts/accordion.js"></script>
   <script type="text/javascript" src="scripts/pagination.js"></script>
-    <script type="text/javascript" src="scripts/ScrollSpy.js"></script>
+    <script type="text/javascript" src="scripts/scrollspy.js"></script>
 
   </body>
 

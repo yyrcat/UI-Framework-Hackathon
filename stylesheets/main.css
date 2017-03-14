@@ -25,6 +25,7 @@
 @import url("components/spiralButtons.css");
 @import url("components/carouselminimalist.css");
 @import url("components/dot-pagination.css");
+@import url("components/list.css");
 
 * {
   box-sizing: border-box;

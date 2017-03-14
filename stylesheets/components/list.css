@@ -1,0 +1,25 @@
+.list-ordered {
+	
+   list-style:upper-roman;
+}
+.list-unordered {
+	list-style:square;
+}
+.list-no-style {
+	list-style: none;
+}
+.list-ordered,
+.list-unordered,
+.list-no-style {
+	margin-left:2em;
+}
+
+.list-sub {
+	margin-left:1em;
+}
+.list-item {
+	padding:.5em 0;
+}
+.list-item i {
+	padding-right:.5em;
+}
