@@ -3,7 +3,10 @@
   position: relative;
   width: 341.3333px;
   height: 256px;
+  margin: 0 auto;
+  margin-bottom: 25px;
 }
+
 
 .minimalist-carousel-container img {
   width: 100%;
