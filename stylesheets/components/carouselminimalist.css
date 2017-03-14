@@ -1,0 +1,112 @@
+
+.minimalist-carousel-container {
+  position: relative;
+  width: 341.3333px;
+  height: 256px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+
+.minimalist-carousel-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.minimalist-carousel-container input {
+  margin: 1em;
+  position: absolute;
+  display: none;
+}
+
+
+.oneLabel, .twoLabel, .threeLabel {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, .35);
+  color: rgba(255, 255, 255, .65);
+  background-color: rgba(255, 255, 255, .25);
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.oneLabel{
+  border-bottom: none;
+}
+
+.back-arrow-one, .back-arrow-two {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  width: 40px;
+  height: 30px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, .25);
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.minimalist-carousel-container .fa-long-arrow-left {
+  color: rgba(255, 255, 255, .75);
+}
+
+.img-carousel-one,
+.img-carousel-two,
+.img-carousel-three {
+  position: absolute;
+}
+
+.img-carousel-one {
+  opacity: 0;
+}
+
+.img-carousel-two {
+  opacity: 0;
+}
+
+.img-carousel-three {
+  opacity: 0;
+}
+
+#input-one-carousel:checked ~ .img-carousel-one ,
+#input-two-carousel:checked ~ .img-carousel-two,
+#input-three-carousel:checked ~ .img-carousel-three {
+  opacity: 1;
+}
+
+#input-one-carousel:checked ~ .oneLabel,
+#input-one-carousel:checked ~ .threeLabel {
+  visibility: hidden;
+}
+
+#input-two-carousel:checked ~ .twoLabel,
+#input-two-carousel:checked ~ .oneLabel {
+  visibility: hidden;
+}
+
+#input-three-carousel:checked ~ .threeLabel,
+#input-three-carousel:checked ~ .twoLabel {
+  visibility: hidden;
+}
+
+#input-three-carousel:checked ~ .back-arrow-two,
+#input-three-carousel:checked ~ .back-arrow-one{
+  visibility: hidden;
+}
+
+#input-two-carousel:checked ~ .back-arrow-one {
+  visibility: hidden;
+}
+
+#input-one-carousel:checked ~ .back-arrow-two {
+  visibility: hidden;
+}
+
+
+
+

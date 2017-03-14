@@ -23,6 +23,7 @@
 @import url("components/typography.css");
 @import url("components/jumbotron.css");
 @import url("components/spiralButtons.css");
+@import url("components/carouselminimalist.css");
 
 * {
   box-sizing: border-box;
