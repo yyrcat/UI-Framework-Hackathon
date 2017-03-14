@@ -146,16 +146,20 @@ body {
 .col-gap11 {
   margin-left: 91.66%;
 }
-
+.no-float {
+  margin-left: 16.66%;
+  float: none；
+}
 header, footer {
   background: #1E2226;
   color: #F3F5F8;
 }
 
 .logo {
+  margin:2rem 0 0 6rem;
   font-family: Roboto Slab, serif;
   font-weight: 100;
-  margin-top: 1em;
+  
 }
 
 .logo__image, .logo__title {
@@ -221,40 +225,35 @@ header, footer {
 	padding:0;
 	width: 85px;
 }
-
+.navbar-sticky {
+  position:fixed;
+  top:0;
+  left:0;
+  bottom:10px;
+  overflow-y:auto;
+}
 .ui-nav-elements-title {
   font-weight: bolder;
-  margin: 2em;
-  text-align: left;
+  margin:2em 0;
+  text-align: center;
 }
 
 .ui-nav-elements__li {
   cursor: pointer;
-  margin: 2em auto 2em 2em;
-  padding: 1em 1em 1em 0;
-  text-align: left;
+  margin: .2em auto .2em 2em;
+  padding: .5em 1em .5em 0;
+  text-align: right;
+}
+.ui-nav-elements__li a {
+  color:#33393F;
+  padding-right:1em;
+  text-decoration: none;
 }
 
-input[id^="tab-under"]:checked ~ li[class="ui-main-menu__underline"]{
-	transition: all .3s ease-in-out;
-}
-
-#tab-under-11:checked ~ .ui-main-menu__underline {
-	margin-left: 15px;
-}
-
-#tab-under-12:checked ~ .ui-main-menu__underline {
-	margin-left: 130px;
-  width: 85px;
-}
-
-#tab-under-13:checked ~ .ui-main-menu__underline{
-  margin-left: 245px;
-  width: 144px;
-}
 
 .is-active {
-  border-right: 5px solid #eb74aa;
+  border-right:5px solid #eb74aa;
+  transition:border-right .3s ease;
 }
 
 .sitemap {

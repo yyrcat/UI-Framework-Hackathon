@@ -12,27 +12,20 @@
   </head>
 
   <body>
-    <header>
+    <header class="no-float">
       <div class="container">
         <div class="row">
-          <div class="col6">
+          <div class="col10">
             <div class="logo">
               <img class="logo__image" src="images/bov_logo.png" alt="Bov Academy Logo">
               <h1 class="logo__title">Bov</h1> <span class="logo__acd">Academy</span> <span class="logo__subtitle">UI Framework</span>
             </div>
           </div>
-          <div class="col-gap2 col4">
-            <input type="text" placeholder="&#xf002; Search" class="search__input">
-            <label for="search" class="search__icon"></label>
-            <select name="color" class="search_palette">
-              <option value="red">Red</option>
-              <option value="gree">Green</option>
-              <option value="blue">Blue</option>
-            </select>
-          </div>
+         
         </div>
       </div>
-      <div class="row">
+    
+     <div class="row">
         <div class="col-gap7 col5">
           <ul class="ui-main-menu">
             <li class="ui-main-menu__li">
@@ -54,36 +47,83 @@
     </header>
     <main class="page-content container">
       <div class="row">
-        <div class="col2">
+        <div class="col2 navbar-sticky">
           <h4 class="ui-nav-elements-title">UI ELEMENTS</h4>
           <ul class="ui-nav-elements-menu">
             <li class="ui-nav-elements__li">
-              <label for="tab-under-21">Buttons</label>
+              <a href="#ui-element-grid" class="is-active">Grid</a>
             </li>
             <li class="ui-nav-elements__li">
-              <label for="tab-under-22">Cards</label>
+              <a href="#ui-component-typography">Typography</a>
             </li>
             <li class="ui-nav-elements__li">
-              <label for="tab-under-23">Accordion</label>
+              <a href="#ui-element-list">List</a>
             </li>
             <li class="ui-nav-elements__li">
-              <label for="tab-under-24">Tabs</label>
+              <a href="#ui-element-button">Button</a>
             </li>
             <li class="ui-nav-elements__li">
-              <label for="tab-under-25">Carousel</label>
+              <a href="#ui-component-tabs">Tab</a>
             </li>
             <li class="ui-nav-elements__li">
-              <label for="tab-under-26">Forms</label>
+              <a href="#ui-component-navbar">Navbar</a>
             </li>
+            <li class="ui-nav-elements__li">
+              <a href="#ui-element-card">Card</a>
+            </li>
+            <li class="ui-nav-elements__li">
+              <a href="#ui-element-dropdown">Dropdown</a>
+            </li>
+            <li class="ui-nav-elements__li">
+              <a href="#ui-element-tooltip">Tooltip</a>
+            </li>
+            <li class="ui-nav-elements__li">
+              <a href="#ui-element-table">Table</a>
+            </li>
+            <li class="ui-nav-elements__li">
+              <a href="#ui-element-form">Form</a>
+            </li>
+            <li class="ui-nav-elements__li">
+              <a href="#ui-element-jumbotron">Jumbotron</a>
+            </li>
+            <li class="ui-nav-elements__li">
+              <a href="#ui-component-toggles">Switch</a>
+            </li>
+            <li class="ui-nav-elements__li">
+              <a href="#ui-component-pagination">Pagination</a>
+            </li>
+            <li class="ui-nav-elements__li">
+              <a href="#ui-component-modal">Modal</a>
+            </li>
+            <li class="ui-nav-elements__li">
+              <a href="#ui-component-accordion">Accordion</a>
+            </li>
+            <li class="ui-nav-elements__li">
+              <a href="#ui-component-carousel">Carousel</a>
+            </li>
+            <li class="ui-nav-elements__li">
+              <a href="#ui-component-groupLists">Group List</a>
+            </li>
+            <li class="ui-nav-elements__li">
+              <a href="#ui-component-inputGroups">Input Group</a>
+            </li>
+            <li class="ui-nav-elements__li">
+              <a href="#ui-component-alerts">Alert</a>
+            </li>
+            <li class="ui-nav-elements__li">
+              <a href="#ui-component-breadcrumb">Breadcrumb</a>
+            </li>
+            
+            <!--
             <input class="hide" type="radio" name="under" id="tab-under-21">
             <input class="hide" type="radio" name="under" id="tab-under-22">
             <input class="hide" type="radio" name="under" id="tab-under-23">
             <input class="hide" type="radio" name="under" id="tab-under-24">
             <input class="hide" type="radio" name="under" id="tab-under-25">
-            <input class="hide" type="radio" name="under" id="tab-under-26">
+            <input class="hide" type="radio" name="under" id="tab-under-26">-->
           </ul>
         </div>
-        <div class="col10">
+        <div class="col10 col-gap2">
 
           <section id="ui-element-grid" class="ui-element-main">
             <h1 class="main-ui-heading">12 Column Grid System</h1>
@@ -2781,6 +2821,8 @@
   <script type="text/javascript" src="scripts/safety.js"></script>
   <script type="text/javascript" src="scripts/prism.js"></script>
   <script type="text/javascript" src="scripts/markupDropDown.js"></script>
+    <script type="text/javascript" src="scripts/ScrollSpy.js"></script>
+
   </body>
 
 </html>
