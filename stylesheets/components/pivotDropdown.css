@@ -1,0 +1,220 @@
+
+/*Pivot Buttons and state*/
+
+.pivotDropdown__container input[type=checkbox],
+.carousel__container input[type=radio] {
+  display: none;
+}
+
+.pivot__controls {
+  position: absolute;
+  z-index: 1;
+  background: #2881C8;
+  opacity: .3;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  text-align: center;
+  padding-top: 10px;
+  transition: opacity .3s;
+}
+
+.pivot__controls:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.pivot__controls label,
+.pivot__controls span {
+  color: #CEEDF3;
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 900;
+  opacity: .6;
+  transition: opacity .3s;
+  z-index: 0;
+}
+
+.pivot__controls label:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.pivot--downBtn {
+  top: 4px;
+  z-index: 2;
+}
+.pivot--upBtn {
+  padding-top: 5px;
+}
+
+.pivot--upBtn label {
+  transform: rotate(-180deg);
+}
+
+/*Placement of button on left or right depending how you want it to pivot.*/
+
+.pivot--rtSide {
+  right: 4px;
+}
+
+.pivot--leftSide {
+  left: 4px;
+}
+
+.pivot__rtAction {
+  background-color: linear-gradient(rgba(206,237,243, .5), rgba(206,237,243,.85) );
+  display: block;
+  height: 0;
+  margin-bottom: 0;
+  opacity: 0;
+  transform-origin: top right;
+  transform: rotate(180deg);        
+  transition-timing-function: ease-in;
+  transition: opacity .5s, transform .5s;
+  width: 100%;
+}
+
+.pivot__leftAction {
+  background-color: linear-gradient(rgba(206,237,243, .5), rgba(206,237,243,.85) );
+  display: block;
+  height: 0;
+  margin-bottom: 0;
+  opacity: 0;
+  transform-origin: top left;
+  transform: rotate(-180deg);        
+  transition-timing-function: ease-in;
+  transition: opacity .5s, transform .5s;
+  width: 100%;
+}
+
+/********Pivot List Items in to view********/
+
+.pivotDropdown__container {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-bottom: 0;
+  border: 1px solid #e4edfb;
+  margin-bottom: 12px;
+  overflow: hidden;
+  border-radius: 3px;
+  background: rgba(206,237,243,.25);
+}
+
+.pivotDropdown__container .ui-element-heading {
+  text-align: center;
+  color: #7d95ab;
+}
+
+.pivotDown--radio:checked ~ .groupList {
+  opacity: 1;
+  transform: rotate(0deg);
+  height: 100%;
+}
+
+.pivotDropdown__container .pivot--upBtn {
+  top: 4px;
+  z-index: 0;
+}
+.pivotDropdown__container .pivot--upBtn label {
+  visibility: hidden;
+}
+
+.pivotDown--radio:checked ~ .pivot--upBtn {
+  z-index: 3;
+}
+.pivotDown--radio:checked ~ .pivot--upBtn label {
+  visibility: visible;
+}
+
+.pivotDown--radio:checked ~ .pivot--downBtn {
+  z-index: 0;
+}
+.pivotDown--radio:checked ~ .pivot--downBtn label {
+  visibility: hidden;
+}
+
+
+
+/*******Carousel********/
+
+.carousel__container {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #e4edfb;
+  margin: 0 auto 24px;
+  overflow: hidden;
+}
+
+.carousel__container .pivot--upBtn {
+  bottom: 4px;
+}
+
+.carousel__container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/*Initial hidden controls*/
+.pivot--downBtn .carousel__item1,
+.pivot--downBtn .carousel__item3,
+.carousel__container .pivot--upBtn {
+  display: none;
+}
+
+/********Changing  states when checked********/ 
+
+
+/*Slide 2 state*/
+.slide2--radio:checked ~ .pivot--downBtn .carousel__item3,
+.slide2--radio:checked ~ .pivot--upBtn,
+.slide2--radio:checked ~ .pivot--upBtn .carousel__item1 {
+  display: block;
+}
+.slide2--radio:checked ~ .pivot--downBtn .carousel__item2,
+.slide2--radio:checked ~ .pivot--upBtn .carousel__item2,
+.slide2--radio:checked ~ .pivot--upBtn .carousel__item3 {
+  display: none;
+}
+
+
+/*Slide --radio3 state*/
+
+.slide3--radio:checked ~ .pivot--downBtn,
+.slide3--radio:checked ~ .pivot--upBtn .carousel__item1,
+.slide3--radio:checked ~ .pivot--upBtn .carousel__item3  {
+  display: none;
+}
+.slide3--radio:checked ~ .pivot--upBtn,
+.slide3--radio:checked ~ .pivot--upBtn .carousel__item2 {
+  display: block;
+} 
+
+
+/*Carousel items state*/
+
+.slide1--radio:checked ~ .carousel__slide1,
+.slide2--radio:checked ~ .carousel__slide2,
+.slide3--radio:checked ~ .carousel__slide3 {
+  transform: rotate(0deg);
+  opacity: 1;
+  z-index: 1;
+  height: 100%;
+}
+
+.slide1--radio:checked ~ .carousel__slide2,
+.slide1--radio:checked ~ .carousel__slide3,
+.slide2--radio:checked ~ .carousel__slide1,
+.slide2--radio:checked ~ .carousel__slide3,
+.slide3--radio:checked ~ .carousel__slide1,
+.slide3--radio:checked ~ .carousel__slide2 {
+  opacity: .1;
+  transform: rotate(-360deg);
+
+}
+
+

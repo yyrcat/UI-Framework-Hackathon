@@ -51,7 +51,7 @@
 .groupList__header {
   height: 84px;
   display: block;
-  padding-top: 30px;
+  padding-top: 0;
 }
 
 /*Header with Secondary Content*/
@@ -67,8 +67,6 @@
   color: #fff;
   opacity: 0;
   transition: opacity .5s;
-  /*padding-top: 8px;*/
-
 }
 
 @media screen and (max-width: 570px) {
