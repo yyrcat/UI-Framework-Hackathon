@@ -10,7 +10,7 @@
   position: absolute;
   z-index: 1;
   background: #2881C8;
-  opacity: .3;
+  opacity: .7;
   border-radius: 50%;
   width: 42px;
   height: 42px;
@@ -71,7 +71,7 @@
   transform-origin: top right;
   transform: rotate(180deg);        
   transition-timing-function: ease-in;
-  transition: opacity .5s, transform .75s;
+  transition: opacity .75s, transform 1s;
   width: 100%;
 }
 
@@ -84,7 +84,7 @@
   transform-origin: top left;
   transform: rotate(-180deg);        
   transition-timing-function: ease-in;
-  transition: opacity .5s, transform .5s;
+  transition: opacity .75s, transform 1s;
   width: 100%;
 }
 
