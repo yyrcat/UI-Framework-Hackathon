@@ -71,7 +71,7 @@
   transform-origin: top right;
   transform: rotate(180deg);        
   transition-timing-function: ease-in;
-  transition: opacity .5s, transform .5s;
+  transition: opacity .5s, transform .75s;
   width: 100%;
 }
 
@@ -213,7 +213,7 @@
 .slide3--radio:checked ~ .carousel__slide1,
 .slide3--radio:checked ~ .carousel__slide2 {
   opacity: .1;
-  transform: rotate(-360deg);
+  transform: rotate(360deg);
 
 }
 
