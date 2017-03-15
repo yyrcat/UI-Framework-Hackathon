@@ -24,6 +24,7 @@
 @import url("components/jumbotron.css");
 @import url("components/spiralButtons.css");
 @import url("components/carouselminimalist.css");
+@import url("components/pivotDropdown.css");
 
 * {
   box-sizing: border-box;

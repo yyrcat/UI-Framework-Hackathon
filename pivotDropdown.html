@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Components</title>
+  <!-- vendor css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!-- component css  -->
+  <link rel="stylesheet" href="stylesheets/main.css">
+  
+</head>
+<body>
+  <main class="page-content">
+    <section id="ui-component-pivotDropdown" class="ui-element-main">
+
+      <h1 class="main-ui-heading">Pivot Dropdown of Element</h1>
+      <p class="main-element-description">If you want the element to be displayed with the effect of pivoting from a point and swinging in to view.</p>
+      
+      <!-- Copy div.ui-element-container template for next UI-Element variation -->
+      
+      <div class="ui-element-container">
+        <h3 class="ui-element-heading">Group List Pivot</h3>
+        <p class="ui-element-description">Display a group of list items, like a submenu for example, with a pivot animation. </p>
+
+        <div class="grid">
+          <div class="space-2 pillar-sm-8">
+            <div class="pivotDropdown__container">
+              <h3 class="ui-element-heading">Heading</h3>
+              <input type="checkbox" id="pivot1" class="pivotDown--radio">
+              <div class="pivot__controls pivot--rtSide pivot--downBtn">
+                <label for="pivot1">↶</label> 
+              </div>
+              <div class="pivot__controls pivot--rtSide pivot--upBtn">
+                <label for="pivot1">↷</label> 
+              </div>
+              <ul class="groupList pivot__rtAction">
+                <li class="groupList__link">link-1</li>
+                <li class="groupList__link">link-2</li>
+                <li class="groupList__link">link-3</li>
+                <li class="groupList__link">link-4</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <button class="btn-full-width">Show markup</button>
+        <div class="show-markup">
+          <pre class="language-markup">
+            <code>
+              &lt;div class="pivotDropdown__container">
+                &lt;h3 class="ui-element-heading">Heading&lt;/h3>
+                &lt;input type="checkbox" id="pivot1" class="pivotDown--radio">
+                &lt;div class="pivot__controls pivot--rtSide pivot--downBtn">
+                  &lt;label for="pivot1">↶&lt;/label> 
+                &lt;/div>
+                &lt;div class="pivot__controls pivot--rtSide pivot--upBtn">
+                  &lt;label for="pivot1">↷&lt;/label> 
+                &lt;/div>
+                &lt;ul class="groupList pivot__rtAction">
+                  &lt;li class="groupList__link">link-1&lt;/li>
+                  &lt;li class="groupList__link">link-2&lt;/li>
+                  &lt;li class="groupList__link">link-3&lt;/li>
+                  &lt;li class="groupList__link">link-4&lt;/li>
+                &lt;/ul>
+              &lt;/div> 
+            </code>
+          </pre>
+        </div>
+      </div>
+
+      <div class="ui-element-container">
+        <h3 class="ui-element-heading">Carousel Pivot</h3>
+        <p class="ui-element-description">In an image carousel, the next image in the gallery can be swung down in to view, or swung back up to get to the previous image.</p>
+        
+        
+        <div class="grid">
+          <div class="space-1 pillar-sm-10">
+            <div class="carousel__container">
+
+              <input type="radio" name="carousel" id=carousel__item1 class="slide1--radio" checked>
+              <input type="radio" name="carousel" id="carousel__item2" class="slide2--radio">
+              <input type="radio" name="carousel" id="carousel__item3" class="slide3--radio">
+
+              <div class="pivot__controls pivot--rtSide pivot--downBtn">
+                <label for="carousel__item1" class="carousel__item1">↶</label>
+                <label for="carousel__item2" class="carousel__item2">↶</label>
+                <label for="carousel__item3" class="carousel__item3">↶</label>
+              </div>
+
+              <div class="pivot__controls pivot--rtSide pivot--upBtn">
+                <label for="carousel__item1" class="carousel__item1">↷</label>
+                <label for="carousel__item2" class="carousel__item2">↷</label>
+                <label for="carousel__item3" class="carousel__item3">↷</label>
+              </div>
+              
+              <div class="carousel__slide1 pivot__rtAction">
+                <img sizes="75vw" src="images/slide1--image.jpeg" alt="">
+              </div>
+              <div class="carousel__slide2 pivot__rtAction">
+                <img sizes="75vw"  src="images/slide2--image.jpeg" alt="">
+              </div>
+              <div class="carousel__slide3 pivot__rtAction">
+                <img sizes="75vw"  src="images/slide3--image.jpg"  alt="">
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <button class="btn-full-width">Show markup</button>
+        <div class="show-markup">
+          <pre class="language-markup">
+            <code>
+              &lt;div class="carousel__container">
+
+                &lt;input type="radio" name="carousel" id=carousel__item1 class="slide1--radio" checked>
+                &lt;input type="radio" name="carousel" id="carousel__item2" class="slide2--radio">
+                &lt;input type="radio" name="carousel" id="carousel__item3" class="slide3--radio">
+
+                &lt;div class="pivot__controls pivot--rtSide pivot--downBtn">
+                  &lt;label for="carousel__item1" class="carousel__item1">↶&lt;/label>
+                  &lt;label for="carousel__item2" class="carousel__item2">↶&lt;/label>
+                  &lt;label for="carousel__item3" class="carousel__item3">↶&lt;/label>
+                &lt;/div>
+
+                &lt;div class="pivot__controls pivot--rtSide pivot--upBtn">
+                  &lt;label for="carousel__item1" class="carousel__item1">↷&lt;/label>
+                  &lt;label for="carousel__item2" class="carousel__item2">↷&lt;/label>
+                  &lt;label for="carousel__item3" class="carousel__item3">↷&lt;/label>
+                &lt;/div>
+                
+                &lt;div class="carousel__slide1 pivot__rtAction">
+                  &lt;img sizes="75vw" src="images/slide1--image.jpeg" alt="">
+                &lt;/div>
+                &lt;div class="carousel__slide2 pivot__rtAction">
+                  &lt;img sizes="75vw"  src="images/slide2--image.jpeg" alt="">
+                &lt;/div>
+                &lt;div class="carousel__slide3 pivot__rtAction">
+                  &lt;img sizes="75vw"  src="images/slide3--image.jpg"  alt="">
+                &lt;/div>
+                
+              &lt;/div> 
+            </code>
+          </pre>
+        </div>
+      </div>
+
+      <div class="ui-element-container">
+        <h3 class="ui-element-heading">Pivot Direction</h3>
+        <p class="ui-element-description">The pivot swing can be either on the left or the right.</p>
+        <h3 class="ui-element-heading">Left Side</h3>
+        <p class="ui-element-description">Add a class of <em class="emphasis">.pivot--leftSide</em> to the pivot button div to place the button on the left side and add a class of <em class="emphasis">.pivot__leftAction</em> to the element group being swung into view.</p>
+        
+        <div class="grid">
+          <div class="space-2 pillar-sm-8">
+            <div class="pivotDropdown__container">
+              <h3 class="ui-element-heading">Left</h3>
+              <input type="checkbox" id="pivot2" class="pivotDown--radio">
+              <div class="pivot__controls pivot--leftSide pivot--downBtn">
+                <label for="pivot2">↷</label> 
+              </div>
+              <div class="pivot__controls pivot--leftSide pivot--upBtn">
+                <label for="pivot2">↶</label> 
+              </div>
+              <ul class="groupList pivot__leftAction">
+                <li class="groupList__link">link-1</li>
+                <li class="groupList__link">link-2</li>
+                <li class="groupList__link">link-3</li>
+                <li class="groupList__link">link-4</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="ui-element-heading">Right Side</h3>
+        <p class="ui-element-description">Add a class of <em class="emphasis">.pivot--rtSide</em> to the pivot button div to place the button on the right side and add a class of <em class="emphasis">.pivot__rtAction</em> to the element group being swung into view.</p>
+        
+        <div class="grid">
+          <div class="space-2 pillar-sm-8">
+            <div class="pivotDropdown__container">
+              <h3 class="ui-element-heading">Right</h3>
+              <input type="checkbox" id="pivot3" class="pivotDown--radio">
+              <div class="pivot__controls pivot--rtSide pivot--downBtn">
+                <label for="pivot3">↶</label> 
+              </div>
+              <div class="pivot__controls pivot--rtSide pivot--upBtn">
+                <label for="pivot3">↷</label> 
+              </div>
+              <ul class="groupList pivot__rtAction">
+                <li class="groupList__link">link-1</li>
+                <li class="groupList__link">link-2</li>
+                <li class="groupList__link">link-3</li>
+                <li class="groupList__link">link-4</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn-full-width">Show markup</button>
+        <div class="show-markup">
+          <pre class="language-markup">
+            <code>
+              &lt;div class="pivotDropdown__container">
+                &lt;h3 class="ui-element-heading">Left&lt;/h3>
+                &lt;input type="checkbox" id="pivot2" class="pivotDown--radio">
+                &lt;div class="pivot__controls pivot--leftSide pivot--downBtn">
+                  &lt;label for="pivot2">↷&lt;/label> 
+                &lt;/div>
+                &lt;div class="pivot__controls pivot--leftSide pivot--upBtn">
+                  &lt;label for="pivot2">↶&lt;/label> 
+                &lt;/div>
+                &lt;ul class="groupList pivot__leftAction">
+                  &lt;li class="groupList__link">link-1&lt;/li>
+                  &lt;li class="groupList__link">link-2&lt;/li>
+                  &lt;li class="groupList__link">link-3&lt;/li>
+                  &lt;li class="groupList__link">link-4&lt;/li>
+                &lt;/ul>
+              &lt;/div>
+
+              &lt;div class="pivotDropdown__container">
+                &lt;h3 class="ui-element-heading">Right&lt;/h3>
+                &lt;input type="checkbox" id="pivot3" class="pivotDown--radio">
+                &lt;div class="pivot__controls pivot--rtSide pivot--downBtn">
+                  &lt;label for="pivot3">↶&lt;/label> 
+                &lt;/div>
+                &lt;div class="pivot__controls pivot--rtSide pivot--upBtn">
+                  &lt;label for="pivot3">↷&lt;/label> 
+                &lt;/div>
+                &lt;ul class="groupList pivot__rtAction">
+                  &lt;li class="groupList__link">link-1&lt;/li>
+                  &lt;li class="groupList__link">link-2&lt;/li>
+                  &lt;li class="groupList__link">link-3&lt;/li>
+                  &lt;li class="groupList__link">link-4&lt;/li>
+                &lt;/ul>
+              &lt;/div> 
+            </code>
+          </pre>
+        </div>
+      </div>
+    </section>
+    <!-- If building more then one UI-Element, copy and paste entire section.ui-element-main and go to town!-->
+  </main>
+  <!-- script for code snippets to work. -->
+  <script type="text/javascript" src="scripts/prism.js"></script>
+  <script type="text/javascript" src="scripts/markupDropDown.js"></script>
+</body>
+</html>

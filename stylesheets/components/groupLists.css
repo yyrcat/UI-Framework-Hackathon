@@ -11,7 +11,7 @@
 .groupList__item,
 .groupList__link {
   position: relative;
-  /*background: #fff;*/
+  background: #FAFCFF;
   border-left: 1px solid #c3ced9;
   border-radius: 2px;
   border-right: 1px solid #c3ced9;
@@ -35,6 +35,7 @@
 .groupList__link:hover {
   background: #edfafd;
   color: #51d0ef;
+  cursor: pointer;
 }
 
 .active {
@@ -51,7 +52,6 @@
 .groupList__header {
   height: 84px;
   display: block;
-  padding-top: 30px;
 }
 
 /*Header with Secondary Content*/
